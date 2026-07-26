@@ -54,6 +54,7 @@ export function MapCanvas({
   // Init once.
   useEffect(() => {
     let cancelled = false;
+    let ro: ResizeObserver | undefined;
     const markers = markersRef.current;
     (async () => {
       const maplibregl = (await import('maplibre-gl')).default;
@@ -68,6 +69,17 @@ export function MapCanvas({
       });
       map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
       mapRef.current = map;
+
+      // The map often initialises before the flex/absolute container has its
+      // final width; without this, MapLibre keeps a stale (tiny) size and every
+      // marker projects to the left edge. Resize on every container size change,
+      // and once more after paint.
+      if (containerRef.current) {
+        ro = new ResizeObserver(() => map.resize());
+        ro.observe(containerRef.current);
+      }
+      requestAnimationFrame(() => map.resize());
+
       // Signal readiness so the marker/location effects (which may have run
       // before this async init finished) attach now. Markers don't need the
       // style/tiles loaded, so flip immediately rather than waiting on 'load'.
@@ -75,6 +87,7 @@ export function MapCanvas({
     })();
     return () => {
       cancelled = true;
+      ro?.disconnect();
       markers.forEach((m) => m.remove());
       markers.clear();
       userMarkerRef.current?.remove();

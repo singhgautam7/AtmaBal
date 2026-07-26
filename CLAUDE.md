@@ -1,11 +1,11 @@
-# CLAUDE.md — Atma Bala
+# CLAUDE.md — Atm Bala
 
 > Read this file fully before writing any code. Then read everything in `specs/`
 > and `design.md`. Do not begin implementation until you have read all of them.
 
 ## What this project is
 
-**Atma Bala** (आत्मबल / ಆತ್ಮಬಲ — "inner strength; the courage to stand for
+**Atm Bala** (आत्मबल / ಆತ್ಮಬಲ — "inner strength; the courage to stand for
 yourself") is a reference tool for women in India. It is **not** an SOS or
 live-tracking app. Its purpose is to help a woman understand, calmly and in her
 own time:

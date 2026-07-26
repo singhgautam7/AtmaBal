@@ -18,15 +18,27 @@ export interface CrimeHead {
   cases: number[];
 }
 
+/**
+ * Per-city crime data — real NCRB totals (2020–2024). NCRB does not publish a
+ * clean per-offence split at city level in the sourced tables, so v1 ships the
+ * verified city total + multi-year trend; the per-head breakdown is a pipeline
+ * job (see headBreakdownNote).
+ */
 export interface CrimeData {
   city: string;
   cityName: string;
+  state: string;
   years: number[];
-  populationLakh: number;
+  /** year (string key) -> total reported crimes against women */
+  totals: Record<string, number>;
+  populationLakh: number | null;
+  ratePerLakh: number | null;
+  chargesheetRate: number | null;
   populationBaseNote: string;
+  source: string;
   lastUpdated: string;
-  provisional: boolean;
-  heads: CrimeHead[];
+  hasHeadBreakdown: boolean;
+  headBreakdownNote: string;
 }
 
 export interface JusticeData {
@@ -68,4 +80,6 @@ export interface CityMeta {
   name: string;
   state: string;
   isLive: boolean;
+  hasCrime: boolean;
+  hasHelp: boolean;
 }

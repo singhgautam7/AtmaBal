@@ -5,7 +5,7 @@
     "neutralDescription": "Local city information and reference."
   },
   "brand": {
-    "name": "Atma Bala",
+    "name": "Atma Bal",
     "forWomen": "For women in India"
   },
   "nav": {
@@ -56,11 +56,32 @@
     }
   },
   "crime": {
-    "eyebrow": "Crime in your city · Bengaluru",
-    "title": "Crime in Bengaluru",
-    "illustrativeBadge": "Illustrative figures",
-    "illustrativeNote": "The chart numbers below are placeholder values, not yet real NCRB data — the data pipeline replaces them. One verified anchor: NCRB recorded 3,924 crimes against women in Bengaluru in 2022.",
-    "howToRead": "How to read this: every number is <strong>reported cases</strong>, not total incidents — a rising line can mean more reporting, not more danger. Rate per lakh is the fairest comparison across years.",
+    "eyebrow": "Crime in your city",
+    "title": "Crime in {city}",
+    "cityLabel": "City",
+    "changeCity": "Change city",
+    "howToRead": "How to read this: every number is <strong>reported cases</strong>, not total incidents — a rising line can mean more reporting, not more danger.",
+    "trend": {
+      "up": "Reported crimes against women in {city} rose from {from} in {y0} to {to} in {y1} — about {pct}% over these years. Much of that reflects more reporting and easier access, not necessarily more crime.",
+      "down": "Reported crimes against women in {city} fell from {from} in {y0} to {to} in {y1} — about {pct}% over these years.",
+      "flat": "Reported crimes against women in {city} held roughly steady, from {from} in {y0} to {to} in {y1}."
+    },
+    "trendChartTitle": "Total reported cases · {y0}–{y1}",
+    "byYearTitle": "Year by year",
+    "perHead": {
+      "title": "How the total breaks down by offence"
+    },
+    "stats": {
+      "total": "Total reported · {year}",
+      "reportedCases": "reported cases",
+      "ratePerLakh": "Rate per lakh women",
+      "censusBase": "per 1,00,000 women (Census 2011 base)",
+      "chargesheet": "Charge-sheeting rate",
+      "chargesheetSub": "of cases, {year}",
+      "changeVs": "Change vs {year}",
+      "moreReported": "more reported",
+      "fewerReported": "fewer reported"
+    },
     "methodology": "Methodology",
     "filters": {
       "scope": "Scope",
@@ -70,17 +91,7 @@
     },
     "scope": { "all": "All", "public": "Public", "domestic": "Domestic" },
     "measure": { "cases": "Cases", "victims": "Victims", "rate": "Rate / lakh" },
-    "stats": {
-      "measureYear": "{measure} · {year}",
-      "ratePerLakh": "Rate per lakh women · {year}",
-      "perWomen": "per 1,00,000 women",
-      "changeVs": "Change vs {year}",
-      "moreReported": "more reported",
-      "fewerReported": "fewer reported",
-      "headsSelected": "{selected} of {total} heads",
-      "mostReported": "Most-reported head · {year}"
-    },
-    "caveat": "A rising line usually means more women are reporting — better access and trust — not necessarily more crime. The rate per lakh is the fairest way to compare years as the city grows.",
+    "caveat": "A rising line usually means more women are reporting — better access and trust — not necessarily more crime. The rate per lakh is the fairest way to compare cities to themselves over time.",
     "headline": {
       "all": "Reported crimes against women in Bengaluru have risen across most heads since 2018 — as much a sign of more reporting as of more crime.",
       "public": "Across public-space heads, reported crime against women in Bengaluru has climbed since 2018 — cyber crime fastest of all.",
@@ -236,6 +247,7 @@
   },
   "footer": {
     "storeNothing": "We store nothing. This site is served as static files — there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
+    "dataSources": "Data & sources",
     "corrections": "Something wrong or out of date? Corrections",
     "sourcesReviewed": "Every legal point and helpline carries a source and a review date."
   }

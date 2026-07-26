@@ -28,17 +28,34 @@ const plex = IBM_Plex_Sans({
   display: 'swap',
 });
 
+const TITLE = 'Atma Bal — know your rights, find help';
+const DESCRIPTION =
+  'For women in India: understand what local crime data really says, know your rights in plain language, and find verified help. Private — stores nothing.';
+
 export const metadata: Metadata = {
-  title: 'Local City Info',
-  description: 'Local city information and reference.',
+  metadataBase: new URL('https://atmabal.in'),
+  title: { default: TITLE, template: '%s · Atma Bal' },
+  description: DESCRIPTION,
+  applicationName: 'Atma Bal',
   robots: { index: true, follow: true },
-  // Browser tab icon stays NEUTRAL (plumbing rule). The diya is only the
-  // installed-app / home-screen icon, declared in the web manifest.
+  // Browser tab icon kept neutral (plumbing rule); the diya is the installed-app
+  // / home-screen icon in the web manifest. (Tab title is now meaningful per the
+  // owner's request — see the safety note in the trust footer.)
   icons: { icon: '/favicon.svg' },
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: 'Local City Info',
-    description: 'Local city information and reference.',
+    type: 'website',
+    siteName: 'Atma Bal',
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: 'en_IN',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Atma Bal — the courage to stand for yourself.' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ['/og-image.png'],
   },
 };
 

@@ -1,6 +1,158 @@
 {
-  "cities": [
-    { "id": "bengaluru", "name": "Bengaluru", "state": "Karnataka", "isLive": true }
-  ],
-  "comingSoon": true
+ "cities": [
+  {
+   "id": "bengaluru",
+   "name": "Bengaluru",
+   "state": "Karnataka",
+   "isLive": true,
+   "hasCrime": true,
+   "hasHelp": true
+  },
+  {
+   "id": "ahmedabad",
+   "name": "Ahmedabad",
+   "state": "Gujarat",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "chennai",
+   "name": "Chennai",
+   "state": "Tamil Nadu",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "coimbatore",
+   "name": "Coimbatore",
+   "state": "Tamil Nadu",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "delhi",
+   "name": "Delhi",
+   "state": "",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "ghaziabad",
+   "name": "Ghaziabad",
+   "state": "Uttar Pradesh",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "hyderabad",
+   "name": "Hyderabad",
+   "state": "Telangana",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "indore",
+   "name": "Indore",
+   "state": "Madhya Pradesh",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "jaipur",
+   "name": "Jaipur",
+   "state": "Rajasthan",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "kanpur",
+   "name": "Kanpur",
+   "state": "Uttar Pradesh",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "kochi",
+   "name": "Kochi",
+   "state": "Kerala",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "kolkata",
+   "name": "Kolkata",
+   "state": "West Bengal",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "kozhikode",
+   "name": "Kozhikode",
+   "state": "Kerala",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "lucknow",
+   "name": "Lucknow",
+   "state": "Uttar Pradesh",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "mumbai",
+   "name": "Mumbai",
+   "state": "Maharashtra",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "nagpur",
+   "name": "Nagpur",
+   "state": "Maharashtra",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "patna",
+   "name": "Patna",
+   "state": "Bihar",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "pune",
+   "name": "Pune",
+   "state": "Maharashtra",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  },
+  {
+   "id": "surat",
+   "name": "Surat",
+   "state": "Gujarat",
+   "isLive": false,
+   "hasCrime": true,
+   "hasHelp": false
+  }
+ ],
+ "comingSoon": false,
+ "note": "Crime data (NCRB) available for all listed metros; Get-help map currently Bengaluru only."
 }

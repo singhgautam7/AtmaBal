@@ -1,7 +1,7 @@
 {
- "city": "bengaluru",
- "cityName": "Bengaluru",
- "state": "Karnataka",
+ "city": "ghaziabad",
+ "cityName": "Ghaziabad",
+ "state": "Uttar Pradesh",
  "years": [
   2020,
   2021,
@@ -10,15 +10,15 @@
   2024
  ],
  "totals": {
-  "2020": 2730,
-  "2021": 3127,
-  "2022": 3924,
-  "2023": 4870,
-  "2024": 4748
+  "2020": 341,
+  "2021": 591,
+  "2022": 1063,
+  "2023": 904,
+  "2024": 1265
  },
- "populationLakh": 40.6,
- "ratePerLakh": 117.0,
- "chargesheetRate": 70.5,
+ "populationLakh": 11.0,
+ "ratePerLakh": 114.8,
+ "chargesheetRate": 65.8,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
  "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",

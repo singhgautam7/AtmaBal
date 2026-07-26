@@ -1,4 +1,4 @@
-# Atma Bala (आत्मबल · ಆತ್ಮಬಲ)
+# Atma Bal (आत्मबल)
 
 > "Inner strength; the courage to stand for yourself."
 

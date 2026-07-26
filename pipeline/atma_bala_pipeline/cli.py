@@ -9,7 +9,7 @@ import typer
 from . import db as dbmod
 from . import export as exportmod
 
-app = typer.Typer(add_completion=False, help="Atma Bala data pipeline (SQLite -> JSON).")
+app = typer.Typer(add_completion=False, help="Atm Bala data pipeline (SQLite -> JSON).")
 
 
 def _seed_geography(conn) -> None:
@@ -41,9 +41,21 @@ def ingest_stations() -> None:
     typer.echo(f"stations: {result}")
 
 
+@app.command("ingest-ncrb-metros")
+def ingest_ncrb_metros() -> None:
+    """REAL: fetch NCRB metro-city crime totals (2020–2024) from OpenCity CSV/XLSX."""
+    from .ingest import ncrb_metros
+
+    conn = dbmod.connect()
+    dbmod.migrate(conn)
+    _seed_geography(conn)
+    result = ncrb_metros.ingest(conn)
+    typer.echo(f"ncrb metros: {result}")
+
+
 @app.command("ingest-ncrb")
 def ingest_ncrb(pdf: Path, year: int) -> None:
-    """Parse an NCRB city-wise 'Crime in India' PDF into crime_stat rows."""
+    """Parse an NCRB city-wise 'Crime in India' PDF into crime_stat rows (per-head)."""
     from .ingest import ncrb
 
     conn = dbmod.connect()
@@ -55,10 +67,11 @@ def ingest_ncrb(pdf: Path, year: int) -> None:
 
 @app.command()
 def export() -> None:
-    """Write ../data/<city>/places.json + stations.geojson from SQLite."""
+    """Write ../data/<city>/{places.json,crime.json} + shared/cities.json from SQLite."""
     conn = dbmod.connect()
-    result = exportmod.export_places(conn)
-    typer.echo(f"exported: {result}")
+    places = exportmod.export_places(conn)
+    crime = exportmod.export_crime(conn)
+    typer.echo(f"exported places: {places}; crime: {crime}")
 
 
 @app.command()

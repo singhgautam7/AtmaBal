@@ -1,7 +1,7 @@
 {
- "city": "bengaluru",
- "cityName": "Bengaluru",
- "state": "Karnataka",
+ "city": "kolkata",
+ "cityName": "Kolkata",
+ "state": "West Bengal",
  "years": [
   2020,
   2021,
@@ -10,15 +10,15 @@
   2024
  ],
  "totals": {
-  "2020": 2730,
-  "2021": 3127,
-  "2022": 3924,
-  "2023": 4870,
-  "2024": 4748
+  "2020": 2001,
+  "2021": 1783,
+  "2022": 1890,
+  "2023": 1746,
+  "2024": 1958
  },
- "populationLakh": 40.6,
- "ratePerLakh": 117.0,
- "chargesheetRate": 70.5,
+ "populationLakh": 67.9,
+ "ratePerLakh": 28.8,
+ "chargesheetRate": 98.5,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
  "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",

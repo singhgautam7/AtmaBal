@@ -1,7 +1,7 @@
 {
- "city": "bengaluru",
- "cityName": "Bengaluru",
- "state": "Karnataka",
+ "city": "surat",
+ "cityName": "Surat",
+ "state": "Gujarat",
  "years": [
   2020,
   2021,
@@ -10,15 +10,15 @@
   2024
  ],
  "totals": {
-  "2020": 2730,
-  "2021": 3127,
-  "2022": 3924,
-  "2023": 4870,
-  "2024": 4748
+  "2020": 633,
+  "2021": 622,
+  "2022": 797,
+  "2023": 869,
+  "2024": 945
  },
- "populationLakh": 40.6,
- "ratePerLakh": 117.0,
- "chargesheetRate": 70.5,
+ "populationLakh": 19.7,
+ "ratePerLakh": 47.9,
+ "chargesheetRate": 83.0,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
  "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",

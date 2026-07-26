@@ -8,6 +8,7 @@
  */
 import type { CrimeHead, Measure } from '@/data/types';
 import { nice, measureValue, shortName, fmtMeasure } from '@/lib/crime';
+import { fmtN } from '@/lib/format';
 
 const FAM = 'var(--font-sans)';
 
@@ -170,6 +171,77 @@ export function GroupedBars({
             </rect>
             <text x={+gx.toFixed(1)} y={y1 + 14} textAnchor="middle" fontSize={small ? 8 : 8.5} fill="var(--ink-faint)" fontFamily={FAM}>
               {sn}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+/* ------------------------------------------------------------ year bars ---- */
+
+export function YearBars({
+  years,
+  values,
+  focusYear,
+  width,
+  height,
+  ariaLabel,
+}: {
+  years: number[];
+  values: number[];
+  focusYear: number;
+  width: number;
+  height: number;
+  ariaLabel: string;
+}) {
+  const w = width;
+  const h = height;
+  const x0 = 44;
+  const x1 = w - 10;
+  const y0 = 14;
+  const y1 = h - 26;
+  const nm = nice(Math.max(...values) * 1.14 || 1);
+  const n = years.length;
+  const gw = (x1 - x0) / n;
+  const bw = Math.min(46, gw * 0.55);
+
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} role="img" aria-label={ariaLabel} style={{ display: 'block', maxWidth: '100%', height: 'auto' }}>
+      {[0, 1, 2, 3].map((k) => {
+        const t = (nm / 3) * k;
+        const y = +(y1 - (t / nm) * (y1 - y0)).toFixed(1);
+        return (
+          <g key={`g${k}`}>
+            <line x1={x0} x2={x1} y1={y} y2={y} stroke="var(--line)" strokeWidth={1} />
+            <text x={x0 - 6} y={y + 3.4} textAnchor="end" fontSize={9.5} fill="var(--ink-faint)" fontFamily={FAM}>
+              {fmtN(t)}
+            </text>
+          </g>
+        );
+      })}
+      {years.map((yr, i) => {
+        const v = values[i] ?? 0;
+        const bh = (v / nm) * (y1 - y0);
+        const cx = x0 + gw * i + gw / 2;
+        const foc = yr === focusYear;
+        return (
+          <g key={`b${i}`}>
+            <rect
+              x={+(cx - bw / 2).toFixed(1)}
+              y={+(y1 - bh).toFixed(1)}
+              width={bw}
+              height={+bh.toFixed(1)}
+              rx={3}
+              fill={foc ? 'var(--accent)' : 'var(--data-domestic)'}
+              opacity={foc ? 1 : 0.55}
+            />
+            <text x={cx} y={+(y1 - bh - 4).toFixed(1)} textAnchor="middle" fontSize={foc ? 10.5 : 9.5} fontWeight={700} fill="var(--ink)" fontFamily={FAM}>
+              {fmtN(v)}
+            </text>
+            <text x={cx} y={h - 7} textAnchor="middle" fontSize={9.5} fontWeight={foc ? 700 : 400} fill={foc ? 'var(--accent-deep)' : 'var(--ink-faint)'} fontFamily={FAM}>
+              {yr}
             </text>
           </g>
         );

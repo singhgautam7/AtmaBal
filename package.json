@@ -2,7 +2,7 @@
   "name": "atmabal",
   "private": true,
   "version": "0.1.0",
-  "description": "Atma Bala — a calm reference tool for women in India: honest local crime data, rights in plain language, and verified help. Static, private, stores nothing.",
+  "description": "Atma Bal — a calm reference tool for women in India: honest local crime data, rights in plain language, and verified help. Static, private, stores nothing.",
   "workspaces": [
     "apps/*"
   ],

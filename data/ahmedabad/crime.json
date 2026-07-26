@@ -1,7 +1,7 @@
 {
- "city": "bengaluru",
- "cityName": "Bengaluru",
- "state": "Karnataka",
+ "city": "ahmedabad",
+ "cityName": "Ahmedabad",
+ "state": "Gujarat",
  "years": [
   2020,
   2021,
@@ -10,15 +10,15 @@
   2024
  ],
  "totals": {
-  "2020": 2730,
-  "2021": 3127,
-  "2022": 3924,
-  "2023": 4870,
-  "2024": 4748
+  "2020": 1524,
+  "2021": 1554,
+  "2022": 1452,
+  "2023": 1360,
+  "2024": 1059
  },
- "populationLakh": 40.6,
- "ratePerLakh": 117.0,
- "chargesheetRate": 70.5,
+ "populationLakh": 30.0,
+ "ratePerLakh": 35.3,
+ "chargesheetRate": 89.7,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
  "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",

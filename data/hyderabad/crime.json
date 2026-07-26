@@ -1,7 +1,7 @@
 {
- "city": "bengaluru",
- "cityName": "Bengaluru",
- "state": "Karnataka",
+ "city": "hyderabad",
+ "cityName": "Hyderabad",
+ "state": "Telangana",
  "years": [
   2020,
   2021,
@@ -10,15 +10,15 @@
   2024
  ],
  "totals": {
-  "2020": 2730,
-  "2021": 3127,
-  "2022": 3924,
-  "2023": 4870,
-  "2024": 4748
+  "2020": 2390,
+  "2021": 3050,
+  "2022": 3145,
+  "2023": 3822,
+  "2024": 3255
  },
- "populationLakh": 40.6,
- "ratePerLakh": 117.0,
- "chargesheetRate": 70.5,
+ "populationLakh": 37.6,
+ "ratePerLakh": 86.5,
+ "chargesheetRate": 76.3,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
  "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",

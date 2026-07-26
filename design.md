@@ -14,7 +14,7 @@ tokens, so reconciliation later is cheap. Never scatter raw colors/spacing acros
 components.
 
 ## Brand & voice
-- **Name:** Atma Bala (आत्मबल / ಆತ್ಮಬಲ) — "inner strength; the courage to stand
+- **Name:** Atm Bala (आत्मबल / ಆತ್ಮಬಲ) — "inner strength; the courage to stand
   for yourself." The hero section explains the meaning and the intent: this is a
   tool to help her stand for herself, **motivator not shelter**.
 - **Say plainly it's for women — on the hero.** The hero must state this is a

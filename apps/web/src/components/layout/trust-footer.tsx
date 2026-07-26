@@ -17,12 +17,20 @@ export function TrustFooter() {
           <IconLock className="mt-0.5 flex-none text-accent-deep" />
           <span className="max-w-[640px]">{t('storeNothing')}</span>
         </p>
-        <LocaleLink
-          href="/corrections"
-          className="flex-none whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
-        >
-          {t('corrections')}
-        </LocaleLink>
+        <div className="flex flex-none items-center gap-4">
+          <LocaleLink
+            href="/methodology"
+            className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
+          >
+            {t('dataSources')}
+          </LocaleLink>
+          <LocaleLink
+            href="/corrections"
+            className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
+          >
+            {t('corrections')}
+          </LocaleLink>
+        </div>
       </div>
     </footer>
   );

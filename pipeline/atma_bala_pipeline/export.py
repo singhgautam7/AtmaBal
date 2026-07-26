@@ -87,6 +87,58 @@ def export_places(conn: sqlite3.Connection, city_id: str = "bengaluru") -> dict:
     return {"places": len(places), "geojson_features": len(features)}
 
 
+def export_crime(conn: sqlite3.Connection) -> dict:
+    """Write per-city crime.json (real NCRB totals) + shared/cities.json."""
+    HEAD_NOTE = (
+        "NCRB does not publish a per-offence breakdown at city level for this city in "
+        "the sourced tables; the city total and its multi-year trend are shown. Per-head "
+        "data will be added when parsed from NCRB head-wise tables."
+    )
+    cities = conn.execute(
+        "SELECT DISTINCT c.id, c.name, c.is_live,"
+        " (SELECT s.name FROM state s WHERE s.id=c.state_id) state"
+        " FROM city c JOIN crime_city_year y ON y.city_id=c.id ORDER BY c.name"
+    ).fetchall()
+
+    index = []
+    written = 0
+    for c in cities:
+        rows = conn.execute(
+            "SELECT year, cases, population_lakh, rate_per_lakh, chargesheet_rate"
+            " FROM crime_city_year WHERE city_id=? ORDER BY year", (c["id"],)
+        ).fetchall()
+        if not rows:
+            continue
+        latest = rows[-1]
+        payload = {
+            "city": c["id"], "cityName": c["name"], "state": c["state"] or "",
+            "years": [r["year"] for r in rows],
+            "totals": {str(r["year"]): r["cases"] for r in rows},
+            "populationLakh": latest["population_lakh"],
+            "ratePerLakh": latest["rate_per_lakh"],
+            "chargesheetRate": latest["chargesheet_rate"],
+            "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
+            "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
+            "lastUpdated": "NCRB Crime in India 2024",
+            "hasHeadBreakdown": False,
+            "headBreakdownNote": HEAD_NOTE,
+        }
+        out = DATA_DIR / c["id"]
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "crime.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1))
+        written += 1
+        has_help = (DATA_DIR / c["id"] / "places.json").exists()
+        index.append({"id": c["id"], "name": c["name"], "state": c["state"] or "",
+                      "isLive": bool(c["is_live"]), "hasCrime": True, "hasHelp": has_help})
+
+    (DATA_DIR / "shared").mkdir(parents=True, exist_ok=True)
+    (DATA_DIR / "shared" / "cities.json").write_text(json.dumps(
+        {"cities": index, "comingSoon": False,
+         "note": "Crime data (NCRB) available for all listed metros; Get-help map currently Bengaluru only."},
+        ensure_ascii=False, indent=1))
+    return {"cities": written}
+
+
 def verify(conn: sqlite3.Connection) -> list[str]:
     """Assert the review trail: nothing user-facing ships without provenance."""
     problems: list[str] = []

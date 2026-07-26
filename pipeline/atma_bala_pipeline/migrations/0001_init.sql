@@ -1,4 +1,4 @@
--- Atma Bala — build-time SQLite schema (v1).
+-- Atm Bala — build-time SQLite schema (v1).
 -- Portable to Postgres for v2 (see specs/v2-future.md): TEXT ISO-8601 timestamps,
 -- no SQLite-only constructs, polymorphic scope via nullable FKs + CHECK.
 
