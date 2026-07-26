@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { quickExit } from '@/lib/safety';
 import { cn } from '@/lib/cn';
@@ -13,19 +13,20 @@ import { IconExit } from '@/components/icons';
  * the tab with a neutral weather search — no interstitial, no animation, nothing
  * that references this site. Speed and camouflage are the whole point.
  *
- * A small "leave this site quickly" hint shows on first appearance (per session)
- * so it isn't a mystery button. sessionStorage is used only to not repeat the
- * hint within a tab session — it tracks nothing about the user.
+ * The purpose is conveyed by the `title` tooltip (per owner's request — no visible
+ * hint label). `variant="floating"` gives it a solid surface background + shadow
+ * for use over the map.
  */
 export function QuickExit({
   cityName = 'Bengaluru',
   size = 'sm',
+  variant = 'default',
 }: {
   cityName?: string;
   size?: 'sm' | 'lg';
+  variant?: 'default' | 'floating';
 }) {
   const t = useTranslations('quickExit');
-  const [showHint, setShowHint] = useState(false);
   const firedRef = useRef(false);
 
   const exit = () => {
@@ -39,41 +40,26 @@ export function QuickExit({
       if (e.key === 'Escape') exit();
     };
     window.addEventListener('keydown', onKey);
-
-    try {
-      if (!sessionStorage.getItem('ab_qe_hint')) {
-        setShowHint(true);
-        sessionStorage.setItem('ab_qe_hint', '1');
-      }
-    } catch {
-      // sessionStorage unavailable (private mode edge case) — show the hint once.
-      setShowHint(true);
-    }
-
     return () => window.removeEventListener('keydown', onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="relative flex flex-col items-end">
-      <button
-        type="button"
-        onClick={exit}
-        title={t('hint')}
-        aria-label={t('hint')}
-        className={cn(
-          'inline-flex items-center gap-1.5 rounded-full border border-line-strong bg-transparent font-sans font-semibold text-ink-soft transition-colors hover:border-accent-line hover:text-accent-deep',
-          size === 'lg' ? 'px-3.5 py-[7px] text-[13px]' : 'px-3 py-1.5 text-xs',
-        )}
-      >
-        {t('label')}
-        <IconExit />
-      </button>
-      {showHint && (
-        <span className="mt-1 whitespace-nowrap rounded-full border border-line bg-surface px-2.5 py-[3px] text-[11px] text-ink-faint">
-          {t('firstHint')}
-        </span>
+    <button
+      type="button"
+      onClick={exit}
+      title={t('firstHint')}
+      aria-label={t('hint')}
+      className={cn(
+        'inline-flex items-center gap-1.5 rounded-full border font-semibold transition-colors',
+        size === 'lg' ? 'px-3.5 py-[7px] text-[13px]' : 'px-3 py-1.5 text-xs',
+        variant === 'floating'
+          ? 'border-line-strong bg-surface text-ink shadow-[0_3px_10px_rgba(42,36,32,0.14)] hover:text-accent-deep'
+          : 'border-line-strong bg-transparent text-ink-soft hover:border-accent-line hover:text-accent-deep',
       )}
-    </div>
+    >
+      {t('label')}
+      <IconExit />
+    </button>
   );
 }

@@ -8,7 +8,7 @@ import { getPlaces } from '@/data/loaders';
  * quick-exit, filters, results) floats over the map, so the page itself is just
  * the map surface.
  */
-export default async function HelpPage({
+export default async function MapPage({
   params,
 }: {
   params: Promise<{ locale: string }>;

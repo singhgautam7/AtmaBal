@@ -19,7 +19,8 @@
     "changeLabel": "Change city",
     "live": "Live",
     "soon": "Soon",
-    "comingSoon": "More cities coming soon."
+    "comingSoon": "More cities coming soon.",
+    "mapNote": "Crime data for 19 metros. The Get-help map is Bengaluru for now."
   },
   "quickExit": {
     "label": "Quick exit",
@@ -136,6 +137,8 @@
     "youAreHere": "You are here",
     "useMyLocation": "Use my location",
     "locating": "Locating…",
+    "locDenied": "Location permission is blocked. Allow it in your browser to sort by distance and show where you are.",
+    "locUnavailable": "Couldn’t get your location. You can still browse and get directions.",
     "nearbyCount": "Nearby — {count} places",
     "byDistance": "by distance",
     "showList": "Show list",

@@ -6,12 +6,15 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 /**
  * Real interactive map — MapLibre GL JS with free OpenFreeMap tiles (no Google
- * Maps JS API, no API key; specs). Markers come from the committed real station
- * data. maplibre-gl is dynamically imported inside the effect so it is
- * code-split and never runs during SSR (perf + no `window` on the server).
+ * Maps JS API, no API key). Markers come from the committed real station data.
+ * maplibre-gl is dynamically imported so it is code-split and never runs during
+ * SSR. Geolocation, when granted, only pans/marks on this device.
  *
- * Geolocation, when granted, only pans/marks on this device — it is never sent
- * anywhere. "Directions" still deep-links out to Google Maps on tap (in the list).
+ * Marker structure matters: MapLibre positions the marker by writing a
+ * `transform: translate(...)` onto the element it owns. So the outer element is
+ * left untouched (MapLibre owns it) and a rotated inner teardrop carries the
+ * appearance. Selection only restyles the inner div — the element is never
+ * replaced — which is why pins no longer jump to the corner on click.
  */
 
 const BENGALURU: [number, number] = [77.5906, 12.9796];
@@ -23,11 +26,20 @@ const TYPE_COLOR: Record<PlaceType, string> = {
   helpline: '#928779', // --ink-faint
 };
 
-function pinElement(color: string, selected: boolean): HTMLElement {
-  const el = document.createElement('div');
-  el.style.cssText = `width:${selected ? 20 : 15}px;height:${selected ? 20 : 15}px;border-radius:50% 50% 50% 0;background:${color};transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 1px 4px rgba(42,36,32,0.35);cursor:pointer;transition:width .15s,height .15s;`;
-  return el;
+function styleInner(inner: HTMLElement, type: PlaceType, selected: boolean) {
+  const size = selected ? 26 : 15;
+  inner.style.cssText =
+    `width:${size}px;height:${size}px;border-radius:50% 50% 50% 0;` +
+    `background:${selected ? '#be5a38' : TYPE_COLOR[type]};transform:rotate(-45deg);` +
+    `border:${selected ? '3px solid #2a2420' : '2px solid #fff'};` +
+    `box-shadow:${selected
+      ? '0 0 0 5px rgba(190,90,56,0.30), 0 4px 10px rgba(0,0,0,0.4)'
+      : '0 1px 4px rgba(42,36,32,0.35)'};` +
+    'transition:width .12s,height .12s;';
 }
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type MarkerEntry = { marker: any; inner: HTMLElement; type: PlaceType };
 
 export function MapCanvas({
   places,
@@ -43,8 +55,7 @@ export function MapCanvas({
   const containerRef = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mapRef = useRef<any>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const markersRef = useRef<Map<string, any>>(new Map());
+  const markersRef = useRef<Map<string, MarkerEntry>>(new Map());
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const userMarkerRef = useRef<any>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -71,24 +82,18 @@ export function MapCanvas({
       mapRef.current = map;
 
       // The map often initialises before the flex/absolute container has its
-      // final width; without this, MapLibre keeps a stale (tiny) size and every
-      // marker projects to the left edge. Resize on every container size change,
-      // and once more after paint.
+      // final width; keep it sized to the container so markers project correctly.
       if (containerRef.current) {
         ro = new ResizeObserver(() => map.resize());
         ro.observe(containerRef.current);
       }
       requestAnimationFrame(() => map.resize());
-
-      // Signal readiness so the marker/location effects (which may have run
-      // before this async init finished) attach now. Markers don't need the
-      // style/tiles loaded, so flip immediately rather than waiting on 'load'.
       if (!cancelled) setReady(true);
     })();
     return () => {
       cancelled = true;
       ro?.disconnect();
-      markers.forEach((m) => m.remove());
+      markers.forEach((m) => m.marker.remove());
       markers.clear();
       userMarkerRef.current?.remove();
       mapRef.current?.remove();
@@ -96,44 +101,46 @@ export function MapCanvas({
     };
   }, []);
 
-  // Sync station markers when the filtered places change.
+  // Add/remove markers to match the filtered places (NOT re-run on selection).
   useEffect(() => {
     const map = mapRef.current;
     const gl = glRef.current;
     if (!map || !gl) return;
 
     const wanted = new Set(places.filter((p) => p.lat != null && p.lng != null).map((p) => p.id));
-    // Remove stale.
-    markersRef.current.forEach((m, id) => {
+    markersRef.current.forEach((entry, id) => {
       if (!wanted.has(id)) {
-        m.remove();
+        entry.marker.remove();
         markersRef.current.delete(id);
       }
     });
-    // Add/refresh.
     for (const p of places) {
-      if (p.lat == null || p.lng == null) continue;
-      const existing = markersRef.current.get(p.id);
-      const selected = selectedId === p.id;
-      if (existing) {
-        existing.getElement().replaceWith(makeMarkerEl(p, selected, onSelect));
-        continue;
-      }
-      const el = makeMarkerEl(p, selected, onSelect);
-      const marker = new gl.Marker({ element: el, anchor: 'bottom' })
+      if (p.lat == null || p.lng == null || markersRef.current.has(p.id)) continue;
+      const outer = document.createElement('div');
+      outer.style.cursor = 'pointer';
+      outer.setAttribute('role', 'button');
+      outer.setAttribute('aria-label', p.name);
+      outer.title = p.name;
+      const inner = document.createElement('div');
+      styleInner(inner, p.type, selectedId === p.id);
+      outer.appendChild(inner);
+      outer.addEventListener('click', () => onSelect(p.id));
+      const marker = new gl.Marker({ element: outer, anchor: 'bottom' })
         .setLngLat([p.lng, p.lat])
         .addTo(map);
-      markersRef.current.set(p.id, marker);
+      markersRef.current.set(p.id, { marker, inner, type: p.type });
     }
-  }, [places, selectedId, onSelect, ready]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [places, ready]);
 
-  // Pan to selection.
+  // Restyle for selection (in place — never replace the element) + pan to it.
   useEffect(() => {
+    markersRef.current.forEach((entry, id) => styleInner(entry.inner, entry.type, id === selectedId));
     const map = mapRef.current;
     if (!map || !selectedId) return;
     const p = places.find((x) => x.id === selectedId);
     if (p?.lat != null && p?.lng != null) {
-      map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(13, map.getZoom()), speed: 0.8 });
+      map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(13, map.getZoom()), speed: 0.7 });
     }
   }, [selectedId, places]);
 
@@ -146,7 +153,8 @@ export function MapCanvas({
     const el = document.createElement('div');
     el.setAttribute('aria-label', 'You are here');
     el.style.cssText =
-      'width:16px;height:16px;border-radius:50%;background:#2f6f7b;border:3px solid #fff;box-shadow:0 0 0 4px rgba(47,111,123,0.25);';
+      'width:18px;height:18px;border-radius:50%;background:#2f6f7b;' +
+      'border:3px solid #fff;box-shadow:0 0 0 6px rgba(47,111,123,0.25);';
     userMarkerRef.current = new gl.Marker({ element: el })
       .setLngLat([userLocation.lng, userLocation.lat])
       .addTo(map);
@@ -154,21 +162,4 @@ export function MapCanvas({
   }, [userLocation, ready]);
 
   return <div ref={containerRef} className="h-full w-full" aria-label="Map of help locations" role="application" />;
-}
-
-function makeMarkerEl(
-  place: Place,
-  selected: boolean,
-  onSelect: (id: string) => void,
-): HTMLElement {
-  const el = pinElement(TYPE_COLOR[place.type], selected);
-  el.setAttribute('role', 'button');
-  el.setAttribute('tabindex', '0');
-  el.setAttribute('aria-label', place.name);
-  el.title = place.name;
-  el.addEventListener('click', () => onSelect(place.id));
-  el.addEventListener('keydown', (e) => {
-    if ((e as KeyboardEvent).key === 'Enter') onSelect(place.id);
-  });
-  return el;
 }

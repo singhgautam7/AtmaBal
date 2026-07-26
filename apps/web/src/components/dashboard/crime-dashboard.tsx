@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import type { CityMeta, CrimeData, JusticeData } from '@/data/types';
 import { fmtN } from '@/lib/format';
@@ -28,11 +28,25 @@ export function CrimeDashboard({
   const years = crime.years;
   const [focusYear, setFocusYear] = useState<number>(years[years.length - 1]!);
 
-  // Keep focusYear valid when the city changes.
+  // Initial city from the URL (?city=), so the header dropdown and deep links work.
+  useEffect(() => {
+    const c = new URLSearchParams(window.location.search).get('city');
+    if (c && allCrime[c]) {
+      setCityId(c);
+      const ys = allCrime[c].years;
+      setFocusYear(ys[ys.length - 1]!);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Keep focusYear valid when the city changes, and reflect it in the URL.
   const changeCity = (id: string) => {
     setCityId(id);
     const ys = allCrime[id]!.years;
     setFocusYear(ys[ys.length - 1]!);
+    const url = new URL(window.location.href);
+    url.searchParams.set('city', id);
+    window.history.replaceState(null, '', url);
   };
 
   const model = useMemo(() => {

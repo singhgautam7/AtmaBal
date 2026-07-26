@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { QuickExit } from '@/components/layout/quick-exit';
 import { LocaleLink } from '@/components/layout/locale-link';
+import { Logo } from '@/components/layout/logo';
 import { IconPhone, IconMindfulness } from '@/components/icons';
 
 /**
@@ -26,7 +27,12 @@ export default async function GroundingPage({
       <GroundingBackdrop />
       <div className="relative z-10 mx-auto max-w-[900px] px-5 py-6 sm:px-8">
         <div className="flex items-center justify-between">
-          <span className="text-[12.5px] font-semibold text-ink-soft">{t('eyebrow')}</span>
+          <div className="flex items-center gap-3">
+            <Logo size="sm" />
+            <span className="hidden text-[12.5px] font-semibold text-ink-faint sm:inline">
+              / {t('eyebrow')}
+            </span>
+          </div>
           <QuickExit />
         </div>
 

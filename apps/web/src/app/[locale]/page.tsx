@@ -35,7 +35,7 @@ const ENTRIES: {
 }[] = [
   { key: 'crime', href: '/crime', Icon: IconChart },
   { key: 'options', href: '/options', Icon: IconRights },
-  { key: 'help', href: '/help', Icon: IconHelp },
+  { key: 'help', href: '/map?city=bengaluru', Icon: IconHelp },
   { key: 'overwhelmed', href: '/grounding', Icon: IconHeart },
 ];
 
