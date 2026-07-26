@@ -203,10 +203,17 @@
       "help": "Both are completely valid. This only changes what we show first; every option stays available."
     },
     "what": {
-      "public": "Something happened in a public place",
-      "home": "Something is happening at home",
-      "work": "Something at my workplace",
-      "online": "Stalking or abuse online",
+      "rape": "Sexual assault or rape",
+      "home": "Something is happening at home (domestic violence)",
+      "dowry": "Dowry demands or harassment",
+      "work": "Harassment at my workplace",
+      "stalking": "Being followed or stalked (in person or online)",
+      "image_abuse": "Private photos or videos shared or threatened",
+      "street": "Street harassment / eve-teasing",
+      "acid": "An acid attack or threat",
+      "kidnapping": "Kidnapping or abduction",
+      "trafficking": "Trafficking — being forced, moved or sold",
+      "pocso": "A child has been sexually abused",
       "unsure": "I’m not sure yet — I just want to understand"
     },
     "when": {
@@ -234,12 +241,20 @@
       "lawBehind": "The law behind this",
       "lawCurrentNote": "Current as of the BNS/BNSS (in force since 1 July 2024). Section references reviewed against the date shown.",
       "context": {
-        "public": "Because this happened in a public place, these paths fit best.",
+        "rape": "This is serious, and none of it is your fault. These paths fit best.",
         "home": "Because this is happening at home, these paths fit best.",
+        "dowry": "Dowry demands are illegal. These paths fit best.",
         "work": "Because this happened at your workplace, these paths fit best.",
-        "online": "Because this happened online, these paths fit best.",
+        "stalking": "Because you’re being followed or monitored, these paths fit best.",
+        "image_abuse": "Because private images are involved, these paths fit best.",
+        "street": "Because this happened in public, these paths fit best.",
+        "acid": "This is grave, and you have strong rights. These paths fit best.",
+        "kidnapping": "If someone is in danger right now, call 112. These paths fit best.",
+        "trafficking": "You are the victim here, not the offender. These paths fit best.",
+        "pocso": "A child’s safety comes first. These paths fit best.",
         "unsure": "It’s completely okay to just want to understand today."
-      }
+      },
+      "reviewNote": "This legal guidance is a first draft and is being reviewed by a qualified person before launch. It cites the current BNS/BNSS law; if your incident was before 1 July 2024 the rights are the same but section numbers differ."
     }
   },
   "grounding": {

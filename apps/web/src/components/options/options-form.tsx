@@ -14,7 +14,7 @@ import {
 import { QuickExit } from '@/components/layout/quick-exit';
 import { SafeBrowsingNote } from '@/components/layout/safe-browsing-note';
 import { LocaleLink } from '@/components/layout/locale-link';
-import { OUTCOMES, type Scenario, type Regime } from '@/data/options';
+import { OUTCOMES, SCENARIOS, type Scenario, type Regime, type LawRef } from '@/data/options';
 
 type When = 'before' | 'after' | 'unsure';
 type Safe = 'yes' | 'no' | 'skip';
@@ -117,10 +117,7 @@ export function OptionsForm() {
             <StepRadio
               title={t('step1.title')}
               help={t('step1.help')}
-              options={(['public', 'home', 'work', 'online', 'unsure'] as Scenario[]).map((id) => ({
-                id,
-                label: t(`what.${id}`),
-              }))}
+              options={SCENARIOS.map((id) => ({ id, label: t(`what.${id}`) }))}
               value={what}
               onChange={(v) => setWhat(v as Scenario)}
             />
@@ -303,6 +300,9 @@ function Outcome({
       <p className="mt-4 rounded-md border border-line bg-surface px-3.5 py-2.5 text-[12px] leading-snug text-ink-soft">
         {t(`regimeNote.${regime}`)}
       </p>
+      <p className="mt-2 rounded-md px-3.5 py-2.5 text-[11.5px] leading-snug text-ink-soft" style={{ border: '1px solid rgba(201,154,46,0.4)', background: 'rgba(201,154,46,0.1)' }}>
+        {t('outcome.reviewNote')}
+      </p>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {cards.map((card, i) => (
@@ -383,7 +383,7 @@ function LawReveal({
   open,
   onToggle,
 }: {
-  law: NonNullable<ReturnType<() => (typeof OUTCOMES)['public'][number]['law']>>;
+  law: LawRef;
   open: boolean;
   onToggle: () => void;
 }) {
