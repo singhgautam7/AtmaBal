@@ -1,0 +1,8 @@
+# Cloudflare Pages headers. Copied to out/_headers by the static export.
+# Privacy-first (safety app): no-referrer so navigations never leak this site as
+# the referrer; geolocation allowed only for the on-device "near me" feature.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(self), camera=(), microphone=()

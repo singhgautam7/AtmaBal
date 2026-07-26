@@ -28,34 +28,30 @@ const plex = IBM_Plex_Sans({
   display: 'swap',
 });
 
-const TITLE = 'Atma Bal — know your rights, find help';
-const DESCRIPTION =
-  'For women in India: understand what local crime data really says, know your rights in plain language, and find verified help. Private — stores nothing.';
+// DISCREET PLUMBING (design.md, safety-critical): the browser tab title, favicon
+// and share preview must NOT flag the subject of this app to someone glancing at
+// a shared device, its history, or a shared link. So the chrome is deliberately
+// neutral/boring. The diya brand mark is used only INSIDE the app (hero header)
+// and as the installed-app icon in the web manifest — never as the favicon.
+const NEUTRAL_TITLE = 'Local Info & Resources';
+const NEUTRAL_DESCRIPTION = 'Local information, guides and resources.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://atmabal.in'),
-  title: { default: TITLE, template: '%s · Atma Bal' },
-  description: DESCRIPTION,
-  applicationName: 'Atma Bal',
-  robots: { index: true, follow: true },
-  // Browser tab icon kept neutral (plumbing rule); the diya is the installed-app
-  // / home-screen icon in the web manifest. (Tab title is now meaningful per the
-  // owner's request — see the safety note in the trust footer.)
-  icons: { icon: '/favicon.svg' },
+  title: { default: NEUTRAL_TITLE, template: '%s · Local Info' },
+  description: NEUTRAL_DESCRIPTION,
+  // Neutral tab icon via the app/icon.svg file convention (a plain document glyph).
   manifest: '/manifest.webmanifest',
+  robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
-    siteName: 'Atma Bal',
-    title: TITLE,
-    description: DESCRIPTION,
-    locale: 'en_IN',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Atma Bal — the courage to stand for yourself.' }],
+    title: NEUTRAL_TITLE,
+    description: NEUTRAL_DESCRIPTION,
   },
   twitter: {
-    card: 'summary_large_image',
-    title: TITLE,
-    description: DESCRIPTION,
-    images: ['/og-image.png'],
+    card: 'summary',
+    title: NEUTRAL_TITLE,
+    description: NEUTRAL_DESCRIPTION,
   },
 };
 
