@@ -8,6 +8,28 @@ export type Scope = 'public' | 'domestic';
 export type ScopeFilter = 'all' | Scope;
 export type Measure = 'cases' | 'victims' | 'rate';
 
+/**
+ * Shared illustrative offence-mix model. NCRB doesn't publish a per-offence split
+ * at city level for major metros, so the per-head breakdown is modelled: each
+ * head has a per-year share of the (real) city total. City totals, rates and
+ * charge-sheeting are real; only the split across offence types is illustrative.
+ */
+export interface HeadModelEntry {
+  id: string;
+  name: string;
+  scope: Scope;
+  victimFactor: number;
+  /** Share of the city total per year (aligned to HeadModel.years). */
+  share: number[];
+}
+
+export interface HeadModel {
+  years: number[];
+  illustrative: boolean;
+  note: string;
+  heads: HeadModelEntry[];
+}
+
 export interface CrimeHead {
   id: string;
   name: string;

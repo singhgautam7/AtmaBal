@@ -20,7 +20,9 @@
     "live": "Live",
     "soon": "Soon",
     "comingSoon": "More cities coming soon.",
-    "mapNote": "Crime data for 19 metros. The Get-help map is Bengaluru for now."
+    "mapNote": "Crime data for 19 metros. The Get-help map is Bengaluru for now.",
+    "searchPlaceholder": "Search a city…",
+    "noMatch": "No matching city."
   },
   "quickExit": {
     "label": "Quick exit",
@@ -72,6 +74,10 @@
     "perHead": {
       "title": "How the total breaks down by offence"
     },
+    "illustrativeBadge": "Illustrative breakdown",
+    "illustrativeNote": "Totals, rates and charge-sheeting are real NCRB data. The split across offence types below is an illustrative estimate — NCRB doesn’t publish a per-offence breakdown at city level for major metros.",
+    "measureLabel": { "cases": "Cases registered", "victims": "Victims", "rate": "Rate per lakh women" },
+    "mostReported": "Most-reported · {year}",
     "stats": {
       "total": "Total reported · {year}",
       "reportedCases": "reported cases",

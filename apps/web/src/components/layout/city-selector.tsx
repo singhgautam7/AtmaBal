@@ -1,17 +1,15 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { getCities } from '@/data/loaders';
 import { IconPin, IconChevronDown } from '@/components/icons';
 
 /**
- * Global city selector (design.md — a site-wide control on every page).
- *
- * Lists every city that has data; choosing one opens its crime dashboard
- * (`/crime?city=<id>`). Bengaluru is the launch city (it also has the Get-help
- * map); other metros currently have crime data only.
+ * Global city selector — lists every city with data; choosing one opens its
+ * crime dashboard (/crime?city=<id>). Includes a search box (19 cities). No
+ * "Live" badge — the map-availability nuance is noted in the footer line.
  */
 export function CitySelector({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
   const t = useTranslations('city');
@@ -21,9 +19,9 @@ export function CitySelector({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
 
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState('bengaluru');
+  const [query, setQuery] = useState('');
   const ref = useRef<HTMLDivElement>(null);
 
-  // Reflect the city currently in the URL (?city=), default Bengaluru.
   useEffect(() => {
     const c = new URLSearchParams(window.location.search).get('city');
     if (c && cities.some((x) => x.id === c)) setCurrent(c);
@@ -45,11 +43,18 @@ export function CitySelector({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
     };
   }, [open]);
 
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return cities;
+    return cities.filter((c) => c.name.toLowerCase().includes(q) || c.state.toLowerCase().includes(q));
+  }, [cities, query]);
+
   const currentName = cities.find((c) => c.id === current)?.name ?? t('current');
   const big = size === 'lg';
 
   const choose = (id: string) => {
     setOpen(false);
+    setQuery('');
     setCurrent(id);
     router.push(`/${locale}/crime/?city=${id}`);
   };
@@ -72,42 +77,38 @@ export function CitySelector({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
       </button>
 
       {open && (
-        <div
-          role="listbox"
-          className="absolute right-0 top-[42px] z-20 max-h-[340px] w-[230px] overflow-y-auto rounded-md border border-line-strong bg-surface p-1.5 shadow-[var(--shadow-pop)]"
-        >
-          {cities.map((c) => {
-            const active = c.id === current;
-            return (
-              <button
-                key={c.id}
-                type="button"
-                role="option"
-                aria-selected={active}
-                onClick={() => choose(c.id)}
-                className={`flex w-full items-center justify-between rounded-lg px-[11px] py-[9px] text-left ${
-                  active ? 'bg-accent-soft' : 'hover:bg-paper'
-                }`}
-              >
-                <span className="min-w-0">
-                  <span className={`block text-[14px] font-medium ${active ? 'text-ink' : 'text-ink'}`}>
-                    {c.name}
+        <div role="listbox" className="absolute right-0 top-[42px] z-20 w-[240px] rounded-md border border-line-strong bg-surface p-1.5 shadow-[var(--shadow-pop)]">
+          <input
+            autoFocus
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={t('searchPlaceholder')}
+            aria-label={t('searchPlaceholder')}
+            className="mb-1.5 w-full rounded-md border border-line bg-paper px-2.5 py-2 text-[13px] text-ink outline-none placeholder:text-ink-faint focus-visible:border-accent-line"
+          />
+          <div className="max-h-[280px] overflow-y-auto">
+            {filtered.map((c) => {
+              const active = c.id === current;
+              return (
+                <button
+                  key={c.id}
+                  type="button"
+                  role="option"
+                  aria-selected={active}
+                  onClick={() => choose(c.id)}
+                  className={`flex w-full items-center justify-between rounded-lg px-[11px] py-[9px] text-left ${active ? 'bg-accent-soft' : 'hover:bg-paper'}`}
+                >
+                  <span className="min-w-0">
+                    <span className="block text-[14px] font-medium text-ink">{c.name}</span>
+                    {c.state && <span className="block text-[11px] text-ink-faint">{c.state}</span>}
                   </span>
-                  {c.state && (
-                    <span className="block text-[11px] text-ink-faint">{c.state}</span>
-                  )}
-                </span>
-                {c.hasHelp && (
-                  <span className="ml-2 flex-none rounded-full bg-accent px-[7px] py-[2px] text-[10px] font-bold uppercase tracking-[0.06em] text-white">
-                    {t('live')}
-                  </span>
-                )}
-              </button>
-            );
-          })}
-          <div className="mt-1 border-t border-line px-[11px] pb-1 pt-2 text-[11px] leading-snug text-ink-faint">
-            {t('mapNote')}
+                  {c.hasHelp && <IconPin size={12} className="ml-2 flex-none text-accent" strokeWidth={1.8} />}
+                </button>
+              );
+            })}
+            {filtered.length === 0 && <div className="px-[11px] py-3 text-[12.5px] text-ink-faint">{t('noMatch')}</div>}
           </div>
+          <div className="mt-1 border-t border-line px-[11px] pb-1 pt-2 text-[11px] leading-snug text-ink-faint">{t('mapNote')}</div>
         </div>
       )}
     </div>

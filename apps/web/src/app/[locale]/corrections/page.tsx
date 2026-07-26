@@ -22,7 +22,14 @@ export default async function CorrectionsPage({
           something wrong or out of date, please tell us so we can fix it.
         </p>
         <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-          A contact route will be published here before launch.
+          Email corrections to{' '}
+          <a
+            href="mailto:singhgautam.dev@gmail.com?subject=Atma%20Bal%20correction"
+            className="font-semibold text-accent-deep underline underline-offset-2"
+          >
+            singhgautam.dev@gmail.com
+          </a>
+          . Please include the page and what looks wrong or out of date.
         </p>
       </main>
       <TrustFooter />
