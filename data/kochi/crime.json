@@ -20,7 +20,7 @@
  "ratePerLakh": 72.8,
  "chargesheetRate": 91.2,
  "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
- "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
+ "source": "NCRB Crime in India (2022-2024), via OpenCity (data.opencity.in)",
  "lastUpdated": "NCRB Crime in India 2024",
  "hasHeadBreakdown": false,
  "headBreakdownNote": "NCRB does not publish a per-offence breakdown at city level for this city in the sourced tables; the city total and its multi-year trend are shown. Per-head data will be added when parsed from NCRB head-wise tables."

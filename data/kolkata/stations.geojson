@@ -1,0 +1,650 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.356961,
+     22.568834
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Hare Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.356611,
+     22.569139
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Bowbazar police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.365341,
+     22.566664
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Muchipara Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.352413,
+     22.57254
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Kolkata Police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.354114,
+     22.562718
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "New Market Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.354541,
+     22.580206
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "boubazar police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.356407,
+     22.551627
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Park Street Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.378896,
+     22.584146
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Manicktala P.S",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.356043,
+     22.593116
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Jorabagan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.368046,
+     22.547021
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "beniapukur police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.371143,
+     22.592513
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Burtolla Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.392065,
+     22.575387
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Phoolbagan Police Sation",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.347112,
+     22.542028
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Maidan police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.326314,
+     22.570789
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Shibpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.396142,
+     22.564602
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Beleghata Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.344409,
+     22.539338
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Gokhale Road Police Quarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.391005,
+     22.588834
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Kolkata Armed Police, 5th Battalion",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.322496,
+     22.563948
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Shibpur Police Line",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.328555,
+     22.548483
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Hastings Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.381795,
+     22.60741
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Tala Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.345994,
+     22.526645
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Bhowanipore Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.398826,
+     22.541869
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Parama - Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.364692,
+     22.521053
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "गरियाहाट पुलिस थाना",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.41367,
+     22.570161
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Bidhannagar South Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.343777,
+     22.521393
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Kalighat Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.343649,
+     22.52091
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Kalighat Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.30146,
+     22.563476
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Amtala Phari",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.417932,
+     22.591753
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "BIdhannagar North Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.38274,
+     22.625214
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Sinthee Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.400148,
+     22.621002
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Ghugudanga O.P.",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.429872,
+     22.576779
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Sector - V Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.367729,
+     22.502768
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Jadavpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.378419,
+     22.636133
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Baranagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.319003,
+     22.503528
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Behala Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.30682,
+     22.508882
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Parnasree Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.425417,
+     22.620372
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Baguiati Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.453108,
+     22.585115
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Additional Deputy Commissioner of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.260544,
+     22.555146
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Nadial Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.478622,
+     22.576086
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "New Town Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.430514,
+     22.442448
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Sonarpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.373306,
+     22.720616
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Khardah Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.467158,
+     22.691717
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Madhyamgram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.52277,
+     22.769844
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Duttapukur Police Station",
+    "type": "police"
+   }
+  }
+ ]
+}

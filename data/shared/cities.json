@@ -14,7 +14,7 @@
    "state": "Gujarat",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "chennai",
@@ -22,7 +22,7 @@
    "state": "Tamil Nadu",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "coimbatore",
@@ -30,15 +30,15 @@
    "state": "Tamil Nadu",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "delhi",
    "name": "Delhi",
-   "state": "",
+   "state": "Delhi (NCT)",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "ghaziabad",
@@ -46,7 +46,7 @@
    "state": "Uttar Pradesh",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "hyderabad",
@@ -54,7 +54,7 @@
    "state": "Telangana",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "indore",
@@ -62,7 +62,7 @@
    "state": "Madhya Pradesh",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "jaipur",
@@ -70,7 +70,7 @@
    "state": "Rajasthan",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "kanpur",
@@ -78,7 +78,7 @@
    "state": "Uttar Pradesh",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "kochi",
@@ -86,7 +86,7 @@
    "state": "Kerala",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "kolkata",
@@ -94,7 +94,7 @@
    "state": "West Bengal",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "kozhikode",
@@ -102,7 +102,7 @@
    "state": "Kerala",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "lucknow",
@@ -110,7 +110,7 @@
    "state": "Uttar Pradesh",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "mumbai",
@@ -118,7 +118,7 @@
    "state": "Maharashtra",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "nagpur",
@@ -126,7 +126,7 @@
    "state": "Maharashtra",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "patna",
@@ -134,7 +134,7 @@
    "state": "Bihar",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "pune",
@@ -142,7 +142,7 @@
    "state": "Maharashtra",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   },
   {
    "id": "surat",
@@ -150,9 +150,9 @@
    "state": "Gujarat",
    "isLive": false,
    "hasCrime": true,
-   "hasHelp": false
+   "hasHelp": true
   }
  ],
  "comingSoon": false,
- "note": "Crime data (NCRB) available for all listed metros; Get-help map currently Bengaluru only."
+ "note": "Crime data (NCRB) and a Get-help map (OpenStreetMap stations + national helplines) for all listed metros. Women's stations & One Stop Centres are hand-verified for Bengaluru; other cities show OSM police stations pending verification."
 }

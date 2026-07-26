@@ -1,7 +1,7 @@
 /**
  * Great-circle distance between two lat/lng points, in kilometres.
  * Used for client-side nearest-station search. Geolocation never leaves the
- * device — this runs entirely in the browser.
+ * device - this runs entirely in the browser.
  */
 export function haversineKm(
   a: { lat: number; lng: number },

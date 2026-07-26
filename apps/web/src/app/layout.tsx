@@ -4,7 +4,7 @@ import { Spectral, IBM_Plex_Sans } from 'next/font/google';
 import '@/styles/globals.css';
 
 /**
- * Root layout — owns the <html>/<body> document shell (Next requires this here).
+ * Root layout - owns the <html>/<body> document shell (Next requires this here).
  *
  * `lang="en"`: English is the only populated locale at launch, and the hi/kn
  * routes deliberately serve English content (specs/i18n.md fallback), so "en" is
@@ -32,7 +32,7 @@ const plex = IBM_Plex_Sans({
 // and share preview must NOT flag the subject of this app to someone glancing at
 // a shared device, its history, or a shared link. So the chrome is deliberately
 // neutral/boring. The diya brand mark is used only INSIDE the app (hero header)
-// and as the installed-app icon in the web manifest — never as the favicon.
+// and as the installed-app icon in the web manifest - never as the favicon.
 const NEUTRAL_TITLE = 'Local Info & Resources';
 const NEUTRAL_DESCRIPTION = 'Local information, guides and resources.';
 

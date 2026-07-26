@@ -1,0 +1,200 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.155974,
+     25.598358
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Kankarbagh police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.159813,
+     25.589719
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Patrakar Nagar police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.169508,
+     25.589705
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "agam kuaa thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.148475,
+     25.615637
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Gandhi Maidan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.15543,
+     25.619931
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Peerbahor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.109695,
+     25.618831
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "AN College Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.097681,
+     25.572847
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Police Station,Beur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.114366,
+     25.627351
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Nehru Nagar Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.101616,
+     25.629579
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Patliputra Colony Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.081218,
+     25.647118
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Digha Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.060315,
+     25.642498
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Police Chowki Danapur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.17034,
+     25.696703
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Sonpur police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.333394,
+     25.643253
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Bidupur Thana",
+    "type": "police"
+   }
+  }
+ ]
+}

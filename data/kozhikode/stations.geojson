@@ -1,0 +1,815 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.783426,
+     11.254461
+    ]
+   },
+   "properties": {
+    "id": "women-0",
+    "name": "Vanitha police station",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.779459,
+     11.250273
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Town Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.77931,
+     11.248442
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Railway Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.779308,
+     11.248432
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Railway Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.782143,
+     11.254228
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Office Of The District Police Chief",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.782474,
+     11.254132
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Office Of The City Police Commissioner",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.782425,
+     11.25423
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "City Police Commissioner Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.787216,
+     11.25366
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Crime Branch, Kozhikode",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.785152,
+     11.239819
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Police Station, Chemmangad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.792048,
+     11.252781
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Police Station, Kasaba",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.775482,
+     11.271056
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Office of Assistant Commissioner of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.775171,
+     11.271468
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Police Station, Nadakkavu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.791665,
+     11.226911
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Police Station, Panniyankara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.791689,
+     11.226804
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Police Station, Panniankara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.762271,
+     11.287584
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Police Station, Vellayil",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.806878,
+     11.210705
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Police Station, Nallalam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.806883,
+     11.21067
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Police Station,Nallalam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.822846,
+     11.272524
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Police Station, Chevayur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.790967,
+     11.202339
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Police Station, Marad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.832219,
+     11.27094
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.817299,
+     11.293126
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Government Police Quaters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.81798,
+     11.292977
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Police Station, Chevayoor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.81415,
+     11.298975
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Armed Reserve Camp, Maloorkunnu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.838191,
+     11.271138
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Medical College Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.838219,
+     11.271092
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Medical College Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.804255,
+     11.193442
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "CI Beypore Coastal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.80701,
+     11.184311
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Lakshadweep Police Special Branch Unit, Beypore",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.747924,
+     11.317273
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Coastal Police Station, Elathur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.854164,
+     11.218407
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Police Station ,Pantheerankavu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.856836,
+     11.218137
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "pantheerankave police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.806565,
+     11.167763
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Police Station, Beypore",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.837412,
+     11.182885
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Police Station Feroke",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.837936,
+     11.183079
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Police Station,Feroke",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.807326,
+     11.161717
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Chaliyam Coastal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.74016,
+     11.34337
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Police Station, Elathur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.878631,
+     11.305371
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Kunnamangalam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.880408,
+     11.303093
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Police Station, Kunnamangalam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.879006,
+     11.30571
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Kunnamangalam Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.879023,
+     11.305693
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Kunnamangalam police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.815189,
+     11.374107
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Police Station,Kakkur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.815643,
+     11.376515
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Kakkur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.758839,
+     11.381589
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Police Station,Atholi",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.895465,
+     11.135689
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "police station, Thenjipalam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.951825,
+     11.261062
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Police Station,Mavoor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.910288,
+     11.361154
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Police Station,koduvalli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.911988,
+     11.36004
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Koduvally Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.954176,
+     11.260517
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "police point",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.957328,
+     11.244169
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Police Station Vazhakkad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.958945,
+     11.244524
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Police Station ,Vazhakkad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.942769,
+     11.132395
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Police Station, Karipur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.824128,
+     11.44887
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Police Station,Balussery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.967268,
+     11.14583
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "kondotty police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.68825,
+     11.449982
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Police Station,Koyilandy",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.936003,
+     11.414123
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Police Station,Thamarassery",
+    "type": "police"
+   }
+  }
+ ]
+}

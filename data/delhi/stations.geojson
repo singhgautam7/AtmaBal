@@ -1,0 +1,2675 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.169916,
+     28.728305
+    ]
+   },
+   "properties": {
+    "id": "women-0",
+    "name": "Women Facilitation Booth",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.250737,
+     28.549942
+    ]
+   },
+   "properties": {
+    "id": "women-1",
+    "name": "All Women police assistance booth",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.207375,
+     28.66942
+    ]
+   },
+   "properties": {
+    "id": "women-2",
+    "name": "Crime Against Women Cell",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209343,
+     28.615334
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "No entry for foreigners going towards the government buildings",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.198571,
+     28.617652
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Gate 35, No entry for foreigners",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.196013,
+     28.602802
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Police Station Chankyapuri",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.212071,
+     28.6254
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Delhi Police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.226249,
+     28.600327
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Police Post, Khan Market",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.227375,
+     28.60126
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Police assistance booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.214186,
+     28.629855
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Police Station Connaught Place",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.219012,
+     28.631626
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Prepaid Auto Service",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.235502,
+     28.617878
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Police Station Tilak Marg",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.219515,
+     28.633147
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Public Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.225354,
+     28.630882
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Police Station Barakhamba Road",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.232869,
+     28.627465
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "DCP Residence",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.222285,
+     28.635912
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Police Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.21469,
+     28.581935
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Delhi Police Seva Kendra",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20257,
+     28.638344
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Mandir Marg Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.202667,
+     28.638779
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Mandir Marg Police Station Complex",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.203092,
+     28.639135
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Economic Offences Wing",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.195299,
+     28.58201
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.218295,
+     28.642028
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Tourist Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.224494,
+     28.640975
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Central Reserve Police Force Transit Camp",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.183751,
+     28.634962
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Police Residential Complex",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.182694,
+     28.634698
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Rajendra Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.243758,
+     28.592268
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Hazrat Nizamuddin Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.218927,
+     28.6437
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Police Station New Delhi Railway Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209004,
+     28.645425
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Police Station Paharganj",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.197371,
+     28.575855
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Facilitation Kiosk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.218882,
+     28.645247
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Railway Police Force Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209676,
+     28.573737
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Integrated Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.225113,
+     28.575935
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Kotla Mubarakpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.195241,
+     28.575703
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209021,
+     28.573239
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Suvidha Seva",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.169127,
+     28.589202
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Integrated Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.240955,
+     28.641513
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Office Of The Deputy Commissioner Of Police Central District",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.241339,
+     28.641731
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Daryaganj Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.226574,
+     28.64947
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Delhi Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.225785,
+     28.649818
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Police Station Hauz Qazi",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.165119,
+     28.594214
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Subroto Park Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.226823,
+     28.64983
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Police Station Rajiv Chowk Metro",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.176029,
+     28.57964
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "South Campus Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.220696,
+     28.568415
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Integrated Police Facility",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.253614,
+     28.58798
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Police Station Hazrat Nizamudin Railway station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.193025,
+     28.652398
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Police Station Karol Bagh",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.180705,
+     28.647873
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Prasad Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.219016,
+     28.655836
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Lahori Gate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.233705,
+     28.652464
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Jama Masjid Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.241995,
+     28.56817
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Pink Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.234738,
+     28.655921
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Cycle Market Police Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.231084,
+     28.658598
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Kotwali Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.229326,
+     28.660387
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Police Station Old Delhi Railway Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.208054,
+     28.665724
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Bara Hindu Rao Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.207328,
+     28.668932
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Sabzi Mandi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.232287,
+     28.554337
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Police Station Greater Kailash - 1",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.270736,
+     28.63741
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Shakarpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.232324,
+     28.66942
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Police Post ISBT",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.168993,
+     28.558016
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Deputy Commissioner of Police Station South West District",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.241148,
+     28.552833
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Kailash Colony Market Integrated Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.133247,
+     28.596645
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Pink Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.267431,
+     28.562552
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "New Friends Colony PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.243131,
+     28.546192
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police Station Greater Kailash 1",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.267191,
+     28.659977
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Gandhi Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.135379,
+     28.640268
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Kirti Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.255371,
+     28.549712
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "Nehru Place Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.126938,
+     28.605011
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "Integrated Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.146744,
+     28.660451
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Moti Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.202183,
+     28.685014
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "Roop Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.178135,
+     28.680712
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Bharat Nagar Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.12401,
+     28.598974
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Delhi Cantt Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209718,
+     28.688632
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Integrated Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.225265,
+     28.531894
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "Police Post PSRI Hospital",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.121557,
+     28.626711
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "Mayapuri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.204556,
+     28.530672
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "Police Station Malviya Nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.221534,
+     28.689067
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "Civil Lines Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.295415,
+     28.639258
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Preet Vihar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.249513,
+     28.536783
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "CR Park Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20841,
+     28.691801
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "Pink Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.302737,
+     28.620126
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Police Station Pandav Nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20668,
+     28.692698
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "Maurice Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.287792,
+     28.561787
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Police check point",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.217069,
+     28.526348
+    ]
+   },
+   "properties": {
+    "id": "police-78",
+    "name": "Saket Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.276113,
+     28.672529
+    ]
+   },
+   "properties": {
+    "id": "police-79",
+    "name": "Welcome Metro Station Integrated Facilitation Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.306181,
+     28.625046
+    ]
+   },
+   "properties": {
+    "id": "police-80",
+    "name": "Police Station Mandawali",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.306287,
+     28.625066
+    ]
+   },
+   "properties": {
+    "id": "police-81",
+    "name": "Police Station Madhu Vihar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.159565,
+     28.68389
+    ]
+   },
+   "properties": {
+    "id": "police-82",
+    "name": "Keshav Puram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.286262,
+     28.664591
+    ]
+   },
+   "properties": {
+    "id": "police-83",
+    "name": "DCP Shahdara District Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.208383,
+     28.523365
+    ]
+   },
+   "properties": {
+    "id": "police-84",
+    "name": "Saket Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.286735,
+     28.665368
+    ]
+   },
+   "properties": {
+    "id": "police-85",
+    "name": "DCP Shahdara District Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.309843,
+     28.612929
+    ]
+   },
+   "properties": {
+    "id": "police-86",
+    "name": "CYBER POLICE STATION, EAST DISTRICT",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.227038,
+     28.696517
+    ]
+   },
+   "properties": {
+    "id": "police-87",
+    "name": "Police Post Majnu ka Tila",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.173905,
+     28.692522
+    ]
+   },
+   "properties": {
+    "id": "police-88",
+    "name": "Ashok Vihar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.177941,
+     28.526204
+    ]
+   },
+   "properties": {
+    "id": "police-89",
+    "name": "Delhi Police — Mehrauli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.311239,
+     28.598336
+    ]
+   },
+   "properties": {
+    "id": "police-90",
+    "name": "New Ashok Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.298339,
+     28.65541
+    ]
+   },
+   "properties": {
+    "id": "police-91",
+    "name": "Delhi Police Dog Squad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.208821,
+     28.700053
+    ]
+   },
+   "properties": {
+    "id": "police-92",
+    "name": "Dr. Mukherjee Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.133689,
+     28.670248
+    ]
+   },
+   "properties": {
+    "id": "police-93",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209265,
+     28.700092
+    ]
+   },
+   "properties": {
+    "id": "police-94",
+    "name": "Mukherjee Nagar Police Station (Guru Tegh Bahadur Nagar)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.122034,
+     28.656671
+    ]
+   },
+   "properties": {
+    "id": "police-95",
+    "name": "Nishkam Seva Bhawan",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.209284,
+     28.700257
+    ]
+   },
+   "properties": {
+    "id": "police-96",
+    "name": "Mukherjee Nagar Police Station (Guru Tegh Bahadur Nagar)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.312847,
+     28.602897
+    ]
+   },
+   "properties": {
+    "id": "police-97",
+    "name": "New Ashoka Nagar Police Station Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.193626,
+     28.702152
+    ]
+   },
+   "properties": {
+    "id": "police-98",
+    "name": "Police Station Model Town",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.132284,
+     28.674146
+    ]
+   },
+   "properties": {
+    "id": "police-99",
+    "name": "Punjabi Bagh Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.278518,
+     28.681824
+    ]
+   },
+   "properties": {
+    "id": "police-100",
+    "name": "Welcome Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.254328,
+     28.524684
+    ]
+   },
+   "properties": {
+    "id": "police-101",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.099791,
+     28.609713
+    ]
+   },
+   "properties": {
+    "id": "police-102",
+    "name": "Hari Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.190581,
+     28.706272
+    ]
+   },
+   "properties": {
+    "id": "police-103",
+    "name": "Police Booth Model Town",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.224434,
+     28.706972
+    ]
+   },
+   "properties": {
+    "id": "police-104",
+    "name": "Police Station Timarpur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.278708,
+     28.689296
+    ]
+   },
+   "properties": {
+    "id": "police-105",
+    "name": "Delhi Police Post (Babarpur)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.314937,
+     28.648003
+    ]
+   },
+   "properties": {
+    "id": "police-106",
+    "name": "G.R.P Police Station Anand Vihar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.323488,
+     28.603763
+    ]
+   },
+   "properties": {
+    "id": "police-107",
+    "name": "Police Station New Ashok Nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.316169,
+     28.648768
+    ]
+   },
+   "properties": {
+    "id": "police-108",
+    "name": "Delhi Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.179845,
+     28.707422
+    ]
+   },
+   "properties": {
+    "id": "police-109",
+    "name": "Integrated police booth, Model Town",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.215033,
+     28.711263
+    ]
+   },
+   "properties": {
+    "id": "police-110",
+    "name": "Police Chowki, Batra Complex, Mukherjee Nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.306294,
+     28.667016
+    ]
+   },
+   "properties": {
+    "id": "police-111",
+    "name": "Vivek Vihar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.175246,
+     28.709859
+    ]
+   },
+   "properties": {
+    "id": "police-112",
+    "name": "Adarsh Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.292028,
+     28.686201
+    ]
+   },
+   "properties": {
+    "id": "police-113",
+    "name": "Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.215994,
+     28.715409
+    ]
+   },
+   "properties": {
+    "id": "police-114",
+    "name": "Police Chowki, Mukherjee Nagar Bandh",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.303299,
+     28.677882
+    ]
+   },
+   "properties": {
+    "id": "police-115",
+    "name": "Swami Dayanand Hospital Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.291533,
+     28.689413
+    ]
+   },
+   "properties": {
+    "id": "police-116",
+    "name": "Durga Puri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.32385,
+     28.571013
+    ]
+   },
+   "properties": {
+    "id": "police-117",
+    "name": "Police Chowki, Sector 18",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.327065,
+     28.642188
+    ]
+   },
+   "properties": {
+    "id": "police-118",
+    "name": "Police Post Kaushambi, Police Station Indirapuram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.096346,
+     28.651766
+    ]
+   },
+   "properties": {
+    "id": "police-119",
+    "name": "Police Station Khyala",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.086075,
+     28.613151
+    ]
+   },
+   "properties": {
+    "id": "police-120",
+    "name": "Police Station Dabri",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.170593,
+     28.715917
+    ]
+   },
+   "properties": {
+    "id": "police-121",
+    "name": "Bharola Police Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.291174,
+     28.696388
+    ]
+   },
+   "properties": {
+    "id": "police-122",
+    "name": "Jyoti Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.088101,
+     28.651593
+    ]
+   },
+   "properties": {
+    "id": "police-123",
+    "name": "Keshavpur Sabzi Mandi",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.340747,
+     28.593211
+    ]
+   },
+   "properties": {
+    "id": "police-124",
+    "name": "Police Station Sector-12",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.157137,
+     28.717092
+    ]
+   },
+   "properties": {
+    "id": "police-125",
+    "name": "Shalimar Bagh Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.175617,
+     28.723857
+    ]
+   },
+   "properties": {
+    "id": "police-126",
+    "name": "Police Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.119235,
+     28.697606
+    ]
+   },
+   "properties": {
+    "id": "police-127",
+    "name": "Police Station Rani Bagh",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.164958,
+     28.722576
+    ]
+   },
+   "properties": {
+    "id": "police-128",
+    "name": "Integrated Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.331314,
+     28.66921
+    ]
+   },
+   "properties": {
+    "id": "police-129",
+    "name": "Police station Surya nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.115364,
+     28.702338
+    ]
+   },
+   "properties": {
+    "id": "police-130",
+    "name": "Police Station South Rohini",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.318812,
+     28.53066
+    ]
+   },
+   "properties": {
+    "id": "police-131",
+    "name": "kalindi kunj pollice station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.351469,
+     28.589015
+    ]
+   },
+   "properties": {
+    "id": "police-132",
+    "name": "Noida Sector 24 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.068268,
+     28.630144
+    ]
+   },
+   "properties": {
+    "id": "police-133",
+    "name": "Vikas Puri",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.175292,
+     28.733711
+    ]
+   },
+   "properties": {
+    "id": "police-134",
+    "name": "Police Station Jahangirpuri",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.290709,
+     28.501911
+    ]
+   },
+   "properties": {
+    "id": "police-135",
+    "name": "Police Station Pul Prahladpur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.351519,
+     28.571675
+    ]
+   },
+   "properties": {
+    "id": "police-136",
+    "name": "Cyber Crime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.351376,
+     28.64906
+    ]
+   },
+   "properties": {
+    "id": "police-137",
+    "name": "Vaishali POlice Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.355877,
+     28.65201
+    ]
+   },
+   "properties": {
+    "id": "police-138",
+    "name": "Police Post, Sector 17, Vasundhara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.340492,
+     28.688339
+    ]
+   },
+   "properties": {
+    "id": "police-139",
+    "name": "shalimar garden police chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.058452,
+     28.564969
+    ]
+   },
+   "properties": {
+    "id": "police-140",
+    "name": "Dwarka Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.111195,
+     28.721911
+    ]
+   },
+   "properties": {
+    "id": "police-141",
+    "name": "Metro Walk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.339214,
+     28.695
+    ]
+   },
+   "properties": {
+    "id": "police-142",
+    "name": "POLICE CHOWLI SIKANDARAPUR",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.107763,
+     28.719867
+    ]
+   },
+   "properties": {
+    "id": "police-143",
+    "name": "Police Station Rithala Metro",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.303768,
+     28.493753
+    ]
+   },
+   "properties": {
+    "id": "police-144",
+    "name": "Police Station Badarpur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.319332,
+     28.5038
+    ]
+   },
+   "properties": {
+    "id": "police-145",
+    "name": "Jaitpur Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.316334,
+     28.500634
+    ]
+   },
+   "properties": {
+    "id": "police-146",
+    "name": "Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.357894,
+     28.677813
+    ]
+   },
+   "properties": {
+    "id": "police-147",
+    "name": "Rajendra Nagar Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.132466,
+     28.740808
+    ]
+   },
+   "properties": {
+    "id": "police-148",
+    "name": "Crime Branch",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.378263,
+     28.637807
+    ]
+   },
+   "properties": {
+    "id": "police-149",
+    "name": "Shipra Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.358281,
+     28.688547
+    ]
+   },
+   "properties": {
+    "id": "police-150",
+    "name": "karan gate",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.381264,
+     28.636291
+    ]
+   },
+   "properties": {
+    "id": "police-151",
+    "name": "Central Industrial Security Force",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.371272,
+     28.678628
+    ]
+   },
+   "properties": {
+    "id": "police-152",
+    "name": "Police Station Sahibabad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.334623,
+     28.725869
+    ]
+   },
+   "properties": {
+    "id": "police-153",
+    "name": "Teela Mod Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.091064,
+     28.487335
+    ]
+   },
+   "properties": {
+    "id": "police-154",
+    "name": "Police Station, DLF Phase 2",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.064992,
+     28.717841
+    ]
+   },
+   "properties": {
+    "id": "police-155",
+    "name": "Aman Vihar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.384565,
+     28.528936
+    ]
+   },
+   "properties": {
+    "id": "police-156",
+    "name": "Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.066046,
+     28.487675
+    ]
+   },
+   "properties": {
+    "id": "police-157",
+    "name": "Sector 18 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.066095,
+     28.486364
+    ]
+   },
+   "properties": {
+    "id": "police-158",
+    "name": "Sector 18 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.22611,
+     28.430043
+    ]
+   },
+   "properties": {
+    "id": "police-159",
+    "name": "Police Post Sanjay Colony",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.023541,
+     28.520586
+    ]
+   },
+   "properties": {
+    "id": "police-160",
+    "name": "Bhajgera Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.080971,
+     28.460703
+    ]
+   },
+   "properties": {
+    "id": "police-161",
+    "name": "Police Station Sushant Lok",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.095488,
+     28.45139
+    ]
+   },
+   "properties": {
+    "id": "police-162",
+    "name": "Assistant Comissioner of Police Cyber Crime Gurugram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.095474,
+     28.451337
+    ]
+   },
+   "properties": {
+    "id": "police-163",
+    "name": "Assistant Comissioner of Police DLF Subdivision Gurugram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.095455,
+     28.451319
+    ]
+   },
+   "properties": {
+    "id": "police-164",
+    "name": "Cyber Crime Police Station Gurugram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.072817,
+     28.462993
+    ]
+   },
+   "properties": {
+    "id": "police-165",
+    "name": "Sushant Lok Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.098075,
+     28.446363
+    ]
+   },
+   "properties": {
+    "id": "police-166",
+    "name": "Sector 53 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.401689,
+     28.499927
+    ]
+   },
+   "properties": {
+    "id": "police-167",
+    "name": "Sector 135 Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.103151,
+     28.424827
+    ]
+   },
+   "properties": {
+    "id": "police-168",
+    "name": "Police Station Sector 56",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.058871,
+     28.449936
+    ]
+   },
+   "properties": {
+    "id": "police-169",
+    "name": "Police Stn (Sec-40)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.036067,
+     28.46406
+    ]
+   },
+   "properties": {
+    "id": "police-170",
+    "name": "Sadar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.029949,
+     28.455168
+    ]
+   },
+   "properties": {
+    "id": "police-171",
+    "name": "Commissioner Of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.017287,
+     28.465187
+    ]
+   },
+   "properties": {
+    "id": "police-172",
+    "name": "Police Staion",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.037512,
+     28.429162
+    ]
+   },
+   "properties": {
+    "id": "police-173",
+    "name": "Police Station Sadar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.025642,
+     28.805512
+    ]
+   },
+   "properties": {
+    "id": "police-174",
+    "name": "Bawana Police station",
+    "type": "police"
+   }
+  }
+ ]
+}

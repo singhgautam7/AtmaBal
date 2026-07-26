@@ -3,7 +3,7 @@ import { CitySelector } from './city-selector';
 
 /**
  * Full site header. The city selector appears only where it drives content
- * (the crime dashboard). On the home page it's hidden — choosing a city there
+ * (the crime dashboard). On the home page it's hidden - choosing a city there
  * would just jump to /crime, so there's nothing to select against (owner's note).
  */
 export function SiteHeader({ showCity = false }: { showCity?: boolean }) {

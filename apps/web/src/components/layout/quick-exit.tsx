@@ -7,13 +7,13 @@ import { cn } from '@/lib/cn';
 import { IconExit } from '@/components/icons';
 
 /**
- * Quick exit — a true panic button (design.md "Quick exit vs the grounding page").
+ * Quick exit - a true panic button (design.md "Quick exit vs the grounding page").
  *
  * Appears only on sensitive pages. On tap OR the Esc key it INSTANTLY replaces
- * the tab with a neutral weather search — no interstitial, no animation, nothing
+ * the tab with a neutral weather search - no interstitial, no animation, nothing
  * that references this site. Speed and camouflage are the whole point.
  *
- * The purpose is conveyed by the `title` tooltip (per owner's request — no visible
+ * The purpose is conveyed by the `title` tooltip (per owner's request - no visible
  * hint label). `variant="floating"` gives it a solid surface background + shadow
  * for use over the map.
  */

@@ -5,7 +5,7 @@ import type { Place, PlaceType } from '@/data/types';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 /**
- * Real interactive map — MapLibre GL JS with free OpenFreeMap tiles (no Google
+ * Real interactive map - MapLibre GL JS with free OpenFreeMap tiles (no Google
  * Maps JS API, no API key). Markers come from the committed real station data.
  * maplibre-gl is dynamically imported so it is code-split and never runs during
  * SSR. Geolocation, when granted, only pans/marks on this device.
@@ -13,8 +13,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
  * Marker structure matters: MapLibre positions the marker by writing a
  * `transform: translate(...)` onto the element it owns. So the outer element is
  * left untouched (MapLibre owns it) and a rotated inner teardrop carries the
- * appearance. Selection only restyles the inner div — the element is never
- * replaced — which is why pins no longer jump to the corner on click.
+ * appearance. Selection only restyles the inner div - the element is never
+ * replaced - which is why pins no longer jump to the corner on click.
  */
 
 const BENGALURU: [number, number] = [77.5906, 12.9796];
@@ -46,11 +46,13 @@ export function MapCanvas({
   userLocation,
   selectedId,
   onSelect,
+  cityId,
 }: {
   places: Place[];
   userLocation: { lat: number; lng: number } | null;
   selectedId: string | null;
   onSelect: (id: string) => void;
+  cityId: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -78,7 +80,9 @@ export function MapCanvas({
         zoom: 11,
         attributionControl: { compact: true },
       });
-      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
+      // Zoom control bottom-LEFT so it never collides with the "My location"
+      // button (bottom-right on desktop / above the sheet on mobile).
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-left');
       mapRef.current = map;
 
       // The map often initialises before the flex/absolute container has its
@@ -133,7 +137,7 @@ export function MapCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [places, ready]);
 
-  // Restyle for selection (in place — never replace the element) + pan to it.
+  // Restyle for selection (in place - never replace the element) + pan to it.
   useEffect(() => {
     markersRef.current.forEach((entry, id) => styleInner(entry.inner, entry.type, id === selectedId));
     const map = mapRef.current;
@@ -160,6 +164,19 @@ export function MapCanvas({
       .addTo(map);
     map.flyTo({ center: [userLocation.lng, userLocation.lat], zoom: 13, speed: 0.9 });
   }, [userLocation, ready]);
+
+  // Recenter/fit to the selected city's stations whenever the city changes.
+  useEffect(() => {
+    const map = mapRef.current;
+    const gl = glRef.current;
+    if (!map || !gl || !ready) return;
+    const coords = places.filter((p) => p.lat != null && p.lng != null);
+    if (!coords.length) return;
+    const b = new gl.LngLatBounds();
+    coords.forEach((p) => b.extend([p.lng!, p.lat!]));
+    map.fitBounds(b, { padding: { top: 150, bottom: 90, left: 400, right: 90 }, maxZoom: 14, duration: 600 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cityId, ready]);
 
   return <div ref={containerRef} className="h-full w-full" aria-label="Map of help locations" role="application" />;
 }

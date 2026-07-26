@@ -1,7 +1,7 @@
 type ClassValue = string | number | null | false | undefined | ClassValue[];
 
 /**
- * Minimal className joiner. (No tailwind-merge dependency yet — add it if/when
+ * Minimal className joiner. (No tailwind-merge dependency yet - add it if/when
  * conflicting utility classes become a real problem.)
  */
 export function cn(...inputs: ClassValue[]): string {

@@ -1,0 +1,995 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.862564,
+     18.519462
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Somwar Peth Police Station सोमवार पेठ पोलिस स्टेशन",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.856038,
+     18.520476
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Kasba Peth Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.862191,
+     18.516175
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Ganesh Peth Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.855842,
+     18.516443
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Faraskhana Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.869689,
+     18.520318
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Samarth Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.850024,
+     18.520009
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Shaniwar Peth Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.868857,
+     18.514876
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Sant Kabir Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.847842,
+     18.522236
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Balagandharva Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.847865,
+     18.5162
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Narayan Peth Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.848776,
+     18.511393
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Perugate Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.850013,
+     18.529982
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "ShivajiNagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.843892,
+     18.513178
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Sambhaji Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.878856,
+     18.524425
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Council Hall Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.859159,
+     18.500792
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Swargate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.840381,
+     18.514141
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Deccan Gymkhana Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.844603,
+     18.505206
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Senadatta Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.878905,
+     18.533987
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Mangaldas Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.833306,
+     18.514522
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Prabhat Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.840267,
+     18.501002
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Dattawadi Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.871109,
+     18.493332
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Maharshi Nagar Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.848173,
+     18.492916
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Dattawadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.849701,
+     18.489602
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Laxminagar Police chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.849652,
+     18.489464
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Sahakarnagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.824599,
+     18.506451
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Paud Phata Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.895302,
+     18.535758
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Koregaon Park Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.826215,
+     18.498433
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Alankar Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.845425,
+     18.557192
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Khadki Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.82246,
+     18.540655
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Centre for Police Research - CPR,",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.825753,
+     18.54613
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Chaturshringi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.899796,
+     18.53935
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Koregaon Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.822832,
+     18.543635
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Chavan Nagar - Pune Rural Police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.895797,
+     18.552799
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Yerawada Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.877527,
+     18.564672
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Vishrantwadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.905636,
+     18.554555
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Ramwadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.802475,
+     18.506629
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Kothrud Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.832795,
+     18.468983
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Vadgaon Budruk Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.857632,
+     18.459091
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Bharati Vidyapeeth Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.798106,
+     18.538216
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Pashan Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.81386,
+     18.473071
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Sinhagad Road Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.93117,
+     18.52014
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Magarpatta City Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.815639,
+     18.578593
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Sangvi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.928086,
+     18.557096
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Chandan nagar police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.779613,
+     18.522592
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "bavdhandhan  Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.779584,
+     18.522496
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Bavdhan Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.777488,
+     18.511313
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Bavdhan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.94749,
+     18.549028
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Kharadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.774897,
+     18.568659
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Baner Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.799361,
+     18.601556
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Pimple Saudagar Police Statiom",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.799092,
+     18.601819
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Police Station Pimple Saudagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.75756,
+     18.59205
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Wakad Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.978236,
+     18.572673
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Unit 6 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.979084,
+     18.571317
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.765311,
+     18.607337
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Wakad Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.779996,
+     18.629324
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Chinchwad Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.986526,
+     18.581217
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "wagoli police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.795019,
+     18.639873
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "PCMC Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.735694,
+     18.586117
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Hinjawadi police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.986854,
+     18.581825
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "police station Wagoli;Wagoli police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.738707,
+     18.591748
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Hinjawadi Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.755452,
+     18.6419
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Police Station Ravet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.767068,
+     18.650741
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Akurdi Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.774177,
+     18.662106
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "Pradhikaran Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.023799,
+     18.620529
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "lonikand Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.721188,
+     18.686306
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.029881,
+     18.346335
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "Saswad police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.677143,
+     18.714162
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Police Station Talegaon Dabhade",
+    "type": "police"
+   }
+  }
+ ]
+}

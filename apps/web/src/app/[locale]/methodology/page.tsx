@@ -6,12 +6,12 @@ import { getCrime } from '@/data/loaders';
 const SOURCES = [
   {
     kind: 'Crime figures',
-    source: 'NCRB “Crime in India” 2020–2024, metro-city tables (via OpenCity, data.opencity.in)',
+    source: 'NCRB “Crime in India” 2020-2024, metro-city tables (via OpenCity, data.opencity.in)',
     verified: 'Machine-read from NCRB’s published CSV/XLSX and validated in the pipeline; no number ships without a source.',
   },
   {
     kind: 'Court/police disposal',
-    source: 'NCRB “Crime in India” disposal tables (state level — Karnataka)',
+    source: 'NCRB “Crime in India” disposal tables (state level - Karnataka)',
     verified: 'State-level and provisional; labelled as such. City-level disposal to be added and marked separately.',
   },
   {
@@ -60,7 +60,7 @@ export default async function MethodologyPage({
           <p>
             <strong className="font-semibold text-ink">Reported crime is not danger.</strong>{' '}
             Every number here is <em>reported cases</em>, not total incidents. A rising line
-            often means more women are reporting — better access and trust — not that a place
+            often means more women are reporting - better access and trust - not that a place
             has become more dangerous. Where reports rose sharply in Bengaluru, police and
             activists attributed it to easier reporting, not a real surge.
           </p>
@@ -86,7 +86,7 @@ export default async function MethodologyPage({
             <strong className="font-semibold text-ink">Where these numbers come
             from.</strong>{' '}
             The city totals, rates and charge-sheeting rates are <em>real NCRB &ldquo;Crime
-            in India&rdquo; data</em> (2020–2024) for 19 metropolitan cities, pulled from
+            in India&rdquo; data</em> (2020-2024) for 19 metropolitan cities, pulled from
             NCRB&apos;s published metro-city tables via OpenCity (data.opencity.in) and
             validated in the pipeline. For Bengaluru, reported crimes against women went from{' '}
             <strong className="font-semibold text-ink">2,730 in 2020 to 4,748 in 2024</strong>.
@@ -94,13 +94,13 @@ export default async function MethodologyPage({
           <p>
             <strong className="font-semibold text-ink">What is still being added.</strong>{' '}
             NCRB does not publish a clean per-offence split at city level in these tables, so
-            we show the verified city total and its trend rather than guess a breakdown — the
+            we show the verified city total and its trend rather than guess a breakdown - the
             per-head split is a documented pipeline job. The <em>Get help</em> map is also
             real: station locations from OpenStreetMap, the One Stop Centre geocoded.
           </p>
         </div>
 
-        {/* Per-kind data sources — so every figure on the site is traceable. */}
+        {/* Per-kind data sources - so every figure on the site is traceable. */}
         <h2 className="mt-10 font-display text-[22px] font-normal leading-tight text-ink">
           Data &amp; sources
         </h2>
@@ -129,7 +129,7 @@ export default async function MethodologyPage({
         </div>
         <p className="mt-4 text-[12px] leading-relaxed text-ink-faint">
           Data last updated: {crime.lastUpdated}. Something wrong or out of date? Use the
-          corrections link in the footer — every legal point, helpline and station also carries
+          corrections link in the footer - every legal point, helpline and station also carries
           its own source and review date in the app.
         </p>
       </main>

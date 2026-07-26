@@ -10,7 +10,7 @@ export function generateStaticParams() {
 }
 
 /**
- * Locale segment — providers only. The document shell lives in the root layout;
+ * Locale segment - providers only. The document shell lives in the root layout;
  * here we set the request locale (for static rendering), load the (English-
  * fallback) messages, and show the "not yet in this language" notice for any
  * not-ready locale.

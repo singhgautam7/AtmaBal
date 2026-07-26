@@ -1,5 +1,5 @@
 /**
- * Crime dashboard math — ported faithfully from the design concept so the
+ * Crime dashboard math - ported faithfully from the design concept so the
  * numbers, aggregation and "nice" axis rounding match the mockup exactly.
  * Pure functions, unit-tested; no rendering here.
  */

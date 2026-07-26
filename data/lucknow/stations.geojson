@@ -1,0 +1,320 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.946096,
+     26.847189
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Hazratganj Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.924363,
+     26.84826
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.958727,
+     26.873085
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Mahanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.957599,
+     26.873508
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Police Chowki Gole Market",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.924987,
+     26.839597
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Police Chowki Makboolganj",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.933224,
+     26.871297
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Police Station Babuganj",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.918437,
+     26.845803
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Dugawan Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.959008,
+     26.878268
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "UP Police Radio Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.97369,
+     26.871084
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Lekhraj Police Chauki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.983644,
+     26.872677
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Ghazipur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.994377,
+     26.854502
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Gomti Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.908893,
+     26.865774
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Police Chowki Chowk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.909521,
+     26.826292
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Alambagh Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.995216,
+     26.873099
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Police Chowki Polytechnic",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.002674,
+     26.877684
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Sec 8 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.010326,
+     26.812141
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "UP police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.875619,
+     26.846318
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Police Station, Talkatora",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.964403,
+     26.919151
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Gudamba Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.874068,
+     26.824023
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "para thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.891791,
+     26.794936
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Krishna Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.894515,
+     26.729942
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Central Reserve Police Force",
+    "type": "police"
+   }
+  }
+ ]
+}

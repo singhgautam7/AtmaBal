@@ -1,12 +1,12 @@
+import { Suspense } from 'react';
 import { setRequestLocale } from 'next-intl/server';
 import { HelpNearYou } from '@/components/help/help-near-you';
-import { getPlaces } from '@/data/loaders';
+import { getAllPlaces, getCities } from '@/data/loaders';
 
 /**
- * Get-help page — a full-bleed real map (MapLibre + free tiles) with real
- * Bengaluru stations, One Stop Centre and helplines. All chrome (title,
- * quick-exit, filters, results) floats over the map, so the page itself is just
- * the map surface.
+ * Get-help map - a full-bleed real map (MapLibre + free tiles). Real stations for
+ * all metros (OpenStreetMap; Bengaluru's women's stations + OSC hand-verified),
+ * national helplines. City is chosen via the map's dropdown (?city=).
  */
 export default async function MapPage({
   params,
@@ -15,10 +15,13 @@ export default async function MapPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const { places } = getPlaces();
+  const allPlaces = getAllPlaces();
+  const cities = getCities();
   return (
     <main id="main">
-      <HelpNearYou places={places} />
+      <Suspense fallback={<div className="grid h-[100dvh] place-items-center text-ink-faint">Loading map…</div>}>
+        <HelpNearYou allPlaces={allPlaces} cities={cities} />
+      </Suspense>
     </main>
   );
 }

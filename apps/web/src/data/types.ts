@@ -41,7 +41,7 @@ export interface CrimeHead {
 }
 
 /**
- * Per-city crime data — real NCRB totals (2020–2024). NCRB does not publish a
+ * Per-city crime data - real NCRB totals (2020-2024). NCRB does not publish a
  * clean per-offence split at city level in the sourced tables, so v1 ships the
  * verified city total + multi-year trend; the per-head breakdown is a pipeline
  * job (see headBreakdownNote).

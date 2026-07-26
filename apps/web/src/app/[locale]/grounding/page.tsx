@@ -5,7 +5,7 @@ import { Logo } from '@/components/layout/logo';
 import { IconPhone, IconMindfulness } from '@/components/icons';
 
 /**
- * Grounding page — "Take a moment". A calm space reached DELIBERATELY from the
+ * Grounding page - "Take a moment". A calm space reached DELIBERATELY from the
  * help/options pages (design.md). This is NOT what quick exit triggers; quick
  * exit still leaves the site entirely, so it's present here too.
  */
@@ -76,7 +76,7 @@ export default async function GroundingPage({
 }
 
 /**
- * Slow drifting, pulsing ambient blobs behind the grounding content — a living,
+ * Slow drifting, pulsing ambient blobs behind the grounding content - a living,
  * calming background (matches the design's intent). Decorative; disabled under
  * prefers-reduced-motion (globals.css), leaving a still, soft wash.
  */

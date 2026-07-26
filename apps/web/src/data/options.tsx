@@ -1,13 +1,13 @@
 /**
  * Options-form outcome content.
  *
- * ⚠️ LEGAL CONTENT — PENDING HUMAN REVIEW. Every "law behind this" entry carries a
+ * ⚠️ LEGAL CONTENT - PENDING HUMAN REVIEW. Every "law behind this" entry carries a
  * source + lastReviewed date (the review trail required by CLAUDE.md /
  * specs/legal-content.md), but these are an authored FIRST DRAFT and MUST be
  * checked by a qualified person (lawyer / DLSA volunteer / One Stop Centre NGO)
  * before launch. Citations are the post-1-July-2024 BNS/BNSS regime; for incidents
  * before that date the rights are the same in substance but section numbers differ
- * (IPC/CrPC) — the form flags this rather than guessing the old number.
+ * (IPC/CrPC) - the form flags this rather than guessing the old number.
  *
  * Section numbers appear ONLY inside the expandable reveal, never as a headline.
  */
@@ -87,20 +87,20 @@ const bns = (section: string, act: string, text: string, source: string): LawRef
 
 const notDeciding: OutcomeCard = {
   tag: 'Equally valid',
-  title: 'Not deciding yet — talk it through first',
+  title: 'Not deciding yet - talk it through first',
   Icon: IconHeart,
   highlight: true,
   action: null,
   law: null,
-  desc: 'Completely okay. Speak with a counsellor to think it over. No form, no report, no pressure to act — call the Women Helpline on 181 whenever you like.',
+  desc: 'Completely okay. Speak with a counsellor to think it over. No form, no report, no pressure to act - call the Women Helpline on 181 whenever you like.',
 };
 
 const zeroFir: OutcomeCard = {
   tag: 'File a report',
-  title: 'File a Zero FIR — at any police station',
+  title: 'File a Zero FIR - at any police station',
   Icon: IconDoc,
   action: 'How it works',
-  desc: 'You can file an FIR at ANY police station, no matter where it happened — they must register it, and refusal can be escalated in writing to the Superintendent of Police.',
+  desc: 'You can file an FIR at ANY police station, no matter where it happened - they must register it, and refusal can be escalated in writing to the Superintendent of Police.',
   law: bns(
     'BNSS §173(1), (2), (4)',
     'Bharatiya Nagarik Suraksha Sanhita, 2023',
@@ -137,7 +137,7 @@ const legalAid: OutcomeCard = {
   title: 'Free legal aid',
   Icon: IconRights,
   action: 'Check eligibility',
-  desc: 'A lawyer at no cost, through the District Legal Services Authority — every woman is entitled, regardless of income.',
+  desc: 'A lawyer at no cost, through the District Legal Services Authority - every woman is entitled, regardless of income.',
   law: bns(
     'LSA Act §12(c)',
     'Legal Services Authorities Act, 1987',
@@ -151,7 +151,7 @@ const preserveEvidence: OutcomeCard = {
   title: 'Preserve the evidence first',
   Icon: IconCam,
   action: 'How to save proof',
-  desc: "Don't delete anything. Screenshot messages, save links, note usernames, dates and witnesses — records make a complaint far stronger.",
+  desc: "Don't delete anything. Screenshot messages, save links, note usernames, dates and witnesses - records make a complaint far stronger.",
   law: bns(
     'BSA §63',
     'Bharatiya Sakshya Adhiniyam, 2023',
@@ -165,7 +165,7 @@ const cyberCell: OutcomeCard = {
   title: 'Complain to the Cyber Crime cell',
   Icon: IconChat,
   action: 'Start online',
-  desc: 'File on the National Cyber Crime Reporting Portal or at your local cyber police station — you can do it online.',
+  desc: 'File on the National Cyber Crime Reporting Portal or at your local cyber police station - you can do it online.',
   law: bns(
     'IT Act §66E, §67 · BNS §78',
     'Information Technology Act, 2000 + Bharatiya Nyaya Sanhita, 2023',
@@ -194,9 +194,9 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Rape is a serious criminal offence',
       Icon: IconRights,
       action: 'What the law says',
-      desc: 'You do not have to decide about a trial now — but you have the right to report, to a medical exam, and to legal aid whenever you are ready.',
+      desc: 'You do not have to decide about a trial now - but you have the right to report, to a medical exam, and to legal aid whenever you are ready.',
       law: bns(
-        'BNS §63–§64 (and §70 gang rape)',
+        'BNS §63-§64 (and §70 gang rape)',
         'Bharatiya Nyaya Sanhita, 2023',
         'Rape is defined in BNS §63 and punished under §64; gang rape under §70. A survivor’s statement should be recorded by a woman officer, with support persons allowed.',
         'Bharatiya Nyaya Sanhita 2023',
@@ -210,7 +210,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Protection, residence & maintenance orders',
       Icon: IconShield,
       action: 'How to apply',
-      desc: 'You can get a protection order, stay in your home, and claim maintenance — without filing a criminal case.',
+      desc: 'You can get a protection order, stay in your home, and claim maintenance - without filing a criminal case.',
       law: bns(
         'PWDVA §18 · §19 · §20',
         'Protection of Women from Domestic Violence Act, 2005',
@@ -240,9 +240,9 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Dowry demands are illegal',
       Icon: IconDoc,
       action: 'How to complain',
-      desc: 'Giving, taking or demanding dowry is a criminal offence — you can complain to the police or a Dowry Prohibition Officer.',
+      desc: 'Giving, taking or demanding dowry is a criminal offence - you can complain to the police or a Dowry Prohibition Officer.',
       law: bns(
-        'Dowry Prohibition Act §3–§4',
+        'Dowry Prohibition Act §3-§4',
         'Dowry Prohibition Act, 1961',
         'Demanding dowry is punishable under §4; giving/taking under §3. Complaints can go to the police or a Dowry Prohibition Officer.',
         'Dowry Prohibition Act 1961',
@@ -253,11 +253,11 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Protection & maintenance (DV Act)',
       Icon: IconShield,
       action: 'How to apply',
-      desc: 'Dowry harassment is domestic violence — you can seek protection, residence and maintenance orders without a criminal case.',
+      desc: 'Dowry harassment is domestic violence - you can seek protection, residence and maintenance orders without a criminal case.',
       law: bns(
-        'PWDVA §3, §18–§20',
+        'PWDVA §3, §18-§20',
         'Protection of Women from Domestic Violence Act, 2005',
-        'Dowry-related harassment falls within the definition of domestic violence (§3); protection and monetary relief follow under §18–§20.',
+        'Dowry-related harassment falls within the definition of domestic violence (§3); protection and monetary relief follow under §18-§20.',
         'Protection of Women from Domestic Violence Act 2005',
       ),
     },
@@ -270,7 +270,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Complain to the Internal Committee',
       Icon: IconDoc,
       action: 'How to file',
-      desc: 'Your workplace must have a committee to hear this confidentially and act within a set time — parallel to, and separate from, any criminal route.',
+      desc: 'Your workplace must have a committee to hear this confidentially and act within a set time - parallel to, and separate from, any criminal route.',
       law: bns(
         'POSH Act §4 & §9',
         'Sexual Harassment of Women at Workplace Act, 2013 (POSH)',
@@ -288,11 +288,11 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Stalking is a criminal offence',
       Icon: IconDoc,
       action: 'How to report',
-      desc: 'Following you, or repeatedly contacting or monitoring you online, is stalking — you can file an FIR (at any station).',
+      desc: 'Following you, or repeatedly contacting or monitoring you online, is stalking - you can file an FIR (at any station).',
       law: bns(
         'BNS §78',
         'Bharatiya Nyaya Sanhita, 2023',
-        'Stalking — including monitoring a woman’s use of the internet or electronic communication — is an offence under BNS §78 (formerly IPC 354D).',
+        'Stalking - including monitoring a woman’s use of the internet or electronic communication - is an offence under BNS §78 (formerly IPC 354D).',
         'Bharatiya Nyaya Sanhita 2023',
       ),
     },
@@ -324,7 +324,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Street harassment is punishable',
       Icon: IconDoc,
       action: 'What the law covers',
-      desc: 'Unwelcome words, gestures, touching, or following in public are offences — you can report them at any police station.',
+      desc: 'Unwelcome words, gestures, touching, or following in public are offences - you can report them at any police station.',
       law: bns(
         'BNS §75 (sexual harassment) · §79 (insult to modesty)',
         'Bharatiya Nyaya Sanhita, 2023',
@@ -345,7 +345,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       action: 'What you can claim',
       desc: 'Hospitals (public and private) must provide free treatment to acid-attack survivors, and you can claim compensation under the victim compensation scheme.',
       law: bns(
-        'BNS §124(1)–(2)',
+        'BNS §124(1)-(2)',
         'Bharatiya Nyaya Sanhita, 2023',
         'Acid attack (§124(1)) and attempt (§124(2)) are grave offences (formerly IPC 326A/326B). Free treatment and victim compensation are directed by law and Supreme Court guidelines.',
         'Bharatiya Nyaya Sanhita 2023',
@@ -360,7 +360,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Call 112 and file a Zero FIR',
       Icon: IconDoc,
       action: 'How it works',
-      desc: 'For an ongoing abduction, call 112 now. Kidnapping and abduction are serious offences — an FIR can be filed at any police station.',
+      desc: 'For an ongoing abduction, call 112 now. Kidnapping and abduction are serious offences - an FIR can be filed at any police station.',
       law: bns(
         'BNS §137 · §87',
         'Bharatiya Nyaya Sanhita, 2023',
@@ -375,7 +375,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
   trafficking: [
     {
       tag: 'Get to safety',
-      title: 'Rescue & report — you are the victim, not the offender',
+      title: 'Rescue & report - you are the victim, not the offender',
       Icon: IconShield,
       action: 'How to get help',
       desc: 'Call 112 or the Women Helpline (181). Anti-Human-Trafficking Units, One Stop Centres and NGOs can help with rescue, shelter and rehabilitation.',
@@ -393,7 +393,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
   pocso: [
     {
       tag: 'Report now',
-      title: 'Report — reporting child abuse is mandatory',
+      title: 'Report - reporting child abuse is mandatory',
       Icon: IconDoc,
       action: 'How to report',
       desc: 'Call Childline 1098 or the police. Under POCSO, anyone who knows of child sexual abuse is legally required to report it; the child’s identity is protected.',
@@ -415,7 +415,7 @@ export const OUTCOMES: Record<Scenario, OutcomeCard[]> = {
       title: 'Understand your rights first',
       Icon: IconRights,
       action: 'Read the guides',
-      desc: 'Plain-language guides to what the law offers — so you decide from a place of knowing.',
+      desc: 'Plain-language guides to what the law offers - so you decide from a place of knowing.',
       law: bns(
         'LSA Act §12(c)',
         'Legal Services Authorities Act, 1987',

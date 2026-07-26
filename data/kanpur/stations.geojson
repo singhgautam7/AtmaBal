@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.350288,
+     26.453714
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Railway Police Force Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.342952,
+     26.473106
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Police station ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.344398,
+     26.472727
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Police chawki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.364264,
+     26.454188
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Police Station Kanpur Cantonment",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.298357,
+     26.467388
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "police chawki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.388663,
+     26.42352
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "POLICE CHOWKI",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.241934,
+     26.510144
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "IIT Kanpur Police Chowki",
+    "type": "police"
+   }
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.846491,
+     22.710018
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "chhatri bagh police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.887755,
+     22.725068
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Palasiya Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.841643,
+     22.695903
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "annapurna police stand",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.872631,
+     22.684767
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Bhanwarkuan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.904687,
+     22.705716
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Police station tilak nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.895196,
+     22.751595
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Vijay Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.914532,
+     22.735853
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Police thana khajrana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.914527,
+     22.73595
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Police station khajrana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.90568,
+     22.785373
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Lasaudia Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.887938,
+     22.639042
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Police Station - Tejaji Nagar",
+    "type": "police"
+   }
+  }
+ ]
+}

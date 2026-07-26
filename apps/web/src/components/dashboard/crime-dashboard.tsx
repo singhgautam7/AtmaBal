@@ -7,7 +7,7 @@ import type { CityMeta, CrimeData, HeadModel, HeadModelEntry, JusticeData, Measu
 import { fmtN } from '@/lib/format';
 import { catColor, shortName } from '@/lib/crime';
 import { cn } from '@/lib/cn';
-import { IconInfo, IconTrendArrow, IconChevronRight } from '@/components/icons';
+import { IconInfo, IconTrendArrow, IconChevronRight, IconChevronDown } from '@/components/icons';
 import { LocaleLink } from '@/components/layout/locale-link';
 import { TrendLine, GroupedBars, Donut, Ring } from './charts';
 import { ChartFrame } from './chart-frame';
@@ -49,7 +49,7 @@ export function CrimeDashboard({
   const [cmpB, setCmpB] = useState<number>(years[years.length - 2] ?? firstYear);
   const [cityKey, setCityKey] = useState<string>(cityId);
   if (cityKey !== cityId) {
-    // City changed via header — reset the year controls to this city's range.
+    // City changed via header - reset the year controls to this city's range.
     setCityKey(cityId);
     setFocusYear(lastYear);
     setCmpA(lastYear);
@@ -239,13 +239,13 @@ export function CrimeDashboard({
         <StatCard label={t('stats.ratePerLakh')} value={rateThisYear.toFixed(1)} sub={t('stats.censusBase')} />
         <StatCard
           label={t('stats.changeVs', { year: prevYear })}
-          value={`${yoy >= 0 ? '+' : '−'}${Math.abs(Math.round(yoy))}%`}
+          value={`${yoy >= 0 ? '+' : '-'}${Math.abs(Math.round(yoy))}%`}
           sub={yoy >= 0 ? t('stats.moreReported') : t('stats.fewerReported')}
           dir={yoy >= 2 ? 'up' : yoy <= -2 ? 'down' : 'flat'}
         />
         <StatCard
           label={t('stats.chargesheet')}
-          value={crime.chargesheetRate != null ? `${crime.chargesheetRate.toFixed(0)}%` : '—'}
+          value={crime.chargesheetRate != null ? `${crime.chargesheetRate.toFixed(0)}%` : '-'}
           sub={t('stats.chargesheetSub', { year: lastYear })}
         />
       </div>
@@ -302,9 +302,9 @@ export function CrimeDashboard({
           filename={`${cityId}-compare-${cmpA}-${cmpB}`}
           controls={
             <div className="flex items-center gap-2">
-              <YearStepper value={cmpA} min={firstYear} max={lastYear} onChange={(y) => setCmpA(clampYear(y))} decLabel={t('charts.earlierYear')} incLabel={t('charts.laterYear')} label={t('charts.compareA')} />
+              <YearSelect years={years} value={cmpA} onChange={(y) => setCmpA(clampYear(y))} label={t('charts.compareA')} />
               <span className="text-[11px] text-ink-faint">vs</span>
-              <YearStepper value={cmpB} min={firstYear} max={lastYear} onChange={(y) => setCmpB(clampYear(y))} decLabel={t('charts.earlierYear')} incLabel={t('charts.laterYear')} label={t('charts.compareB')} />
+              <YearSelect years={years} value={cmpB} onChange={(y) => setCmpB(clampYear(y))} label={t('charts.compareB')} />
             </div>
           }
         >
@@ -357,16 +357,20 @@ function Segmented({ options, value, onChange }: { options: { id: string; label:
   );
 }
 
-function YearStepper({ value, min, max, onChange, label, decLabel, incLabel }: { value: number; min: number; max: number; onChange: (y: number) => void; label: string; decLabel: string; incLabel: string }) {
+function YearSelect({ years, value, onChange, label }: { years: number[]; value: number; onChange: (y: number) => void; label: string }) {
   return (
-    <div role="group" aria-label={label} className="flex items-center gap-px overflow-hidden rounded-lg border border-line-strong bg-paper">
-      <button type="button" onClick={() => onChange(value - 1)} disabled={value <= min} aria-label={decLabel} className="inline-flex items-center px-[7px] py-1.5 text-ink-soft disabled:opacity-30">
-        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M7.5 3L4 6l3.5 3" /></svg>
-      </button>
-      <span className="min-w-[36px] text-center text-[13px] font-semibold tabular-nums text-ink" aria-live="polite">{value}</span>
-      <button type="button" onClick={() => onChange(value + 1)} disabled={value >= max} aria-label={incLabel} className="inline-flex items-center px-[7px] py-1.5 text-ink-soft disabled:opacity-30">
-        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M4.5 3L8 6l-3.5 3" /></svg>
-      </button>
+    <div className="relative inline-flex items-center">
+      <select
+        value={value}
+        onChange={(e) => onChange(+e.target.value)}
+        aria-label={label}
+        className="appearance-none rounded-lg border border-line-strong bg-paper py-1.5 pl-3 pr-7 text-[13px] font-semibold tabular-nums text-ink"
+      >
+        {years.map((y) => (
+          <option key={y} value={y}>{y}</option>
+        ))}
+      </select>
+      <IconChevronDown size={11} strokeWidth={1.8} className="pointer-events-none absolute right-2.5 text-ink-faint" />
     </div>
   );
 }

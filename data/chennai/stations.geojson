@@ -1,0 +1,1370 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.270914,
+     13.083112
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Periamet PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2733,
+     13.083061
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Chennai Central RPF",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.272504,
+     13.074909
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Chintadripet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.275507,
+     13.081828
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Central Station PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.271418,
+     13.069926
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Police Assistance Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.273649,
+     13.067255
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "D1 Triplicane Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.275012,
+     13.092631
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "C2 Elephant Gate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.257014,
+     13.075072
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "F2 Egmore Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.262058,
+     13.068639
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Office of the Deputy Commissioner of Police, Pudupet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.281703,
+     13.088408
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "C1 Flower Bazaar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.282394,
+     13.088372
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "C1 Flower Bazaar Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.28537,
+     13.086472
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Esplanade PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.280724,
+     13.095344
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "C5 Kothavalchavadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.252068,
+     13.072535
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "G7 Chetpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.262232,
+     13.061062
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "D2 Anna Salai (Mount Road) Poice Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.28546,
+     13.094035
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "C5 Kothavalchavadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.281695,
+     13.098888
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "C3 Seven Wells Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.290458,
+     13.089922
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "B1 North Beach Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.245879,
+     13.087452
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Otteri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.254797,
+     13.059839
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "F4 Greams Road PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.287025,
+     13.099838
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "N3 Muthialpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.291512,
+     13.096622
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "B1 North Beach Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.251563,
+     13.100333
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "P2 Otteri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.263735,
+     13.052011
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Royapettah PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.242119,
+     13.070691
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Chetpet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.28092,
+     13.108661
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "H1 Washermanpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.249488,
+     13.048651
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Teynampet E3 PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.279321,
+     13.039151
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "D5 Marina Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.270142,
+     13.035987
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Mylapore E1 PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.266441,
+     13.034137
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Railway Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.255967,
+     13.033256
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Abhiramapuram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.218247,
+     13.084869
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Control Room",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.21797,
+     13.092545
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "K4 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.226378,
+     13.111398
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Peravallur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.274816,
+     13.024555
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "E5 Foreshore Estate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.243235,
+     13.030052
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Office of the Director General of Police Civil Supplies CID Chennai",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.239832,
+     13.031311
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "E3 Teynampet Police Assistance Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.271634,
+     13.022806
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Tamil Nadu State Crime Records Bureau",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.271388,
+     13.022507
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Tamil Nadu Police Computer Communication Centre",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.22946,
+     13.034957
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Mambalam Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.22949,
+     13.034764
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "R1 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.29746,
+     13.134541
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "N4 PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.217304,
+     13.044081
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "R3 Ashok Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.211731,
+     13.049673
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Vadapalani Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.204667,
+     13.068701
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "K11 CMBT Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.200459,
+     13.069641
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Koyambedu Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.226078,
+     13.022408
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Police Station - J1 - Saidapet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.216311,
+     13.028368
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "R6 KUMARAN NAGAR POLICE STATION ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.205442,
+     13.041511
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "KK Nagar PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199256,
+     13.049112
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Virugambakkam Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.193571,
+     13.065691
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192342,
+     13.073748
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.211624,
+     13.026501
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "R6 Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.27122,
+     13.000714
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Elliots Beach Police Outpost",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.227246,
+     13.012506
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Srinagar colony police booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.265931,
+     13.000612
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Shastri Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.187889,
+     13.087695
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "J.J Nagar Police Booth (V3)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.201703,
+     13.031089
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "R10 MGR Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.255718,
+     12.997814
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Adyar J2",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.186216,
+     13.044732
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.210692,
+     13.009353
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Guindy J3 Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.255932,
+     12.98746
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "J6 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199093,
+     13.010086
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "Office, Police Commissioner",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.179007,
+     13.031774
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Ramapuram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.200262,
+     12.999121
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "B1 Saint Thomas Mount PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.220871,
+     12.985013
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Velachery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181643,
+     13.014976
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.220923,
+     12.980944
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Velachery Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.201968,
+     12.989396
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "S-8 Adambakkam Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.307606,
+     13.186418
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "M5 Ennore Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.160249,
+     13.034199
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "T15 SRMC PS",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.160129,
+     13.034307
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "Porur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.166324,
+     13.020716
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Police Assistance Booth Mugalivakam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.152557,
+     13.107314
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "Ambattur T1 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.158703,
+     13.130662
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "T-1 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.206035,
+     12.965163
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Police booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.241625,
+     12.947613
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "J9 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.185307,
+     12.955986
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Madipalkam police stations",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.114521,
+     13.035288
+    ]
+   },
+   "properties": {
+    "id": "police-78",
+    "name": "mangadu police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.107379,
+     13.129146
+    ]
+   },
+   "properties": {
+    "id": "police-79",
+    "name": "HVF",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.169439,
+     13.215617
+    ]
+   },
+   "properties": {
+    "id": "police-80",
+    "name": "Police Outpost",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195081,
+     12.917383
+    ]
+   },
+   "properties": {
+    "id": "police-81",
+    "name": "S-10 Police Station (Pallikaranai)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.125796,
+     12.96928
+    ]
+   },
+   "properties": {
+    "id": "police-82",
+    "name": "S6 Shankar Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.228016,
+     12.900856
+    ]
+   },
+   "properties": {
+    "id": "police-83",
+    "name": "J-10 Semmenchery Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.227558,
+     12.8997
+    ]
+   },
+   "properties": {
+    "id": "police-84",
+    "name": "டி-16 செம்மஞ்சேரி காவல் நிலையம்",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.138001,
+     12.93954
+    ]
+   },
+   "properties": {
+    "id": "police-85",
+    "name": "T-13 Chitlapakkam Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.262509,
+     13.271806
+    ]
+   },
+   "properties": {
+    "id": "police-86",
+    "name": "E6",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.091852,
+     12.997405
+    ]
+   },
+   "properties": {
+    "id": "police-87",
+    "name": "T13 Kundrathur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.182321,
+     12.897566
+    ]
+   },
+   "properties": {
+    "id": "police-88",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.135236,
+     12.922946
+    ]
+   },
+   "properties": {
+    "id": "police-89",
+    "name": "Selaiyur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.112898,
+     12.925417
+    ]
+   },
+   "properties": {
+    "id": "police-90",
+    "name": "police station s11",
+    "type": "police"
+   }
+  }
+ ]
+}

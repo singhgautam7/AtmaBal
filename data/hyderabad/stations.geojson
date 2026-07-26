@@ -1,0 +1,950 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.363026,
+     17.438243
+    ]
+   },
+   "properties": {
+    "id": "women-0",
+    "name": "Women police station",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.476139,
+     17.38898
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "abids police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.49173,
+     17.377938
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Chaderghat Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.479458,
+     17.367155
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Deputy Commissioner of Police Office (South Zone)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.48521,
+     17.394662
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "ABIDS Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.480489,
+     17.363619
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "میر چوک تھانہ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.460742,
+     17.378408
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Mangalhat Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.488192,
+     17.361747
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "ریان بازار تھانہ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.489819,
+     17.397857
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Narayanaguda police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.460378,
+     17.400089
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Nampally Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.462832,
+     17.402653
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Saifabad Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.501053,
+     17.358641
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Madannapet police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.448434,
+     17.374818
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Tappachabutra Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.460165,
+     17.355979
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "کامتی پورہ تھانہ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.512004,
+     17.370486
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Malakpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.509166,
+     17.36207
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "سعیدآباد تھانہ",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.464608,
+     17.411087
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Saifabad Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.516959,
+     17.386332
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Dcp Office East Zone Amberpet",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.516741,
+     17.38991
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Amberpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.517429,
+     17.387195
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Police training center",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.518244,
+     17.389303
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Amberpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.442229,
+     17.39555
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Humayun Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.513311,
+     17.407697
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Nallakunta Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.500299,
+     17.419353
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Musheerabad- Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.52766,
+     17.368319
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Saroornagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.52769,
+     17.368156
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.452375,
+     17.426243
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Punjagutta Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.508301,
+     17.333689
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Kanchanbagh Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.488475,
+     17.436164
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Ramgopalpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.48835,
+     17.43621
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Ramgopalpet old police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.49096,
+     17.436026
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Mahankali Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.513215,
+     17.430311
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Chilkalguda Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.435741,
+     17.422399
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Banjara Hills Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.525957,
+     17.421527
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Osmania University Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.479125,
+     17.440561
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Ramgopalpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.474784,
+     17.443961
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Begumpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.445601,
+     17.440071
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Sanjeev Reddy Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.447843,
+     17.441429
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "SR Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.517481,
+     17.445106
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Tukaram Gate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.551573,
+     17.346778
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "LB Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.560227,
+     17.402203
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Uppal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.500045,
+     17.458988
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Karkhana Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.472566,
+     17.464851
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Bowenpally Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.537414,
+     17.44987
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Malkajgiri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.41403,
+     17.453333
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Old Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.56901,
+     17.332011
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "vanasthalipuram police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.39589,
+     17.439398
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Madhapur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.396074,
+     17.439873
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Madhapur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.380577,
+     17.423342
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Raidurgam, Cyberabad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.474138,
+     17.264146
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Pahadishareef Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.601109,
+     17.407588
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Medipally Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.60113,
+     17.40765
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Medipally Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.415172,
+     17.481597
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.570848,
+     17.472752
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Kushaiguda Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.511667,
+     17.50404
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Alwal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.448492,
+     17.50919
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Jeedimetla Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.353765,
+     17.443513
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Gachibowli Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.422701,
+     17.506386
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Jagadgirigutta Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3957,
+     17.49674
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "KPHB Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.434679,
+     17.534999
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.347549,
+     17.496417
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Miyapur Police Strion",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.324924,
+     17.496203
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Chanda Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.316331,
+     17.494456
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "Ramachndrapuram Police Station",
+    "type": "police"
+   }
+  }
+ ]
+}

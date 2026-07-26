@@ -1,9 +1,9 @@
 /**
- * Diya (oil lamp) brand mark — "warmth and courage lit from within" (HANDOFF v2).
+ * Diya (oil lamp) brand mark - "warmth and courage lit from within" (HANDOFF v2).
  * One clear silhouette, terracotta on warm cream. Used in the in-app header and
  * the installed-app (home-screen) icon only.
  *
- * NOTE (plumbing rule): the diya is NOT the browser favicon — the tab icon stays
+ * NOTE (plumbing rule): the diya is NOT the browser favicon - the tab icon stays
  * neutral so the subject isn't flagged to someone glancing at the tab or history.
  */
 export function DiyaMark({ size = 28 }: { size?: number }) {

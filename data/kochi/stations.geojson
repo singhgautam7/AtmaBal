@@ -1,0 +1,1130 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.356695,
+     10.104204
+    ]
+   },
+   "properties": {
+    "id": "women-0",
+    "name": "Aluva Women Cell",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.279555,
+     9.974048
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Office of the Commissioner of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.291252,
+     9.968233
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Kerala Railway Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.268469,
+     9.960668
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Janamaithri Police Station, Kochi Harbour",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.297022,
+     9.970175
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Janamythri Police Station, Kadavantra",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.276181,
+     9.987066
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Central Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.275914,
+     9.987051
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Central Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.276163,
+     9.987113
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "ACP Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.282699,
+     9.98887
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Police Station, ET North Cusba",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.259474,
+     9.959682
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Police Station, Mattanchery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.292634,
+     9.950256
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Ernakulam Town South Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.291709,
+     9.949422
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Police Aid Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.289174,
+     9.996015
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Cerebtec Technologies pvt.ltd",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.251554,
+     9.968922
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Coastal Police Station , Ernakulam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.251274,
+     9.96918
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Customs",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.285703,
+     9.941805
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Naval Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.244275,
+     9.973571
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Fisheries Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.244036,
+     9.967351
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Fort Kochi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.261884,
+     9.937481
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Police Station, Thoppumpady",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.321164,
+     9.969531
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Police Aid Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.305898,
+     10.00255
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Janamythri Police Station, Palarivattom",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.290488,
+     10.012008
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Police Station , Elamakkara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.271438,
+     9.927548
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Police Station, Palluruthy",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.256258,
+     10.014196
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Police Station,Mulavukad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.328226,
+     9.936513
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Maradu Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.307723,
+     10.024613
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Police Aid Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.315497,
+     9.918472
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Hill Palace Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.316606,
+     9.908074
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Police Station,Panangad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.350558,
+     9.942692
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Inspector General of Police, Crime Branch Ernakulam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.350393,
+     9.941978
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Police Station, Tripunitura",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.352086,
+     9.936049
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Police Quarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.361028,
+     9.954723
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Armed Reserve Police Parade Ground",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.360905,
+     9.953622
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Hill Palace Police Camp",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.361006,
+     9.954078
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Armed Reserve Police Station, Thrippunithura",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.345356,
+     10.02081
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Janamaithri Police Station,Thrikkakara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.317075,
+     10.046255
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Police Station,Kalamassery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.26093,
+     9.885995
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Police Station,Kannamaly",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.287661,
+     10.056771
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Police Station,Cheranalloor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.33851,
+     10.036673
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Police aid post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.361526,
+     10.006975
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Infopark Police Station and Cyber Crime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.288087,
+     9.879134
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "Kumbalanghi,Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.219029,
+     10.039221
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Njarakkal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.219034,
+     10.039231
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Police Station,Njarakkal",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.288384,
+     10.061617
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Police Signal Control",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.364715,
+     9.913829
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Police Station,Udayamperoor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.272338,
+     10.071041
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Police Station,Varapuzha",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.300192,
+     10.074123
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Eloor Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.390676,
+     9.932621
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Police Station,Chottanikkara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.39934,
+     9.989373
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Police Station,Ambalamedu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.307006,
+     9.851776
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Police Station,Aroor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.392126,
+     9.901528
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Police Station, Mulanthuruthy",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.320764,
+     10.096137
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Police Station,Binanipuram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.357487,
+     10.100076
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Ernakulam Rural DSP office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.436141,
+     9.970254
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Police Station , Puthencruz",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.436154,
+     9.970234
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "puthencurz police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.358783,
+     10.102797
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Police Station,Aluva East",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.351046,
+     10.108327
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Police Aid Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.300283,
+     10.126827
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Police Station,Aluva West",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.342707,
+     10.119669
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "Police Aid Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.394373,
+     10.089745
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police Station,Edathala",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.450597,
+     10.023554
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Police Station,Kunnathunadu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.353443,
+     9.806442
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Police Station , Poochakkal",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.316458,
+     9.792584
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "Police Station , Kuthiathode",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.231144,
+     10.147768
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "Police Station,North Paravur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.231043,
+     10.148167
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Office Of Circle Inspector Of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.231099,
+     10.148366
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "highway police k-24 n paravur",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.429862,
+     10.086879
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Police Station,Thadiyittaparambu",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.338367,
+     10.151219
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.338499,
+     10.152024
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Police Station,Chengamanad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.392808,
+     10.160003
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "Police Station,Nedumbassery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.181391,
+     10.16949
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "Police Station,Munambam",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.181465,
+     10.169685
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "Pallipuram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.476149,
+     9.826778
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "Police Station, Velloor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.475971,
+     10.115198
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Police Station,Perumbavoor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.442888,
+     9.786404
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "Police Station, Thalayolaparambu",
+    "type": "police"
+   }
+  }
+ ]
+}

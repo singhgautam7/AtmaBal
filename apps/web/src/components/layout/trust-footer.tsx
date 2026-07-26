@@ -3,8 +3,8 @@ import { LocaleLink } from './locale-link';
 import { IconLock } from '@/components/icons';
 
 /**
- * Trust footer (design.md): the "we store nothing" statement — architecturally
- * true here (static site, no server, no analytics) — plus a corrections link.
+ * Trust footer (design.md): the "we store nothing" statement - architecturally
+ * true here (static site, no server, no analytics) - plus a corrections link.
  * No contact email at launch, per the owner's decision. Kept compact (one row on
  * desktop) so it doesn't dominate a short page.
  */

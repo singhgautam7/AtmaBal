@@ -31,18 +31,18 @@
     "safeBrowsing": "Browsing safely: Quick exit leaves at once, but it can’t erase your history."
   },
   "localeNotice": {
-    "message": "This page isn’t available in {language} yet — showing English."
+    "message": "This page isn’t available in {language} yet - showing English."
   },
   "hero": {
     "eyebrow": "For women in India",
-    "title": "आत्म बल — the courage to stand for yourself.",
-    "lede": "A quiet place, made for women across India, to understand what the numbers really say, know your rights in plain language, and find real help — on your own terms.",
+    "title": "आत्म बल - the courage to stand for yourself.",
+    "lede": "A quiet place, made for women across India, to understand what the numbers really say, know your rights in plain language, and find real help - on your own terms.",
     "cityNote": "Starting with Bengaluru. More cities coming soon.",
     "reassurance": "Free · Private · You choose every step. Nothing here judges the choice you make.",
     "entries": {
       "crime": {
         "title": "Crime in your city",
-        "desc": "What the numbers actually say — by category."
+        "desc": "What the numbers actually say - by category."
       },
       "options": {
         "title": "Know your options",
@@ -63,19 +63,19 @@
     "title": "Crime in {city}",
     "cityLabel": "City",
     "changeCity": "Change city",
-    "howToRead": "How to read this: every number is <strong>reported cases</strong>, not total incidents — a rising line can mean more reporting, not more danger.",
+    "howToRead": "How to read this: every number is <strong>reported cases</strong>, not total incidents - a rising line can mean more reporting, not more danger.",
     "trend": {
-      "up": "Reported crimes against women in {city} rose from {from} in {y0} to {to} in {y1} — about {pct}% over these years. Much of that reflects more reporting and easier access, not necessarily more crime.",
-      "down": "Reported crimes against women in {city} fell from {from} in {y0} to {to} in {y1} — about {pct}% over these years.",
+      "up": "Reported crimes against women in {city} rose from {from} in {y0} to {to} in {y1} - about {pct}% over these years. Much of that reflects more reporting and easier access, not necessarily more crime.",
+      "down": "Reported crimes against women in {city} fell from {from} in {y0} to {to} in {y1} - about {pct}% over these years.",
       "flat": "Reported crimes against women in {city} held roughly steady, from {from} in {y0} to {to} in {y1}."
     },
-    "trendChartTitle": "Total reported cases · {y0}–{y1}",
+    "trendChartTitle": "Total reported cases · {y0}-{y1}",
     "byYearTitle": "Year by year",
     "perHead": {
       "title": "How the total breaks down by offence"
     },
     "illustrativeBadge": "Illustrative breakdown",
-    "illustrativeNote": "Totals, rates and charge-sheeting are real NCRB data. The split across offence types below is an illustrative estimate — NCRB doesn’t publish a per-offence breakdown at city level for major metros.",
+    "illustrativeNote": "Totals, rates and charge-sheeting are real NCRB data. The split across offence types below is an illustrative estimate - NCRB doesn’t publish a per-offence breakdown at city level for major metros.",
     "measureLabel": { "cases": "Cases registered", "victims": "Victims", "rate": "Rate per lakh women" },
     "mostReported": "Most-reported · {year}",
     "stats": {
@@ -98,11 +98,11 @@
     },
     "scope": { "all": "All", "public": "Public", "domestic": "Domestic" },
     "measure": { "cases": "Cases", "victims": "Victims", "rate": "Rate / lakh" },
-    "caveat": "A rising line usually means more women are reporting — better access and trust — not necessarily more crime. The rate per lakh is the fairest way to compare cities to themselves over time.",
+    "caveat": "A rising line usually means more women are reporting - better access and trust - not necessarily more crime. The rate per lakh is the fairest way to compare cities to themselves over time.",
     "headline": {
-      "all": "Reported crimes against women in Bengaluru have risen across most heads since 2018 — as much a sign of more reporting as of more crime.",
-      "public": "Across public-space heads, reported crime against women in Bengaluru has climbed since 2018 — cyber crime fastest of all.",
-      "domestic": "At home, cruelty by a husband or his relatives is by far the most-reported head — and most have risen since 2020."
+      "all": "Reported crimes against women in Bengaluru have risen across most heads since 2018 - as much a sign of more reporting as of more crime.",
+      "public": "Across public-space heads, reported crime against women in Bengaluru has climbed since 2018 - cyber crime fastest of all.",
+      "domestic": "At home, cruelty by a husband or his relatives is by far the most-reported head - and most have risen since 2020."
     },
     "charts": {
       "overTime": "{measure} over time · total of selected heads",
@@ -118,17 +118,17 @@
     },
     "justice": {
       "eyebrow": "What happens after a case is filed",
-      "title": "Filing is only the start — here’s how cases move through the system, and why evidence and legal aid matter.",
+      "title": "Filing is only the start - here’s how cases move through the system, and why evidence and legal aid matter.",
       "convictionRate": "Conviction rate",
       "convicted": "convicted",
-      "convictionBody": "Completed trials ending in conviction, Karnataka (2023). The rest end in acquittal — usually for want of evidence.",
+      "convictionBody": "Completed trials ending in conviction, Karnataka (2023). The rest end in acquittal - usually for want of evidence.",
       "pendingInvestigation": "Pending police investigation",
-      "pendingInvestigationBody": "Cases still with police at year-end — before any trial begins.",
+      "pendingInvestigationBody": "Cases still with police at year-end - before any trial begins.",
       "pendingTrial": "Pending trial in court",
-      "pendingTrialBody": "40,000+ cases awaiting trial — why timely evidence matters most.",
-      "callout": "These numbers describe the system, not you or your case. Strong evidence and a good lawyer are how cases beat these odds — so preserve evidence early and get legal aid.",
+      "pendingTrialBody": "40,000+ cases awaiting trial - why timely evidence matters most.",
+      "callout": "These numbers describe the system, not you or your case. Strong evidence and a good lawyer are how cases beat these odds - so preserve evidence early and get legal aid.",
       "exploreOptions": "Explore your options",
-      "provisional": "Disposal figures are state-level (Karnataka), provisional — source NCRB. City-level disposal to be added and marked separately."
+      "provisional": "Disposal figures are state-level (Karnataka), provisional - source NCRB. City-level disposal to be added and marked separately."
     },
     "footer": {
       "source": "Source: NCRB “Crime in India” & Bengaluru City Police open data. Figures illustrative for concept; rates use principal-offence counts on a base of ~63 lakh women. No safety score, no city-vs-city comparison.",
@@ -142,16 +142,18 @@
     "mobileTitle": "Get help near you",
     "youAreHere": "You are here",
     "useMyLocation": "Use my location",
+    "myLocation": "My location",
+    "changeCity": "Change city",
     "locating": "Locating…",
     "locDenied": "Location permission is blocked. Allow it in your browser to sort by distance and show where you are.",
     "locUnavailable": "Couldn’t get your location. You can still browse and get directions.",
-    "nearbyCount": "Nearby — {count} places",
+    "nearbyCount": "Nearby - {count} places",
     "byDistance": "by distance",
     "showList": "Show list",
     "showMap": "Show map",
     "verifiedNote": "Police locations from OpenStreetMap; women’s stations and One Stop Centre hand-checked. Report anything wrong via Corrections.",
     "safeBrowsingShort": "Quick exit leaves at once, but it can’t erase your history.",
-    "locationPrivacy": "Your location is used only on your device to sort results — it is never sent anywhere.",
+    "locationPrivacy": "Your location is used only on your device to sort results - it is never sent anywhere.",
     "filters": {
       "all": "All",
       "women": "Women’s police",
@@ -189,17 +191,17 @@
     },
     "step2": {
       "title": "Roughly when did this happen?",
-      "help": "The law changed on 1 July 2024. Knowing which side of that date this falls on lets us cite the correct rights — you can pick “not sure”."
+      "help": "The law changed on 1 July 2024. Knowing which side of that date this falls on lets us cite the correct rights - you can pick “not sure”."
     },
     "step3": {
       "title": "Are you safe right now?",
-      "help": "This doesn’t change your options below — it only decides whether to show immediate help first. You never have to answer.",
+      "help": "This doesn’t change your options below - it only decides whether to show immediate help first. You never have to answer.",
       "immediateHelp": "If you’re in danger right now, call 112. You can also open a calm space to breathe.",
       "callNow": "Call 112",
       "takeMoment": "Take a moment"
     },
     "step4": {
-      "title": "Today, do you want to act — or just understand?",
+      "title": "Today, do you want to act - or just understand?",
       "help": "Both are completely valid. This only changes what we show first; every option stays available."
     },
     "what": {
@@ -212,9 +214,9 @@
       "street": "Street harassment / eve-teasing",
       "acid": "An acid attack or threat",
       "kidnapping": "Kidnapping or abduction",
-      "trafficking": "Trafficking — being forced, moved or sold",
+      "trafficking": "Trafficking - being forced, moved or sold",
       "pocso": "A child has been sexually abused",
-      "unsure": "I’m not sure yet — I just want to understand"
+      "unsure": "I’m not sure yet - I just want to understand"
     },
     "when": {
       "before": "Before 1 July 2024",
@@ -232,7 +234,7 @@
     },
     "regimeNote": {
       "bns_bnss": "Citations below are under the BNS/BNSS (in force since 1 July 2024).",
-      "ipc_crpc": "This happened under the earlier IPC/CrPC. The rights are the same in substance, but the exact section numbers differ — we show the verified current-law reference and flag it rather than guess the old number.",
+      "ipc_crpc": "This happened under the earlier IPC/CrPC. The rights are the same in substance, but the exact section numbers differ - we show the verified current-law reference and flag it rather than guess the old number.",
       "unsure": "We’re showing the current-law (BNS/BNSS) references. If your incident was before 1 July 2024, the rights are the same in substance but section numbers differ."
     },
     "outcome": {
@@ -260,7 +262,7 @@
   "grounding": {
     "eyebrow": "Take a moment",
     "title": "You’re going to be okay.",
-    "body": "There’s no rush, and nothing you have to decide right now. Take a few breaths. Stay here as long as you need — then choose what feels right.",
+    "body": "There’s no rush, and nothing you have to decide right now. Take a few breaths. Stay here as long as you need - then choose what feels right.",
     "bodyShort": "There’s no rush and nothing you have to decide right now. Stay here as long as you need.",
     "breatheIn": "Breathe in slowly",
     "hold": "Hold your breath",
@@ -270,7 +272,7 @@
     "callTeleManas": "Talk to Tele-MANAS · 14416"
   },
   "footer": {
-    "storeNothing": "We store nothing. This site is served as static files — there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
+    "storeNothing": "We store nothing. This site is served as static files - there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
     "dataSources": "Data & sources",
     "corrections": "Something wrong or out of date? Corrections",
     "sourcesReviewed": "Every legal point and helpline carries a source and a review date."

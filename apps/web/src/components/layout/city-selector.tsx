@@ -7,9 +7,9 @@ import { getCities } from '@/data/loaders';
 import { IconPin, IconChevronDown } from '@/components/icons';
 
 /**
- * Global city selector — lists every city with data; choosing one opens its
+ * Global city selector - lists every city with data; choosing one opens its
  * crime dashboard (/crime?city=<id>). Includes a search box (19 cities). No
- * "Live" badge — the map-availability nuance is noted in the footer line.
+ * "Live" badge - the map-availability nuance is noted in the footer line.
  */
 export function CitySelector({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
   const t = useTranslations('city');

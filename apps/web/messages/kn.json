@@ -1,6 +1,6 @@
 {
   "meta": {
     "translation_complete": false,
-    "_note": "Scaffold only. Kannada is not populated at launch — the app falls back to English with a visible notice. See specs/i18n.md. Kannada matters most in Bengaluru, so legal strings here must be machine-drafted then human-verified before shipping."
+    "_note": "Scaffold only. Kannada is not populated at launch - the app falls back to English with a visible notice. See specs/i18n.md. Kannada matters most in Bengaluru, so legal strings here must be machine-drafted then human-verified before shipping."
   }
 }

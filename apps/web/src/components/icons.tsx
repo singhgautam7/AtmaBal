@@ -3,7 +3,7 @@ import type { SVGProps } from 'react';
 /**
  * Shared line-icon set, matching the design concept's inline SVGs. All are
  * `stroke="currentColor"` so colour follows text; decorative by default
- * (aria-hidden) — pair with a text label for meaning, never colour/shape alone.
+ * (aria-hidden) - pair with a text label for meaning, never colour/shape alone.
  */
 type IconProps = SVGProps<SVGSVGElement> & { size?: number };
 
@@ -151,6 +151,16 @@ export function IconExit(p: IconProps) {
   return (
     <svg {...base({ size: 12, strokeWidth: 1.6, ...p })} viewBox="0 0 12 12">
       <path d="M3 9L9 3M5 3h4v4" />
+    </svg>
+  );
+}
+
+/** "Locate me" crosshair - clearer than a pin for the my-location action. */
+export function IconLocate(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
     </svg>
   );
 }

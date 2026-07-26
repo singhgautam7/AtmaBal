@@ -1,0 +1,440 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.083559,
+     21.144064
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.080338,
+     21.144299
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "Sitabuldi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.100796,
+     21.142706
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Ganeshpeth Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.085355,
+     21.137389
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Police Station Dhantoli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.072517,
+     21.154594
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Police Control Room Nagpur City",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.076687,
+     21.163224
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Golchha Marg Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.102793,
+     21.164244
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Police Station Pachpaoli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.071402,
+     21.161774
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Sadar Solan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.112832,
+     21.147774
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Lakdapul Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.085425,
+     21.123399
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Police Station-Ajni",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.097476,
+     21.123026
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Ajni Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.114072,
+     21.129421
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Sakkardara Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.068769,
+     21.125868
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Bajajnagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.055379,
+     21.148586
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Ambazari Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.122057,
+     21.136913
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Nandanvan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.122102,
+     21.130454
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Nandanvan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.060918,
+     21.173675
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Gittikhadan Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.091877,
+     21.188689
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Jaripatka Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.060565,
+     21.118635
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Regional Police Training School",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.125586,
+     21.181333
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Yashodhara Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.117185,
+     21.105796
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Hudkeshwar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.14559,
+     21.162799
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Kalamana Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.039834,
+     21.115537
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "RanaPratapnagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.064358,
+     21.090538
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Sonegao Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.011034,
+     21.124765
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "MIDC Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.991495,
+     21.147363
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Wadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.191799,
+     21.215488
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Kamptee Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.233885,
+     21.225507
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Police Station Kanhan",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.911444,
+     21.234093
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Police Station Kalmeshwar",
+    "type": "police"
+   }
+  }
+ ]
+}

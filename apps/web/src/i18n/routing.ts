@@ -3,7 +3,7 @@
  *
  * Locale-prefixed routes (`/en`, `/hi`, `/kn`) exist from day one so adding a
  * language later is drop-in, not a refactor. **English is the only populated
- * locale at launch** — see specs/i18n.md. Hindi and Kannada resolve to English
+ * locale at launch** - see specs/i18n.md. Hindi and Kannada resolve to English
  * with a visible "not yet available" note; we never mix languages on a page.
  */
 export const locales = ['en', 'hi', 'kn'] as const;
