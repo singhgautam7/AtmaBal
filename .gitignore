@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Bun
+bun.lockb
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Production build
+build/
+dist/
+
+# Testing
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Python / pipeline
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Design references — local only, never pushed (see conversation with owner)
+design-assets/
+
+# Planning docs — kept private for now (owner's request). Includes the moved
+# START_HERE.md / BOOTSTRAP_PROMPT.md.
+specs/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

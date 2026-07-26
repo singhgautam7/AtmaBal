@@ -1,0 +1,169 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/*
+ * Map the design tokens into Tailwind's theme so utilities like `bg-paper`,
+ * `text-ink-soft`, `border-line`, `rounded-md`, `font-display` resolve to the
+ * single source of truth in tokens.css.
+ */
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-line: var(--accent-line);
+
+  --color-data-public: var(--data-public);
+  --color-data-domestic: var(--data-domestic);
+  --color-conv: var(--conv);
+  --color-acq: var(--acq);
+
+  --color-cat-3: var(--cat-3);
+  --color-cat-4: var(--cat-4);
+  --color-cat-5: var(--cat-5);
+  --color-cat-6: var(--cat-6);
+  --color-cat-7: var(--cat-7);
+  --color-cat-8: var(--cat-8);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  --radius-lg: var(--radius-lg);
+  --radius-md: var(--radius-md);
+  --radius-sm: var(--radius-sm);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+  }
+
+  /* Visible, consistent focus for keyboard users (a11y — users may be
+     one-handed, at night, stressed). Never remove focus styling. */
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  a {
+    color: var(--accent-deep);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--accent);
+  }
+}
+
+/* Respect users who ask for less motion (breathing animation, transitions). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Page-transition enter animation (replayed on every route change by template.tsx). */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: pageEnter 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Screen-reader-only utility. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * Guided box-breathing animation for the grounding page (CSS-driven, matching
+ * the concept's @keyframes). Three 4s phases over a 12s loop.
+ */
+@keyframes brFill0 {
+  0% { width: 0; }
+  33.33% { width: 100%; }
+  100% { width: 100%; }
+}
+@keyframes brFill1 {
+  0%, 33.33% { width: 0; }
+  66.66% { width: 100%; }
+  100% { width: 100%; }
+}
+@keyframes brFill2 {
+  0%, 66.66% { width: 0; }
+  100% { width: 100%; }
+}
+@keyframes brLbl0 {
+  0%, 30% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}
+@keyframes brLbl1 {
+  0%, 33% { opacity: 0; }
+  36%, 63% { opacity: 1; }
+  66%, 100% { opacity: 0; }
+}
+@keyframes brLbl2 {
+  0%, 66% { opacity: 0; }
+  69%, 97% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes brGlow {
+  0%, 100% { opacity: 0.35; transform: translate(-50%, -50%) scale(0.85); }
+  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.12); }
+}
+
+/* Grounding page — slow drifting ambient blobs behind the content. */
+@keyframes gFloatA {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.55; }
+  50% { transform: translate(6%, -5%) scale(1.15); opacity: 0.8; }
+}
+@keyframes gFloatB {
+  0%, 100% { transform: translate(0, 0) scale(1.1); opacity: 0.5; }
+  50% { transform: translate(-7%, 6%) scale(0.92); opacity: 0.75; }
+}
+@keyframes gFloatC {
+  0%, 100% { transform: translate(0, 0) scale(0.95); opacity: 0.4; }
+  50% { transform: translate(4%, 8%) scale(1.1); opacity: 0.65; }
+}
+
+/* Print stylesheet: the options outcome must be carryable to a station/lawyer. */
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+}

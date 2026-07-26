@@ -1,0 +1,6 @@
+{
+  "cities": [
+    { "id": "bengaluru", "name": "Bengaluru", "state": "Karnataka", "isLive": true }
+  ],
+  "comingSoon": true
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "translation_complete": false,
+    "_note": "Scaffold only. Hindi is not populated at launch — the app falls back to English with a visible notice. See specs/i18n.md. Do NOT add machine-translated legal strings here without human review."
+  }
+}

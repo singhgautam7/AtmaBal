@@ -1,0 +1,65 @@
+/*
+ * Design tokens — the single source of truth for colour, type, and radius.
+ *
+ * Derived verbatim from the owner's design concept (design-assets/, gitignored).
+ * Every component references these variables (directly or via the Tailwind theme
+ * in globals.css). Never hardcode a hex or a raw px radius in a component — change
+ * it here so a later reconciliation with the design references stays a one-file job.
+ *
+ * Values invented beyond the concept's :root are marked "invented" and recorded
+ * in design-assets/NOTE.md for the owner to reconcile.
+ */
+:root {
+  /* Surfaces */
+  --canvas: #e7e0d4; /* gallery backdrop in the concept; app itself uses --paper */
+  --paper: #fbf8f2; /* app page background + inner cards */
+  --surface: #ffffff; /* raised cards, inputs */
+
+  /* Ink (text) */
+  --ink: #2a2420;
+  --ink-soft: #5e554c;
+  --ink-faint: #928779;
+
+  /* Hairlines / borders */
+  --line: #e8dfd1;
+  --line-strong: #d8cdbb;
+
+  /* Accent — one grounded terracotta. No alarm red anywhere. */
+  --accent: #be5a38;
+  --accent-deep: #9b4526;
+  --accent-soft: #f5e6db;
+  --accent-line: #e7c7b4;
+
+  /* Data — colour-blind-safe orange/teal pair. Meaning never by colour alone. */
+  --data-public: #be5a38;
+  --data-domestic: #2f6f7b;
+
+  /* Justice / disposal */
+  --conv: #2f6f7b;
+  --acq: #c9bea9;
+
+  /* Extra categorical hues used by the composition donut & map pins.
+     Taken from the concept's catColor()/map palette. */
+  --cat-3: #7a6591; /* violet */
+  --cat-4: #c99a2e; /* amber (also the "pending investigation" bar) */
+  --cat-5: #4e7a5b; /* green */
+  --cat-6: #a85a6e; /* rose */
+  --cat-7: #8c8378; /* warm grey */
+  --cat-8: #5b7da8; /* blue */
+
+  /* Fonts. The --font-* variables are injected by next/font in layout.tsx. */
+  --font-display: var(--font-spectral), Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-plex), system-ui, -apple-system, sans-serif;
+
+  /* Radii */
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 9px;
+
+  /* invented — focus ring, not defined in the concept :root */
+  --focus-ring: #9b4526;
+
+  /* invented — soft elevation used on the concept's device frames */
+  --shadow-card: 0 1px 2px rgba(42, 36, 32, 0.04);
+  --shadow-pop: 0 8px 24px rgba(42, 36, 32, 0.12);
+}

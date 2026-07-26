@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "translation_complete": true,
+    "neutralTitle": "Local City Info",
+    "neutralDescription": "Local city information and reference."
+  },
+  "brand": {
+    "name": "Atma Bala",
+    "forWomen": "For women in India"
+  },
+  "nav": {
+    "crime": "Crime in your city",
+    "options": "Know your options",
+    "help": "Get help",
+    "home": "Home"
+  },
+  "city": {
+    "current": "Bengaluru",
+    "changeLabel": "Change city",
+    "live": "Live",
+    "soon": "Soon",
+    "comingSoon": "More cities coming soon."
+  },
+  "quickExit": {
+    "label": "Quick exit",
+    "hint": "Leave this site quickly",
+    "firstHint": "Leave this site quickly ↗",
+    "safeBrowsing": "Browsing safely: Quick exit leaves at once, but it can’t erase your history."
+  },
+  "localeNotice": {
+    "message": "This page isn’t available in {language} yet — showing English."
+  },
+  "hero": {
+    "eyebrow": "For women in India",
+    "title": "आत्म बल — the courage to stand for yourself.",
+    "lede": "A quiet place, made for women across India, to understand what the numbers really say, know your rights in plain language, and find real help — on your own terms.",
+    "cityNote": "Starting with Bengaluru. More cities coming soon.",
+    "reassurance": "Free · Private · You choose every step. Nothing here judges the choice you make.",
+    "entries": {
+      "crime": {
+        "title": "Crime in your city",
+        "desc": "What the numbers actually say — by category."
+      },
+      "options": {
+        "title": "Know your options",
+        "desc": "Your rights and next steps, in plain language."
+      },
+      "help": {
+        "title": "Get help now",
+        "desc": "Verified helplines and your nearest stations."
+      },
+      "overwhelmed": {
+        "title": "Feeling overwhelmed?",
+        "desc": "A calm space to breathe and steady yourself."
+      }
+    }
+  },
+  "crime": {
+    "eyebrow": "Crime in your city · Bengaluru",
+    "title": "Crime in Bengaluru",
+    "illustrativeBadge": "Illustrative figures",
+    "illustrativeNote": "The chart numbers below are placeholder values, not yet real NCRB data — the data pipeline replaces them. One verified anchor: NCRB recorded 3,924 crimes against women in Bengaluru in 2022.",
+    "howToRead": "How to read this: every number is <strong>reported cases</strong>, not total incidents — a rising line can mean more reporting, not more danger. Rate per lakh is the fairest comparison across years.",
+    "methodology": "Methodology",
+    "filters": {
+      "scope": "Scope",
+      "measure": "Measure",
+      "year": "Year",
+      "crimeHead": "Crime head"
+    },
+    "scope": { "all": "All", "public": "Public", "domestic": "Domestic" },
+    "measure": { "cases": "Cases", "victims": "Victims", "rate": "Rate / lakh" },
+    "stats": {
+      "measureYear": "{measure} · {year}",
+      "ratePerLakh": "Rate per lakh women · {year}",
+      "perWomen": "per 1,00,000 women",
+      "changeVs": "Change vs {year}",
+      "moreReported": "more reported",
+      "fewerReported": "fewer reported",
+      "headsSelected": "{selected} of {total} heads",
+      "mostReported": "Most-reported head · {year}"
+    },
+    "caveat": "A rising line usually means more women are reporting — better access and trust — not necessarily more crime. The rate per lakh is the fairest way to compare years as the city grows.",
+    "headline": {
+      "all": "Reported crimes against women in Bengaluru have risen across most heads since 2018 — as much a sign of more reporting as of more crime.",
+      "public": "Across public-space heads, reported crime against women in Bengaluru has climbed since 2018 — cyber crime fastest of all.",
+      "domestic": "At home, cruelty by a husband or his relatives is by far the most-reported head — and most have risen since 2020."
+    },
+    "charts": {
+      "overTime": "{measure} over time · total of selected heads",
+      "shareByHead": "Share by head · {year}",
+      "yoyByHead": "{current} vs {previous}, by head",
+      "compareTwoYears": "Compare two years, by head",
+      "earlierYear": "Earlier year",
+      "laterYear": "Later year",
+      "compareA": "First year to compare",
+      "compareB": "Second year to compare",
+      "otherHeads": "Other heads",
+      "download": "Download or share this chart"
+    },
+    "justice": {
+      "eyebrow": "What happens after a case is filed",
+      "title": "Filing is only the start — here’s how cases move through the system, and why evidence and legal aid matter.",
+      "convictionRate": "Conviction rate",
+      "convicted": "convicted",
+      "convictionBody": "Completed trials ending in conviction, Karnataka (2023). The rest end in acquittal — usually for want of evidence.",
+      "pendingInvestigation": "Pending police investigation",
+      "pendingInvestigationBody": "Cases still with police at year-end — before any trial begins.",
+      "pendingTrial": "Pending trial in court",
+      "pendingTrialBody": "40,000+ cases awaiting trial — why timely evidence matters most.",
+      "callout": "These numbers describe the system, not you or your case. Strong evidence and a good lawyer are how cases beat these odds — so preserve evidence early and get legal aid.",
+      "exploreOptions": "Explore your options",
+      "provisional": "Disposal figures are state-level (Karnataka), provisional — source NCRB. City-level disposal to be added and marked separately."
+    },
+    "footer": {
+      "source": "Source: NCRB “Crime in India” & Bengaluru City Police open data. Figures illustrative for concept; rates use principal-offence counts on a base of ~63 lakh women. No safety score, no city-vs-city comparison.",
+      "methodologyLink": "Methodology & crime-head mapping",
+      "lastUpdated": "Data last updated: {date}"
+    }
+  },
+  "help": {
+    "eyebrow": "Get help near you · Bengaluru",
+    "title": "Verified help, close to you.",
+    "mobileTitle": "Get help near you",
+    "youAreHere": "You are here",
+    "useMyLocation": "Use my location",
+    "locating": "Locating…",
+    "nearbyCount": "Nearby — {count} places",
+    "byDistance": "by distance",
+    "showList": "Show list",
+    "showMap": "Show map",
+    "verifiedNote": "Police locations from OpenStreetMap; women’s stations and One Stop Centre hand-checked. Report anything wrong via Corrections.",
+    "safeBrowsingShort": "Quick exit leaves at once, but it can’t erase your history.",
+    "locationPrivacy": "Your location is used only on your device to sort results — it is never sent anywhere.",
+    "filters": {
+      "all": "All",
+      "women": "Women’s police",
+      "police": "Police",
+      "osc": "One Stop Centre",
+      "helpline": "Helplines"
+    },
+    "types": {
+      "women": "Women’s Police Station",
+      "police": "Police Station",
+      "osc": "One Stop Centre",
+      "helpline": "Helpline"
+    },
+    "femalePoliceStation": "female police station",
+    "directions": "Directions",
+    "call": "Call {number}",
+    "callFromAnywhere": "Call from anywhere",
+    "mapNote": "Map is illustrative. Browsing safely: Quick exit leaves at once, but it can’t erase your history. Station locations verified against official directories per city.",
+    "overwhelmed": {
+      "title": "Feeling overwhelmed?",
+      "desc": "Open a calm space to breathe →"
+    }
+  },
+  "options": {
+    "eyebrow": "Know your options · Bengaluru",
+    "back": "Back",
+    "stepOf": "{current} of {total}",
+    "privacy": "Nothing you enter here is saved or sent. It stays on your device.",
+    "continue": "Continue",
+    "seeOptions": "See my options",
+    "startOver": "Start over",
+    "step1": {
+      "title": "What happened?",
+      "help": "There’s no wrong answer, and you can change it anytime. Next we’ll ask roughly when, and whether you’re safe right now."
+    },
+    "step2": {
+      "title": "Roughly when did this happen?",
+      "help": "The law changed on 1 July 2024. Knowing which side of that date this falls on lets us cite the correct rights — you can pick “not sure”."
+    },
+    "step3": {
+      "title": "Are you safe right now?",
+      "help": "This doesn’t change your options below — it only decides whether to show immediate help first. You never have to answer.",
+      "immediateHelp": "If you’re in danger right now, call 112. You can also open a calm space to breathe.",
+      "callNow": "Call 112",
+      "takeMoment": "Take a moment"
+    },
+    "step4": {
+      "title": "Today, do you want to act — or just understand?",
+      "help": "Both are completely valid. This only changes what we show first; every option stays available."
+    },
+    "what": {
+      "public": "Something happened in a public place",
+      "home": "Something is happening at home",
+      "work": "Something at my workplace",
+      "online": "Stalking or abuse online",
+      "unsure": "I’m not sure yet — I just want to understand"
+    },
+    "when": {
+      "before": "Before 1 July 2024",
+      "after": "On or after 1 July 2024",
+      "unsure": "I’m not sure of the date"
+    },
+    "safe": {
+      "yes": "Yes, I’m safe right now",
+      "no": "No, I don’t feel safe",
+      "skip": "I’d rather not say"
+    },
+    "posture": {
+      "act": "I want to take a step today",
+      "understand": "I just want to understand my options"
+    },
+    "regimeNote": {
+      "bns_bnss": "Citations below are under the BNS/BNSS (in force since 1 July 2024).",
+      "ipc_crpc": "This happened under the earlier IPC/CrPC. The rights are the same in substance, but the exact section numbers differ — we show the verified current-law reference and flag it rather than guess the old number.",
+      "unsure": "We’re showing the current-law (BNS/BNSS) references. If your incident was before 1 July 2024, the rights are the same in substance but section numbers differ."
+    },
+    "outcome": {
+      "title": "Here are your options. Every one of them is a valid next step.",
+      "lede": "Take the one that feels right for you today. Nothing here commits you to anything.",
+      "lawBehind": "The law behind this",
+      "lawCurrentNote": "Current as of the BNS/BNSS (in force since 1 July 2024). Section references reviewed against the date shown.",
+      "context": {
+        "public": "Because this happened in a public place, these paths fit best.",
+        "home": "Because this is happening at home, these paths fit best.",
+        "work": "Because this happened at your workplace, these paths fit best.",
+        "online": "Because this happened online, these paths fit best.",
+        "unsure": "It’s completely okay to just want to understand today."
+      }
+    }
+  },
+  "grounding": {
+    "eyebrow": "Take a moment",
+    "title": "You’re going to be okay.",
+    "body": "There’s no rush, and nothing you have to decide right now. Take a few breaths. Stay here as long as you need — then choose what feels right.",
+    "bodyShort": "There’s no rush and nothing you have to decide right now. Stay here as long as you need.",
+    "breatheIn": "Breathe in slowly",
+    "hold": "Hold your breath",
+    "breatheOut": "Breathe out slowly",
+    "backHome": "Back to home",
+    "callWomen": "Call Women Helpline · 181",
+    "callTeleManas": "Talk to Tele-MANAS · 14416"
+  },
+  "footer": {
+    "storeNothing": "We store nothing. This site is served as static files — there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
+    "corrections": "Something wrong or out of date? Corrections",
+    "sourcesReviewed": "Every legal point and helpline carries a source and a review date."
+  }
+}

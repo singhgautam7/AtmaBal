@@ -1,0 +1,11 @@
+{
+  "scope": "state",
+  "scopeName": "Karnataka",
+  "year": 2023,
+  "provisional": true,
+  "source": "NCRB (disposal tables, state-level)",
+  "convictionRate": 27,
+  "pendingInvestigationRate": 31,
+  "pendingTrialRate": 86,
+  "pendingTrialCountLabel": "40,000+"
+}

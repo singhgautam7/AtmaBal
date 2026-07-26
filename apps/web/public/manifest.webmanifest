@@ -1,0 +1,19 @@
+{
+  "name": "Atma Bal",
+  "short_name": "Atma Bal",
+  "description": "Understand local data, know your rights, and find help.",
+  "start_url": "/en/",
+  "display": "standalone",
+  "background_color": "#fbf8f2",
+  "theme_color": "#fbf8f2",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

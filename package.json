@@ -1,0 +1,21 @@
+{
+  "name": "atmabal",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Atma Bala — a calm reference tool for women in India: honest local crime data, rights in plain language, and verified help. Static, private, stores nothing.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter @atmabal/web dev",
+    "build": "bun --filter @atmabal/web build",
+    "start": "bun --filter @atmabal/web start",
+    "lint": "bun --filter @atmabal/web lint",
+    "test": "bun --filter @atmabal/web test",
+    "e2e": "bun --filter @atmabal/web e2e",
+    "typecheck": "bun --filter @atmabal/web typecheck"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}

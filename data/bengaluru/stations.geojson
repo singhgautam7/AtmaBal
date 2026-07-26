@@ -1,0 +1,1700 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.567851,
+     12.929227
+    ]
+   },
+   "properties": {
+    "id": "women-0",
+    "name": "Banashankari Women Police Station",
+    "type": "women"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.574019,
+     12.961464
+    ]
+   },
+   "properties": {
+    "id": "osc-sakhi-vanivilas",
+    "name": "Sakhi One Stop Centre · Vani Vilas Hospital",
+    "type": "osc"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.588436,
+     12.977373
+    ]
+   },
+   "properties": {
+    "id": "police-0",
+    "name": "Vidhana Soudha Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.585536,
+     12.981421
+    ]
+   },
+   "properties": {
+    "id": "police-1",
+    "name": "CID Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.594723,
+     12.984089
+    ]
+   },
+   "properties": {
+    "id": "police-2",
+    "name": "Cyber Crime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.59464,
+     12.984479
+    ]
+   },
+   "properties": {
+    "id": "police-3",
+    "name": "Commisioner of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.598231,
+     12.976218
+    ]
+   },
+   "properties": {
+    "id": "police-4",
+    "name": "Cubbon Park Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.598346,
+     12.97624
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Cubbon Park Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.581507,
+     12.980265
+    ]
+   },
+   "properties": {
+    "id": "police-6",
+    "name": "Department of Prisons & Correctional Services",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.592027,
+     12.989582
+    ]
+   },
+   "properties": {
+    "id": "police-7",
+    "name": "Superintendent of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.601028,
+     12.977923
+    ]
+   },
+   "properties": {
+    "id": "police-8",
+    "name": "Additional Director General of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.587855,
+     12.969559
+    ]
+   },
+   "properties": {
+    "id": "police-9",
+    "name": "Police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.587762,
+     12.969537
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Police Headquarters",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.592724,
+     12.990059
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "High Grounds Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.592951,
+     12.990375
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Cybercrime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.607098,
+     12.98257
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Commercial Street Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.578704,
+     12.968018
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Avenue Road Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.592064,
+     12.963254
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Sampangi Rama Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.574432,
+     12.988128
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Seshadripuram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.573639,
+     12.970701
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Chikkapete Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.58313,
+     12.960948
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "S.J. Park Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.576188,
+     12.96494
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Krishna Rajendra Market Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.610204,
+     12.971632
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Ashok Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.570094,
+     12.968092
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Cottenpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.612084,
+     12.991198
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Bharthinagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.578628,
+     13.001573
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Vyali Kaval Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.593412,
+     13.005717
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "JC Nagara Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.572062,
+     12.96013
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Central Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.569671,
+     12.996681
+    ]
+   },
+   "properties": {
+    "id": "police-26",
+    "name": "Maleshwaram Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.564937,
+     12.99005
+    ]
+   },
+   "properties": {
+    "id": "police-27",
+    "name": "Srirampura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.616865,
+     12.969131
+    ]
+   },
+   "properties": {
+    "id": "police-28",
+    "name": "Karnataka State Reserve Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.59612,
+     12.950184
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Wilson Garden Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.56432,
+     12.960477
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Chamarajapet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.570101,
+     12.953873
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Shankarapuram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.625278,
+     12.974781
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Halasuru Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.619613,
+     12.999347
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Pulakeshi Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.555159,
+     12.964359
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "J J R Nagar Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.554366,
+     12.99461
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Rajaji Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.554298,
+     12.994506
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Rajaji Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.613093,
+     13.011415
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "DJ Halli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.55125,
+     12.974486
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Magadi Road Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.594921,
+     12.940615
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "NIMHANS Police Outpost",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.572487,
+     13.014966
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Sadhashivanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.574333,
+     12.942187
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Basavangudi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.59238,
+     12.938872
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Siddapura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.622351,
+     12.951868
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Viveknagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.553759,
+     13.003374
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Subramanyanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.610171,
+     12.939227
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Adugodi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.593196,
+     13.024685
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "RT Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.638406,
+     12.983025
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Indira Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.638411,
+     12.983019
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Indira Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.542602,
+     12.985417
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Basaveshwaranagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.547416,
+     13.002841
+    ]
+   },
+   "properties": {
+    "id": "police-50",
+    "name": "Mahalakshmipuram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.619238,
+     13.019412
+    ]
+   },
+   "properties": {
+    "id": "police-51",
+    "name": "Kadugondanahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.621411,
+     12.941098
+    ]
+   },
+   "properties": {
+    "id": "police-52",
+    "name": "Koramangala Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.558418,
+     13.017886
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Yeshwantpura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.590569,
+     12.928367
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Tilaknagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.561501,
+     12.936343
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.581366,
+     12.928565
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Jayanagar 4th Block Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.537725,
+     12.970726
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "Vijayanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.642578,
+     12.996563
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.567848,
+     12.929436
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Thyagaraja Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.575898,
+     13.03356
+    ]
+   },
+   "properties": {
+    "id": "police-60",
+    "name": "Sanjayanagar Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.560604,
+     12.930133
+    ]
+   },
+   "properties": {
+    "id": "police-61",
+    "name": "Chennamanakere Achukattu Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.589624,
+     13.038619
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "Hebbal Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.536829,
+     13.012468
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Nandini Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.565005,
+     12.922912
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "Banashankari Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.640156,
+     13.019673
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Banaswadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.543968,
+     12.935917
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Girinagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.528382,
+     12.958931
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Chandra Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.655694,
+     12.967771
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "Jeevan Bhima Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.657343,
+     12.991735
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "Baiyyapannahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.553333,
+     12.923555
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "BSK 3rd stage Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.587541,
+     12.911851
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "JP Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.645771,
+     13.02377
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Hennur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.610565,
+     12.908637
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "Mico Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.610698,
+     12.908585
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "Mico Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.665939,
+     13.004188
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Ramamurthy Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.59853,
+     13.05693
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "Amrutahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.562955,
+     12.905094
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Kumaraswamy Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.549567,
+     13.048648
+    ]
+   },
+   "properties": {
+    "id": "police-78",
+    "name": "Jalahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.651303,
+     12.920177
+    ]
+   },
+   "properties": {
+    "id": "police-79",
+    "name": "HSR Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.574109,
+     13.062197
+    ]
+   },
+   "properties": {
+    "id": "police-80",
+    "name": "Kodigehalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.521185,
+     13.036011
+    ]
+   },
+   "properties": {
+    "id": "police-81",
+    "name": "Peenya Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.682808,
+     12.955069
+    ]
+   },
+   "properties": {
+    "id": "police-82",
+    "name": "HAL Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.646326,
+     13.055514
+    ]
+   },
+   "properties": {
+    "id": "police-83",
+    "name": "Kothanur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.520516,
+     12.912812
+    ]
+   },
+   "properties": {
+    "id": "police-84",
+    "name": "Rajarajeshwari Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.667964,
+     12.919015
+    ]
+   },
+   "properties": {
+    "id": "police-85",
+    "name": "Bellanduru Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.491253,
+     12.986768
+    ]
+   },
+   "properties": {
+    "id": "police-86",
+    "name": "Byadarahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.566363,
+     12.883835
+    ]
+   },
+   "properties": {
+    "id": "police-87",
+    "name": "Konanakunte Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.692838,
+     12.996813
+    ]
+   },
+   "properties": {
+    "id": "police-88",
+    "name": "Mahadevpura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.693678,
+     12.996475
+    ]
+   },
+   "properties": {
+    "id": "police-89",
+    "name": "Office Of The Assistant Commissioner Whitefield Subdivision",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.600042,
+     12.87667
+    ]
+   },
+   "properties": {
+    "id": "police-90",
+    "name": "Hulimavu Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.693206,
+     13.008633
+    ]
+   },
+   "properties": {
+    "id": "police-91",
+    "name": "KR Puram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.635601,
+     13.075302
+    ]
+   },
+   "properties": {
+    "id": "police-92",
+    "name": "City Armed Reserve North",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.530192,
+     13.072097
+    ]
+   },
+   "properties": {
+    "id": "police-93",
+    "name": "Gangammagudi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.697947,
+     12.945549
+    ]
+   },
+   "properties": {
+    "id": "police-94",
+    "name": "Marathahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.59381,
+     13.095358
+    ]
+   },
+   "properties": {
+    "id": "police-95",
+    "name": "Yelahanka Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.583962,
+     13.100137
+    ]
+   },
+   "properties": {
+    "id": "police-96",
+    "name": "Office of the Assisstant Commisioner of the Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.536285,
+     12.868946
+    ]
+   },
+   "properties": {
+    "id": "police-97",
+    "name": "Thalaghattapura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.481543,
+     12.910491
+    ]
+   },
+   "properties": {
+    "id": "police-98",
+    "name": "Kengeri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.490758,
+     13.093794
+    ]
+   },
+   "properties": {
+    "id": "police-99",
+    "name": "Soladevanahalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.751139,
+     12.975442
+    ]
+   },
+   "properties": {
+    "id": "police-100",
+    "name": "Whitefield Police Station -Office of the Deputy Commisionner",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.663139,
+     12.839963
+    ]
+   },
+   "properties": {
+    "id": "police-101",
+    "name": "Electronics City Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.746933,
+     12.938025
+    ]
+   },
+   "properties": {
+    "id": "police-102",
+    "name": "Varthur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.757468,
+     12.995384
+    ]
+   },
+   "properties": {
+    "id": "police-103",
+    "name": "Kadugodi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.449857,
+     12.884217
+    ]
+   },
+   "properties": {
+    "id": "police-104",
+    "name": "Kumbalagodu Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.682085,
+     12.826365
+    ]
+   },
+   "properties": {
+    "id": "police-105",
+    "name": "Hebbagodi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.670434,
+     13.140103
+    ]
+   },
+   "properties": {
+    "id": "police-106",
+    "name": "Bagaluru Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.782224,
+     12.987855
+    ]
+   },
+   "properties": {
+    "id": "police-107",
+    "name": "Tirumalashettyhalli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.508513,
+     12.80143
+    ]
+   },
+   "properties": {
+    "id": "police-108",
+    "name": "Kaggalipura Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.403646,
+     13.095895
+    ]
+   },
+   "properties": {
+    "id": "police-109",
+    "name": "Nelamangala Rural Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.783278,
+     12.860643
+    ]
+   },
+   "properties": {
+    "id": "police-110",
+    "name": "Sarjapura Police Station",
+    "type": "police"
+   }
+  }
+ ]
+}

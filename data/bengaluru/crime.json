@@ -1,0 +1,22 @@
+{
+  "city": "bengaluru",
+  "cityName": "Bengaluru",
+  "years": [2018, 2019, 2020, 2021, 2022, 2023, 2024],
+  "populationLakh": 63,
+  "populationBaseNote": "Rates use principal-offence counts on a base of ~63 lakh women.",
+  "lastUpdated": "May 2026",
+  "provisional": true,
+  "heads": [
+    { "id": "rape", "name": "Rape", "scope": "public", "victimFactor": 1.0, "cases": [520, 545, 470, 560, 610, 650, 690] },
+    { "id": "molestation", "name": "Molestation (outrage of modesty)", "scope": "public", "victimFactor": 1.0, "cases": [1400, 1480, 1180, 1520, 1700, 1850, 1990] },
+    { "id": "insult_to_modesty", "name": "Insult to modesty", "scope": "public", "victimFactor": 1.0, "cases": [380, 410, 330, 420, 470, 510, 560] },
+    { "id": "kidnapping_abduction", "name": "Kidnapping & abduction", "scope": "public", "victimFactor": 1.06, "cases": [560, 590, 470, 600, 650, 690, 730] },
+    { "id": "acid_attack", "name": "Acid attack", "scope": "public", "victimFactor": 1.1, "cases": [9, 8, 5, 7, 8, 10, 8] },
+    { "id": "trafficking", "name": "Trafficking", "scope": "public", "victimFactor": 2.4, "cases": [70, 82, 60, 90, 110, 130, 150] },
+    { "id": "cyber", "name": "Cyber crimes against women", "scope": "public", "victimFactor": 1.0, "cases": [140, 180, 220, 320, 460, 600, 760] },
+    { "id": "pocso", "name": "POCSO / child rape", "scope": "public", "victimFactor": 1.0, "cases": [210, 240, 200, 260, 300, 340, 380] },
+    { "id": "cruelty_husband_relatives", "name": "Cruelty by husband / relatives", "scope": "domestic", "victimFactor": 1.0, "cases": [3000, 3200, 2950, 3500, 3800, 4100, 4400] },
+    { "id": "dowry_deaths", "name": "Dowry deaths", "scope": "domestic", "victimFactor": 1.0, "cases": [44, 42, 38, 40, 37, 35, 33] },
+    { "id": "abetment_suicide", "name": "Abetment to suicide", "scope": "domestic", "victimFactor": 1.0, "cases": [66, 70, 66, 72, 78, 81, 85] }
+  ]
+}
