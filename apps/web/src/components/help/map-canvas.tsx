@@ -58,6 +58,7 @@ export function MapCanvas({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mapRef = useRef<any>(null);
   const markersRef = useRef<Map<string, MarkerEntry>>(new Map());
+  const markerCityRef = useRef<string>('');
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const userMarkerRef = useRef<any>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -111,6 +112,15 @@ export function MapCanvas({
     const gl = glRef.current;
     if (!map || !gl) return;
 
+    // City changed: marker ids (police-0, women-0, ...) repeat across cities, so
+    // clear them all first, otherwise the new city's markers get skipped as
+    // "already present" and the old city's pins linger off-screen.
+    if (markerCityRef.current !== cityId) {
+      markersRef.current.forEach((entry) => entry.marker.remove());
+      markersRef.current.clear();
+      markerCityRef.current = cityId;
+    }
+
     const wanted = new Set(places.filter((p) => p.lat != null && p.lng != null).map((p) => p.id));
     markersRef.current.forEach((entry, id) => {
       if (!wanted.has(id)) {
@@ -135,7 +145,7 @@ export function MapCanvas({
       markersRef.current.set(p.id, { marker, inner, type: p.type });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [places, ready]);
+  }, [places, ready, cityId]);
 
   // Restyle for selection (in place - never replace the element) + pan to it.
   useEffect(() => {

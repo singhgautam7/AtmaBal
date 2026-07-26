@@ -74,6 +74,12 @@
     "perHead": {
       "title": "How the total breaks down by offence"
     },
+    "totalOverTime": "Total reported cases · {y0}-{y1}",
+    "breakdownTitle": "Breakdown by offence type",
+    "notAvailable": {
+      "badge": "Data not available yet",
+      "note": "NCRB doesn't publish a per-offence breakdown at city level for major metros. We won't show an estimate on a page people rely on - we'll add real figures here when they're available."
+    },
     "illustrativeBadge": "Illustrative breakdown",
     "illustrativeNote": "Totals, rates and charge-sheeting are real NCRB data. The split across offence types below is an illustrative estimate - NCRB doesn’t publish a per-offence breakdown at city level for major metros.",
     "measureLabel": { "cases": "Cases registered", "victims": "Victims", "rate": "Rate per lakh women" },
