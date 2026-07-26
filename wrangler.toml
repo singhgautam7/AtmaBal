@@ -1,0 +1,16 @@
+# Cloudflare PAGES config (repo root). This is a static Next.js export → Pages,
+# NOT Workers. The Next app lives in apps/web and exports to apps/web/out.
+#
+# Cloudflare Pages → Settings → Builds & deployments (use these EXACT values):
+#   Root directory (Build system):   /            (leave as repo root — default)
+#   Build command:                    cd apps/web && bunx next build
+#   Build output directory:           apps/web/out
+#
+# This wrangler.toml tells Pages where the output is; the build command above is
+# the important bit — the earlier failure was `bunx next build` running at the
+# repo root (no app dir there), so it MUST cd into apps/web first.
+#
+# CLI deploy from repo root: `bunx wrangler pages deploy`
+name = "atmabal"
+compatibility_date = "2025-06-01"
+pages_build_output_dir = "apps/web/out"
