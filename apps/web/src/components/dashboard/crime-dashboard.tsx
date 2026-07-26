@@ -182,6 +182,12 @@ export function CrimeDashboard({
         </div>
       </div>
 
+      {/* Compare any two years - uses only the REAL totals, so it needs no
+          per-offence breakdown. This is what "Compare two years" now means. */}
+      <div className="mt-4">
+        <CompareTwoYears totals={crime.totals} years={years} cityId={cityId} />
+      </div>
+
       {justice && <JusticeSection justice={justice} />}
 
       {/* Footer / sources */}
@@ -197,6 +203,85 @@ export function CrimeDashboard({
 }
 
 /* ---------------------------------------------------------------- bits ---- */
+
+function CompareTwoYears({ totals, years, cityId }: { totals: Record<string, number>; years: number[]; cityId: string }) {
+  const t = useTranslations('crime.charts');
+  const first = years[0]!;
+  const last = years[years.length - 1]!;
+  const [a, setA] = useState<number>(first);
+  const [b, setB] = useState<number>(last);
+  // Reset the picked years when the city changes.
+  const [ck, setCk] = useState<string>(cityId);
+  if (ck !== cityId) {
+    setCk(cityId);
+    setA(first);
+    setB(last);
+  }
+
+  const va = totals[String(a)] ?? 0;
+  const vb = totals[String(b)] ?? 0;
+  const max = Math.max(va, vb, 1);
+  const pct = va ? Math.round(((vb - va) / va) * 100) : 0;
+
+  return (
+    <div className="rounded-md border border-line bg-surface p-4">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div className="text-[13px] font-semibold text-ink-soft">{t('compareTwoYears')}</div>
+        <div className="flex items-center gap-2 text-[13px]">
+          <YearPicker label={t('earlierYear')} value={a} years={years} onChange={setA} />
+          <span className="text-ink-faint">vs</span>
+          <YearPicker label={t('laterYear')} value={b} years={years} onChange={setB} />
+        </div>
+      </div>
+      <div className="space-y-3.5">
+        <CompareBar year={a} value={va} frac={va / max} tone="prev" />
+        <CompareBar year={b} value={vb} frac={vb / max} tone="cur" />
+      </div>
+      <p className="mt-3.5 text-[12.5px] leading-snug text-ink-soft">
+        {pct === 0
+          ? t('compareSame', { y0: a, y1: b })
+          : t('compareChange', { pct: Math.abs(pct), dir: pct > 0 ? t('compareMore') : t('compareFewer'), y0: a, y1: b })}
+      </p>
+    </div>
+  );
+}
+
+function YearPicker({ label, value, years, onChange }: { label: string; value: number; years: number[]; onChange: (y: number) => void }) {
+  return (
+    <label className="inline-flex items-center">
+      <span className="sr-only">{label}</span>
+      <select
+        value={value}
+        onChange={(e) => onChange(+e.target.value)}
+        aria-label={label}
+        className="cursor-pointer rounded-md border border-line bg-paper px-2.5 py-1.5 text-[13px] font-semibold text-ink"
+      >
+        {years.map((y) => (
+          <option key={y} value={y}>
+            {y}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+function CompareBar({ year, value, frac, tone }: { year: number; value: number; frac: number; tone: 'cur' | 'prev' }) {
+  return (
+    <div>
+      <div className="mb-1 flex items-baseline justify-between text-[12.5px]">
+        <span className="font-display text-[15px] font-semibold text-ink">{year}</span>
+        <span className="text-ink-soft">{fmtN(value)} reported</span>
+      </div>
+      <div className="h-3.5 overflow-hidden rounded-full bg-line">
+        <div
+          className="h-full rounded-full transition-[width] duration-300"
+          style={{ width: `${Math.max(2, frac * 100)}%`, background: tone === 'cur' ? 'var(--data-public)' : 'var(--data-domestic)' }}
+        />
+      </div>
+    </div>
+  );
+}
 
 function StatCard({ label, value, sub, dir }: { label: string; value: string; sub: string; dir?: 'up' | 'down' | 'flat' }) {
   return (

@@ -6,3 +6,9 @@
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
   Permissions-Policy: geolocation=(self), camera=(), microphone=()
+
+# The generated share image is emitted without a file extension, so pin its type
+# explicitly - with nosniff on, scrapers reject it unless the Content-Type is exact.
+/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400

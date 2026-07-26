@@ -28,30 +28,37 @@ const plex = IBM_Plex_Sans({
   display: 'swap',
 });
 
-// DISCREET PLUMBING (design.md, safety-critical): the browser tab title, favicon
-// and share preview must NOT flag the subject of this app to someone glancing at
-// a shared device, its history, or a shared link. So the chrome is deliberately
-// neutral/boring. The diya brand mark is used only INSIDE the app (hero header)
-// and as the installed-app icon in the web manifest - never as the favicon.
+// Two audiences, two identities (deliberate):
+//   - BROWSER CHROME stays neutral - the tab title / history entry must not flag
+//     the subject to someone glancing at a shared device. (design.md discreet plumbing.)
+//   - The LINK PREVIEW is branded - a link is shared on purpose (to recommend the
+//     tool), so the WhatsApp/Instagram/Snapchat card should look like a real,
+//     trustworthy product, not a blank "Local Info" card. The share image comes
+//     from app/opengraph-image.tsx (auto-wired to og:image + twitter:image).
 const NEUTRAL_TITLE = 'Local Info & Resources';
 const NEUTRAL_DESCRIPTION = 'Local information, guides and resources.';
+const BRAND_TITLE = 'Atma Bal - know your rights, find help';
+const BRAND_DESCRIPTION =
+  'Understand crime in your city, know your legal options, and find verified helplines and stations. For women in India. We store nothing.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://atmabal.in'),
+  // Tab title / document title stay neutral.
   title: { default: NEUTRAL_TITLE, template: '%s · Local Info' },
   description: NEUTRAL_DESCRIPTION,
-  // Neutral tab icon via the app/icon.svg file convention (a plain document glyph).
   manifest: '/manifest.webmanifest',
   robots: { index: true, follow: true },
+  // Share preview is branded.
   openGraph: {
     type: 'website',
-    title: NEUTRAL_TITLE,
-    description: NEUTRAL_DESCRIPTION,
+    siteName: 'Atma Bal',
+    title: BRAND_TITLE,
+    description: BRAND_DESCRIPTION,
   },
   twitter: {
-    card: 'summary',
-    title: NEUTRAL_TITLE,
-    description: NEUTRAL_DESCRIPTION,
+    card: 'summary_large_image',
+    title: BRAND_TITLE,
+    description: BRAND_DESCRIPTION,
   },
 };
 
