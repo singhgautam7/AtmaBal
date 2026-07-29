@@ -1365,6 +1365,441 @@
     "name": "police station s11",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2427681,
+     13.0596173
+    ]
+   },
+   "properties": {
+    "id": "police-91",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192063,
+     12.9814685
+    ]
+   },
+   "properties": {
+    "id": "police-92",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2674177,
+     13.03694
+    ]
+   },
+   "properties": {
+    "id": "police-93",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2060352,
+     12.9651635
+    ]
+   },
+   "properties": {
+    "id": "police-94",
+    "name": "Police booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2771688,
+     13.1244932
+    ]
+   },
+   "properties": {
+    "id": "police-95",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2041548,
+     13.0576855
+    ]
+   },
+   "properties": {
+    "id": "police-96",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2416251,
+     12.947613
+    ]
+   },
+   "properties": {
+    "id": "police-97",
+    "name": "J9 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1999165,
+     13.0229741
+    ]
+   },
+   "properties": {
+    "id": "police-98",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.0615864,
+     12.8439226
+    ]
+   },
+   "properties": {
+    "id": "police-99",
+    "name": "Guduvancherry Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2271771,
+     12.8469006
+    ]
+   },
+   "properties": {
+    "id": "police-100",
+    "name": "Thalambur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.0585425,
+     13.1037724
+    ]
+   },
+   "properties": {
+    "id": "police-101",
+    "name": "Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.0624155,
+     13.1222511
+    ]
+   },
+   "properties": {
+    "id": "police-102",
+    "name": "T9 Police Station Pattabiram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2674928,
+     12.9931857
+    ]
+   },
+   "properties": {
+    "id": "police-103",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2974617,
+     13.1188229
+    ]
+   },
+   "properties": {
+    "id": "police-104",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2775929,
+     13.0757377
+    ]
+   },
+   "properties": {
+    "id": "police-105",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.186835,
+     12.9738305
+    ]
+   },
+   "properties": {
+    "id": "police-106",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1828617,
+     13.0504496
+    ]
+   },
+   "properties": {
+    "id": "police-107",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1331364,
+     13.0414828
+    ]
+   },
+   "properties": {
+    "id": "police-108",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1295679,
+     12.9339134
+    ]
+   },
+   "properties": {
+    "id": "police-109",
+    "name": "Selaiyur Beat Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2706569,
+     13.0590491
+    ]
+   },
+   "properties": {
+    "id": "police-110",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2873206,
+     13.1231943
+    ]
+   },
+   "properties": {
+    "id": "police-111",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2601445,
+     13.1000303
+    ]
+   },
+   "properties": {
+    "id": "police-112",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2434556,
+     13.0934393
+    ]
+   },
+   "properties": {
+    "id": "police-113",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2748155,
+     13.0245553
+    ]
+   },
+   "properties": {
+    "id": "police-114",
+    "name": "E5 Foreshore Estate Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.0603546,
+     12.8439997
+    ]
+   },
+   "properties": {
+    "id": "police-115",
+    "name": "D3 Guduvancheri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2611458,
+     12.9845863
+    ]
+   },
+   "properties": {
+    "id": "police-116",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2432354,
+     13.0300516
+    ]
+   },
+   "properties": {
+    "id": "police-117",
+    "name": "Office of the Director General of Police Civil Supplies CID Chennai",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2520681,
+     13.0725347
+    ]
+   },
+   "properties": {
+    "id": "police-118",
+    "name": "G7 Chetpet Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1485692,
+     12.9715664
+    ]
+   },
+   "properties": {
+    "id": "police-119",
+    "name": "டி-3 பல்லாவரம் காவல் நிலையம்",
+    "type": "police"
+   }
   }
  ]
 }

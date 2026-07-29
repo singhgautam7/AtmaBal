@@ -1,10 +1,11 @@
 {
  "city": "lucknow",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 0,
-  "police": 21,
+  "police": 26,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -279,6 +280,71 @@
    "distanceLabel": "",
    "handVerified": false,
    "lastVerified": "2026-07-27",
+   "source": "OSM way/217766495"
+  },
+  {
+   "id": "police-21",
+   "type": "police",
+   "name": "Mahanagar Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 26.8730854,
+   "lng": 80.9587271,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/1944291983"
+  },
+  {
+   "id": "police-22",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 26.7939541,
+   "lng": 80.9125252,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/4727512744"
+  },
+  {
+   "id": "police-23",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 26.8476468,
+   "lng": 80.9396569,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/6635438740"
+  },
+  {
+   "id": "police-24",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "luclnow",
+   "phone": "",
+   "lat": 26.7963062,
+   "lng": 80.9233034,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/10896597726"
+  },
+  {
+   "id": "police-25",
+   "type": "police",
+   "name": "Central Reserve Police Force",
+   "addr": "",
+   "phone": "",
+   "lat": 26.7299423,
+   "lng": 80.8945152,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
    "source": "OSM way/217766495"
   },
   {

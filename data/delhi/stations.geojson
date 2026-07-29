@@ -1392,7 +1392,7 @@
    },
    "properties": {
     "id": "police-89",
-    "name": "Delhi Police — Mehrauli",
+    "name": "Delhi Police - Mehrauli",
     "type": "police"
    }
   },
@@ -2668,6 +2668,1566 @@
    "properties": {
     "id": "police-174",
     "name": "Bawana Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3375263,
+     28.5779649
+    ]
+   },
+   "properties": {
+    "id": "police-175",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0660949,
+     28.4863642
+    ]
+   },
+   "properties": {
+    "id": "police-176",
+    "name": "Sector 18 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0681342,
+     28.3445779
+    ]
+   },
+   "properties": {
+    "id": "police-177",
+    "name": "Police Station Bhondsi",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1233526,
+     28.8638535
+    ]
+   },
+   "properties": {
+    "id": "police-178",
+    "name": "Thana Kundli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1810077,
+     28.6345193
+    ]
+   },
+   "properties": {
+    "id": "police-179",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1739049,
+     28.6925224
+    ]
+   },
+   "properties": {
+    "id": "police-180",
+    "name": "Ashok Vihar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2900781,
+     28.3959429
+    ]
+   },
+   "properties": {
+    "id": "police-181",
+    "name": "Police chowki NIT 3",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2971327,
+     28.4309808
+    ]
+   },
+   "properties": {
+    "id": "police-182",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9828316,
+     28.6098145
+    ]
+   },
+   "properties": {
+    "id": "police-183",
+    "name": "Najafgarh Police Thana",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9867433,
+     28.6126106
+    ]
+   },
+   "properties": {
+    "id": "police-184",
+    "name": "Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9151778,
+     28.5958543
+    ]
+   },
+   "properties": {
+    "id": "police-185",
+    "name": "Jaffar Pur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9666822,
+     28.6289362
+    ]
+   },
+   "properties": {
+    "id": "police-186",
+    "name": "Baba Haridas Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1219621,
+     28.6499571
+    ]
+   },
+   "properties": {
+    "id": "police-187",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2432349,
+     28.6499319
+    ]
+   },
+   "properties": {
+    "id": "police-188",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2854276,
+     28.8638951
+    ]
+   },
+   "properties": {
+    "id": "police-189",
+    "name": "Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2217498,
+     28.6891306
+    ]
+   },
+   "properties": {
+    "id": "police-190",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1930248,
+     28.652398
+    ]
+   },
+   "properties": {
+    "id": "police-191",
+    "name": "Police Station Karol Bagh",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2222854,
+     28.635912
+    ]
+   },
+   "properties": {
+    "id": "police-192",
+    "name": "Police Post",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3171717,
+     28.613379
+    ]
+   },
+   "properties": {
+    "id": "police-193",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0860753,
+     28.6131514
+    ]
+   },
+   "properties": {
+    "id": "police-194",
+    "name": "Police Station Dabri",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3845655,
+     28.5289358
+    ]
+   },
+   "properties": {
+    "id": "police-195",
+    "name": "Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0910642,
+     28.4873346
+    ]
+   },
+   "properties": {
+    "id": "police-196",
+    "name": "Police Station, DLF Phase 2",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2020072,
+     28.617356
+    ]
+   },
+   "properties": {
+    "id": "police-197",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1811399,
+     28.560194
+    ]
+   },
+   "properties": {
+    "id": "police-198",
+    "name": "Traffic Police Station, RK Puram, Sector-4",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1627448,
+     28.7541865
+    ]
+   },
+   "properties": {
+    "id": "police-199",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2774333,
+     28.6304085
+    ]
+   },
+   "properties": {
+    "id": "police-200",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2273752,
+     28.6012604
+    ]
+   },
+   "properties": {
+    "id": "police-201",
+    "name": "Police assistance booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1683104,
+     28.5956693
+    ]
+   },
+   "properties": {
+    "id": "police-202",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0053949,
+     28.401589
+    ]
+   },
+   "properties": {
+    "id": "police-203",
+    "name": "Police Chauki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2849399,
+     28.4610831
+    ]
+   },
+   "properties": {
+    "id": "police-204",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1332471,
+     28.5966453
+    ]
+   },
+   "properties": {
+    "id": "police-205",
+    "name": "Pink Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1973707,
+     28.5758546
+    ]
+   },
+   "properties": {
+    "id": "police-206",
+    "name": "Facilitation Kiosk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2182954,
+     28.6420284
+    ]
+   },
+   "properties": {
+    "id": "police-207",
+    "name": "Tourist Police Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2409554,
+     28.6415133
+    ]
+   },
+   "properties": {
+    "id": "police-208",
+    "name": "Office Of The Deputy Commissioner Of Police Central District",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0417182,
+     28.591667
+    ]
+   },
+   "properties": {
+    "id": "police-209",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2442795,
+     28.5588883
+    ]
+   },
+   "properties": {
+    "id": "police-210",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2140888,
+     28.4989184
+    ]
+   },
+   "properties": {
+    "id": "police-211",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1798446,
+     28.7074219
+    ]
+   },
+   "properties": {
+    "id": "police-212",
+    "name": "Integrated police booth, Model Town",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2917074,
+     28.5356392
+    ]
+   },
+   "properties": {
+    "id": "police-213",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2251127,
+     28.5759348
+    ]
+   },
+   "properties": {
+    "id": "police-214",
+    "name": "Kotla Mubarakpur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1268184,
+     28.7181571
+    ]
+   },
+   "properties": {
+    "id": "police-215",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1111954,
+     28.721911
+    ]
+   },
+   "properties": {
+    "id": "police-216",
+    "name": "Metro Walk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3237677,
+     28.5669719
+    ]
+   },
+   "properties": {
+    "id": "police-217",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.078729,
+     28.3594774
+    ]
+   },
+   "properties": {
+    "id": "police-218",
+    "name": "Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25304,
+     28.5826675
+    ]
+   },
+   "properties": {
+    "id": "police-219",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2324817,
+     28.5593548
+    ]
+   },
+   "properties": {
+    "id": "police-220",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2146901,
+     28.5819346
+    ]
+   },
+   "properties": {
+    "id": "police-221",
+    "name": "Delhi Police Seva Kendra",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2201421,
+     28.5855227
+    ]
+   },
+   "properties": {
+    "id": "police-222",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2360244,
+     28.6509253
+    ]
+   },
+   "properties": {
+    "id": "police-223",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2419945,
+     28.56817
+    ]
+   },
+   "properties": {
+    "id": "police-224",
+    "name": "Pink Booth",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2269535,
+     28.6664277
+    ]
+   },
+   "properties": {
+    "id": "police-225",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3662248,
+     28.559976
+    ]
+   },
+   "properties": {
+    "id": "police-226",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1923715,
+     28.4068907
+    ]
+   },
+   "properties": {
+    "id": "police-227",
+    "name": "Maangar Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.335289,
+     28.369156
+    ]
+   },
+   "properties": {
+    "id": "police-228",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1517947,
+     28.5352556
+    ]
+   },
+   "properties": {
+    "id": "police-229",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1429,
+     28.5341516
+    ]
+   },
+   "properties": {
+    "id": "police-230",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.028071,
+     28.5909304
+    ]
+   },
+   "properties": {
+    "id": "police-231",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2083829,
+     28.5233652
+    ]
+   },
+   "properties": {
+    "id": "police-232",
+    "name": "Saket Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2850581,
+     28.6748039
+    ]
+   },
+   "properties": {
+    "id": "police-233",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0768152,
+     28.6116948
+    ]
+   },
+   "properties": {
+    "id": "police-234",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2656868,
+     28.5308191
+    ]
+   },
+   "properties": {
+    "id": "police-235",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0679729,
+     28.6300302
+    ]
+   },
+   "properties": {
+    "id": "police-236",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1836843,
+     28.6688409
+    ]
+   },
+   "properties": {
+    "id": "police-237",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9411626,
+     28.3665369
+    ]
+   },
+   "properties": {
+    "id": "police-238",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9092944,
+     28.3730383
+    ]
+   },
+   "properties": {
+    "id": "police-239",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0170789,
+     28.4954346
+    ]
+   },
+   "properties": {
+    "id": "police-240",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0245269,
+     28.5042019
+    ]
+   },
+   "properties": {
+    "id": "police-241",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0584391,
+     28.5648054
+    ]
+   },
+   "properties": {
+    "id": "police-242",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3399689,
+     28.6231116
+    ]
+   },
+   "properties": {
+    "id": "police-243",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2260672,
+     28.6425191
+    ]
+   },
+   "properties": {
+    "id": "police-244",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2194906,
+     28.5328269
+    ]
+   },
+   "properties": {
+    "id": "police-245",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0648745,
+     28.6254858
+    ]
+   },
+   "properties": {
+    "id": "police-246",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2041727,
+     28.7070813
+    ]
+   },
+   "properties": {
+    "id": "police-247",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2107352,
+     28.6541302
+    ]
+   },
+   "properties": {
+    "id": "police-248",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2446595,
+     28.6251166
+    ]
+   },
+   "properties": {
+    "id": "police-249",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2090042,
+     28.6454252
+    ]
+   },
+   "properties": {
+    "id": "police-250",
+    "name": "Police Station Paharganj",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2599064,
+     28.5779761
+    ]
+   },
+   "properties": {
+    "id": "police-251",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0879593,
+     28.8531159
+    ]
+   },
+   "properties": {
+    "id": "police-252",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1790899,
+     28.571113
+    ]
+   },
+   "properties": {
+    "id": "police-253",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9951919,
+     28.4702303
+    ]
+   },
+   "properties": {
+    "id": "police-254",
+    "name": "Police station sec 9A",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1595646,
+     28.6838899
+    ]
+   },
+   "properties": {
+    "id": "police-255",
+    "name": "Keshav Puram Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2141861,
+     28.6298552
+    ]
+   },
+   "properties": {
+    "id": "police-256",
+    "name": "Police Station Connaught Place",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3514693,
+     28.5890153
+    ]
+   },
+   "properties": {
+    "id": "police-257",
+    "name": "Noida Sector 24 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3537514,
+     28.366564
+    ]
+   },
+   "properties": {
+    "id": "police-258",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9952105,
+     28.4700122
+    ]
+   },
+   "properties": {
+    "id": "police-259",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3404996,
+     28.539244
+    ]
+   },
+   "properties": {
+    "id": "police-260",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.937426,
+     28.3389797
+    ]
+   },
+   "properties": {
+    "id": "police-261",
+    "name": "Traffic Police Station II",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1655129,
+     28.7428097
+    ]
+   },
+   "properties": {
+    "id": "police-262",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2869046,
+     28.7022782
+    ]
+   },
+   "properties": {
+    "id": "police-263",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2741174,
+     28.6979957
+    ]
+   },
+   "properties": {
+    "id": "police-264",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1200477,
+     28.6516078
+    ]
+   },
+   "properties": {
+    "id": "police-265",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1684119,
+     28.5884292
+    ]
+   },
+   "properties": {
+    "id": "police-266",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0928815,
+     28.4600978
+    ]
+   },
+   "properties": {
+    "id": "police-267",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2030923,
+     28.6391352
+    ]
+   },
+   "properties": {
+    "id": "police-268",
+    "name": "Economic Offences Wing",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0980752,
+     28.4463631
+    ]
+   },
+   "properties": {
+    "id": "police-269",
+    "name": "Sector 53 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0954546,
+     28.4513188
+    ]
+   },
+   "properties": {
+    "id": "police-270",
+    "name": "Cyber Crime Police Station Gurugram",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3515191,
+     28.5716754
+    ]
+   },
+   "properties": {
+    "id": "police-271",
+    "name": "Cyber Crime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0730897,
+     28.4629003
+    ]
+   },
+   "properties": {
+    "id": "police-272",
+    "name": "Sector 29 Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0633624,
+     28.5012077
+    ]
+   },
+   "properties": {
+    "id": "police-273",
+    "name": "Palam Vihar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0598854,
+     28.4281672
+    ]
+   },
+   "properties": {
+    "id": "police-274",
+    "name": "Police Station Sec 51",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2264833,
+     28.587959
+    ]
+   },
+   "properties": {
+    "id": "police-275",
+    "name": "Lodhi Colony Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0915377,
+     28.5536542
+    ]
+   },
+   "properties": {
+    "id": "police-276",
+    "name": "Indira Gandhi International Airport Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2403322,
+     28.5681923
+    ]
+   },
+   "properties": {
+    "id": "police-277",
+    "name": "Lajpat Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2328255,
+     28.5648051
+    ]
+   },
+   "properties": {
+    "id": "police-278",
+    "name": "Police Station, Defence Colony",
     "type": "police"
    }
   }

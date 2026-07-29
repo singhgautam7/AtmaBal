@@ -1,10 +1,11 @@
 {
  "city": "kolkata",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 0,
-  "police": 43,
+  "police": 50,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -566,6 +567,97 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM way/1199283547"
+  },
+  {
+   "id": "police-43",
+   "type": "police",
+   "name": "Tiljala Traffic Guard",
+   "addr": "",
+   "phone": "",
+   "lat": 22.5425798,
+   "lng": 88.3989293,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/2461251766"
+  },
+  {
+   "id": "police-44",
+   "type": "police",
+   "name": "Bhowanipore Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 22.5266453,
+   "lng": 88.3459941,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/2471894120"
+  },
+  {
+   "id": "police-45",
+   "type": "police",
+   "name": "Ultadanga traffic guard",
+   "addr": "",
+   "phone": "",
+   "lat": 22.5893923,
+   "lng": 88.3951013,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/9641103817"
+  },
+  {
+   "id": "police-46",
+   "type": "police",
+   "name": "Exide South Traffic Guard Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 22.5420398,
+   "lng": 88.3469829,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/9911020517"
+  },
+  {
+   "id": "police-47",
+   "type": "police",
+   "name": "Tala Police Station",
+   "addr": "Tala Park Path",
+   "phone": "",
+   "lat": 22.6074097,
+   "lng": 88.3817952,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/11436646870"
+  },
+  {
+   "id": "police-48",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 22.5417713,
+   "lng": 88.3988208,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/238279646"
+  },
+  {
+   "id": "police-49",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 22.47378,
+   "lng": 88.4050232,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/420013360"
   },
   {
    "id": "helpline-0",

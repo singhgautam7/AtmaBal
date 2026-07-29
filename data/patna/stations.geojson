@@ -195,6 +195,141 @@
     "name": "Bidupur Thana",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1108576,
+     25.6280772
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1096946,
+     25.6188314
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "AN College Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1006549,
+     25.6301163
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1188443,
+     25.6125629
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1006452,
+     25.6302392
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1100433,
+     25.6165839
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.1040902,
+     25.6294213
+    ]
+   },
+   "properties": {
+    "id": "police-19",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.11776,
+     25.6109512
+    ]
+   },
+   "properties": {
+    "id": "police-20",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.0421153,
+     25.622707
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

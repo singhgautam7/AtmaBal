@@ -99,7 +99,12 @@
     },
     "heads": {
       "yearTag": "{year} · NCRB Table 3B.2",
+      "shareTitle": "Share by offence type · {year}",
+      "compareTitle": "Compare two years, by offence",
+      "compareEmpty": "No shared offence heads to compare for these two years. Try different years, or widen the scope filter.",
+      "sourceTag": "NCRB Table 3B.2",
       "other": "Other offences",
+      "filtered": "Filtered out",
       "hidden": "Hidden heads",
       "principalOffence": "NCRB counts each case under one most-serious offence, so heads never double-count: the listed heads plus 'Other offences' add up to the city total. 'Other offences' is the real remainder of smaller heads NCRB lists, not missing data.",
       "notAvailableList": "No separate figure published for: {heads}",
@@ -173,6 +178,8 @@
     "showList": "Show list",
     "showMap": "Show map",
     "verifiedNote": "Police locations from OpenStreetMap; women’s stations and One Stop Centre hand-checked. Report anything wrong via Corrections.",
+    "howWeSource": "How we source this",
+    "addrNotListed": "Address not listed",
     "safeBrowsingShort": "Quick exit leaves at once, but it can’t erase your history.",
     "locationPrivacy": "Your location is used only on your device to sort results - it is never sent anywhere.",
     "filters": {
@@ -295,6 +302,7 @@
   "footer": {
     "storeNothing": "We store nothing. This site is served as static files - there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
     "dataSources": "Data & sources",
+    "about": "About",
     "corrections": "Something wrong or out of date? Corrections",
     "sourcesReviewed": "Every legal point and helpline carries a source and a review date."
   }

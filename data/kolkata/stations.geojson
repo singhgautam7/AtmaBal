@@ -645,6 +645,111 @@
     "name": "Duttapukur Police Station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3989293,
+     22.5425798
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Tiljala Traffic Guard",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3459941,
+     22.5266453
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Bhowanipore Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3951013,
+     22.5893923
+    ]
+   },
+   "properties": {
+    "id": "police-45",
+    "name": "Ultadanga traffic guard",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3469829,
+     22.5420398
+    ]
+   },
+   "properties": {
+    "id": "police-46",
+    "name": "Exide South Traffic Guard Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3817952,
+     22.6074097
+    ]
+   },
+   "properties": {
+    "id": "police-47",
+    "name": "Tala Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3988208,
+     22.5417713
+    ]
+   },
+   "properties": {
+    "id": "police-48",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.4050232,
+     22.47378
+    ]
+   },
+   "properties": {
+    "id": "police-49",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

@@ -1,10 +1,11 @@
 {
  "city": "kozhikode",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 1,
-  "police": 53,
+  "police": 60,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -709,6 +710,97 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM way/800577813"
+  },
+  {
+   "id": "police-53",
+   "type": "police",
+   "name": "Police Station Feroke",
+   "addr": "",
+   "phone": "",
+   "lat": 11.1828848,
+   "lng": 75.837412,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/2723877454"
+  },
+  {
+   "id": "police-54",
+   "type": "police",
+   "name": "Kakkur Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 11.3765153,
+   "lng": 75.8156431,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/2854008101"
+  },
+  {
+   "id": "police-55",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 11.2540144,
+   "lng": 75.7821745,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/7467654930"
+  },
+  {
+   "id": "police-56",
+   "type": "police",
+   "name": "Vanitha police station",
+   "addr": "",
+   "phone": "",
+   "lat": 11.2544608,
+   "lng": 75.7834255,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/8921258375"
+  },
+  {
+   "id": "police-57",
+   "type": "police",
+   "name": "Police Station, Panniyankara",
+   "addr": "",
+   "phone": "",
+   "lat": 11.2269108,
+   "lng": 75.7916652,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/846640561"
+  },
+  {
+   "id": "police-58",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 11.218187,
+   "lng": 75.8567447,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/982416129"
+  },
+  {
+   "id": "police-59",
+   "type": "police",
+   "name": "Police Station, Beypore",
+   "addr": "",
+   "phone": "",
+   "lat": 11.1677635,
+   "lng": 75.8065649,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/1065779807"
   },
   {
    "id": "helpline-0",

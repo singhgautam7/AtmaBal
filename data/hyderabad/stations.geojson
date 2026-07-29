@@ -945,6 +945,486 @@
     "name": "Ramachndrapuram Police Station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4999031,
+     17.3655267
+    ]
+   },
+   "properties": {
+    "id": "police-62",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4820816,
+     17.3714465
+    ]
+   },
+   "properties": {
+    "id": "police-63",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5493729,
+     17.4265322
+    ]
+   },
+   "properties": {
+    "id": "police-64",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5004605,
+     17.4618242
+    ]
+   },
+   "properties": {
+    "id": "police-65",
+    "name": "Karkhana Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4790905,
+     17.4436297
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Begumpet Traffic Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4649177,
+     17.4223157
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4839215,
+     17.4211388
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5365773,
+     17.3686441
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.46836,
+     17.3349988
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4689352,
+     17.3923657
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4761757,
+     17.3889758
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Abids traffic police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3519936,
+     17.4458549
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "Gachibowli traffic police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4581018,
+     17.3989925
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "Asif Nagar Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6027803,
+     17.3276128
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5040109,
+     17.3628131
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.493562,
+     17.382365
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Kachiguda Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2649702,
+     17.5296566
+    ]
+   },
+   "properties": {
+    "id": "police-78",
+    "name": "DSP office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.264711,
+     17.5297092
+    ]
+   },
+   "properties": {
+    "id": "police-79",
+    "name": "Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.364221,
+     17.4628678
+    ]
+   },
+   "properties": {
+    "id": "police-80",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3615646,
+     17.4964332
+    ]
+   },
+   "properties": {
+    "id": "police-81",
+    "name": "Miyapur Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5000445,
+     17.458988
+    ]
+   },
+   "properties": {
+    "id": "police-82",
+    "name": "Karkhana Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5114764,
+     17.4802402
+    ]
+   },
+   "properties": {
+    "id": "police-83",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3808903,
+     17.4513495
+    ]
+   },
+   "properties": {
+    "id": "police-84",
+    "name": "Madhapur traffic police booth Cyberabad",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4185614,
+     17.4801354
+    ]
+   },
+   "properties": {
+    "id": "police-85",
+    "name": "traffic police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4752661,
+     17.3618349
+    ]
+   },
+   "properties": {
+    "id": "police-86",
+    "name": "Traffic Police Station Charminar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5579354,
+     17.3616089
+    ]
+   },
+   "properties": {
+    "id": "police-87",
+    "name": "Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3699438,
+     17.4316271
+    ]
+   },
+   "properties": {
+    "id": "police-88",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.3537653,
+     17.4435126
+    ]
+   },
+   "properties": {
+    "id": "police-89",
+    "name": "Gachibowli Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.4523748,
+     17.4262429
+    ]
+   },
+   "properties": {
+    "id": "police-90",
+    "name": "Punjagutta Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5602993,
+     17.4022297
+    ]
+   },
+   "properties": {
+    "id": "police-91",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.340686,
+     17.4256406
+    ]
+   },
+   "properties": {
+    "id": "police-92",
+    "name": "Traffice Police Watch Tower",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.5174291,
+     17.3871953
+    ]
+   },
+   "properties": {
+    "id": "police-93",
+    "name": "Police training center",
+    "type": "police"
+   }
   }
  ]
 }

@@ -44,6 +44,10 @@ export interface CrimeHead {
 export interface CrimeHeadItem {
   id: string;
   name: string;
+  /** Offence-type grouping for the scope filter (NOT incident location). */
+  scope: 'public' | 'domestic';
+  /** POCSO / girl-child heads (labelled so they're not read as adult-women). */
+  isChild: boolean;
   /**
    * Reported cases. A number (INCLUDING 0) is a real published figure. `null`
    * means NCRB published no value for this head/city/year - render it as
@@ -72,6 +76,8 @@ export interface CrimeHeads {
   unit: string;
   source: string;
   principalOffenceNote: string;
+  regimeNote?: string;
+  scopeNote?: string;
   /** Years for which a real head-wise split exists (others: show total only). */
   availableYears: number[];
   byYear: Record<string, CrimeHeadYear>;

@@ -315,6 +315,81 @@
     "name": "Central Reserve Police Force",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.9587271,
+     26.8730854
+    ]
+   },
+   "properties": {
+    "id": "police-21",
+    "name": "Mahanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.9125252,
+     26.7939541
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.9396569,
+     26.8476468
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.9233034,
+     26.7963062
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.8945152,
+     26.7299423
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Central Reserve Police Force",
+    "type": "police"
+   }
   }
  ]
 }

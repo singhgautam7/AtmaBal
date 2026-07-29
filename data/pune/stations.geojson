@@ -990,6 +990,186 @@
     "name": "Police Station Talegaon Dabhade",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.9173998,
+     18.5075612
+    ]
+   },
+   "properties": {
+    "id": "police-66",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8621906,
+     18.5161748
+    ]
+   },
+   "properties": {
+    "id": "police-67",
+    "name": "Ganesh Peth Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8154722,
+     18.4637816
+    ]
+   },
+   "properties": {
+    "id": "police-68",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8448569,
+     18.5449382
+    ]
+   },
+   "properties": {
+    "id": "police-69",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8904599,
+     18.4659808
+    ]
+   },
+   "properties": {
+    "id": "police-70",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8789046,
+     18.5339866
+    ]
+   },
+   "properties": {
+    "id": "police-71",
+    "name": "Mangaldas Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8425166,
+     18.6478898
+    ]
+   },
+   "properties": {
+    "id": "police-72",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8327946,
+     18.4689831
+    ]
+   },
+   "properties": {
+    "id": "police-73",
+    "name": "Vadgaon Budruk Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8024748,
+     18.506629
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "Kothrud Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8436593,
+     18.4574226
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8895195,
+     18.464748
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "Kondhwa traffic police chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7369373,
+     18.5865997
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

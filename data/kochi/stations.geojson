@@ -1125,6 +1125,201 @@
     "name": "Police Station, Thalayolaparambu",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.315901,
+     10.046978
+    ]
+   },
+   "properties": {
+    "id": "police-74",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2891741,
+     9.9960152
+    ]
+   },
+   "properties": {
+    "id": "police-75",
+    "name": "Cerebtec Technologies pvt.ltd",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3002137,
+     10.0741754
+    ]
+   },
+   "properties": {
+    "id": "police-76",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2442749,
+     9.9735714
+    ]
+   },
+   "properties": {
+    "id": "police-77",
+    "name": "Fisheries Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2795549,
+     9.9740482
+    ]
+   },
+   "properties": {
+    "id": "police-78",
+    "name": "Office of the Commissioner of Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3076516,
+     10.0222535
+    ]
+   },
+   "properties": {
+    "id": "police-79",
+    "name": "City Traffic Police Station (East)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3647149,
+     9.9138292
+    ]
+   },
+   "properties": {
+    "id": "police-80",
+    "name": "Police Station,Udayamperoor",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2857026,
+     9.9418048
+    ]
+   },
+   "properties": {
+    "id": "police-81",
+    "name": "Naval Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3607138,
+     9.9544134
+    ]
+   },
+   "properties": {
+    "id": "police-82",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3357687,
+     10.0178912
+    ]
+   },
+   "properties": {
+    "id": "police-83",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3170746,
+     10.0462548
+    ]
+   },
+   "properties": {
+    "id": "police-84",
+    "name": "Police Station,Kalamassery",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2757357,
+     9.9868562
+    ]
+   },
+   "properties": {
+    "id": "police-85",
+    "name": "Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2759591,
+     9.9869188
+    ]
+   },
+   "properties": {
+    "id": "police-86",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

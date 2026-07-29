@@ -840,6 +840,66 @@
     "name": "Police Chowki",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4340032,
+     28.6301852
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4333457,
+     28.655862
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4304575,
+     28.6578336
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4486211,
+     28.6591647
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police Station",
+    "type": "police"
+   }
   }
  ]
 }

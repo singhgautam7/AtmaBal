@@ -1,10 +1,11 @@
 {
  "city": "jaipur",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 1,
-  "police": 22,
+  "police": 26,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -306,6 +307,58 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM node/12149437904"
+  },
+  {
+   "id": "police-22",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 26.9320929,
+   "lng": 75.8176035,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/6955659885"
+  },
+  {
+   "id": "police-23",
+   "type": "police",
+   "name": "Police Station Vaishali Nagar",
+   "addr": "Vaishali Marg",
+   "phone": "",
+   "lat": 26.9153921,
+   "lng": 75.7355845,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/6968230689"
+  },
+  {
+   "id": "police-24",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 26.9252096,
+   "lng": 75.8254757,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/14058331317"
+  },
+  {
+   "id": "police-25",
+   "type": "police",
+   "name": "Sanganer Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 26.8195252,
+   "lng": 75.7971644,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/862954955"
   },
   {
    "id": "helpline-0",

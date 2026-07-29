@@ -450,6 +450,51 @@
     "name": "Hanspura/Dehgam naka police station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5405988,
+     23.0347446
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Gujarat university police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5232653,
+     23.0491783
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Vastrapur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6228096,
+     23.0214014
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

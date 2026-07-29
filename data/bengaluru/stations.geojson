@@ -1695,6 +1695,741 @@
     "name": "Sarjapura Police Station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6820851,
+     12.8263652
+    ]
+   },
+   "properties": {
+    "id": "police-111",
+    "name": "Hebbagodi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5581675,
+     13.0181973
+    ]
+   },
+   "properties": {
+    "id": "police-112",
+    "name": "DCP Bangalore North Traffic Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6105652,
+     12.9086369
+    ]
+   },
+   "properties": {
+    "id": "police-113",
+    "name": "Mico Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5414869,
+     12.9733449
+    ]
+   },
+   "properties": {
+    "id": "police-114",
+    "name": "Vijaynagar Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6559012,
+     12.967409
+    ]
+   },
+   "properties": {
+    "id": "police-115",
+    "name": "Indiranagar Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5377251,
+     12.9707264
+    ]
+   },
+   "properties": {
+    "id": "police-116",
+    "name": "Vijayanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5650055,
+     12.9229116
+    ]
+   },
+   "properties": {
+    "id": "police-117",
+    "name": "Banashankari Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6404269,
+     12.978243
+    ]
+   },
+   "properties": {
+    "id": "police-118",
+    "name": "Indiranagar Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7011085,
+     12.9568555
+    ]
+   },
+   "properties": {
+    "id": "police-119",
+    "name": "Traffic Police Cabin",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5889783,
+     12.8565752
+    ]
+   },
+   "properties": {
+    "id": "police-120",
+    "name": "Hulimavu Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6616311,
+     12.9217846
+    ]
+   },
+   "properties": {
+    "id": "police-121",
+    "name": "Bellanduru Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.661459,
+     12.8394292
+    ]
+   },
+   "properties": {
+    "id": "police-122",
+    "name": "Electronics City Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6675094,
+     12.9588013
+    ]
+   },
+   "properties": {
+    "id": "police-123",
+    "name": "HAL Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5748342,
+     12.9744833
+    ]
+   },
+   "properties": {
+    "id": "police-124",
+    "name": "Upparpet Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5386676,
+     12.9724461
+    ]
+   },
+   "properties": {
+    "id": "police-125",
+    "name": "Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6368327,
+     12.9081741
+    ]
+   },
+   "properties": {
+    "id": "police-126",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5828907,
+     12.9848902
+    ]
+   },
+   "properties": {
+    "id": "police-127",
+    "name": "High Grounds Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6009835,
+     12.9132041
+    ]
+   },
+   "properties": {
+    "id": "police-128",
+    "name": "Mico Layout Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6935636,
+     12.9964893
+    ]
+   },
+   "properties": {
+    "id": "police-129",
+    "name": "Mahadevapura Traffic Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6936783,
+     12.9964748
+    ]
+   },
+   "properties": {
+    "id": "police-130",
+    "name": "Office Of The Assistant Commissioner Whitefield Subdivision",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.633371,
+     13.0747194
+    ]
+   },
+   "properties": {
+    "id": "police-131",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5981119,
+     12.9760045
+    ]
+   },
+   "properties": {
+    "id": "police-132",
+    "name": "Cubbon Park Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5893069,
+     13.0424185
+    ]
+   },
+   "properties": {
+    "id": "police-133",
+    "name": "Hebbal Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5760581,
+     12.8715628
+    ]
+   },
+   "properties": {
+    "id": "police-134",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5929507,
+     12.9903748
+    ]
+   },
+   "properties": {
+    "id": "police-135",
+    "name": "Cybercrime Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7571802,
+     12.9942469
+    ]
+   },
+   "properties": {
+    "id": "police-136",
+    "name": "Whitefield Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5870156,
+     12.9665425
+    ]
+   },
+   "properties": {
+    "id": "police-137",
+    "name": "Halasuru Gate Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6384064,
+     12.9830254
+    ]
+   },
+   "properties": {
+    "id": "police-138",
+    "name": "Indira Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6206703,
+     12.9210124
+    ]
+   },
+   "properties": {
+    "id": "police-139",
+    "name": "Madiwala Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6000885,
+     12.8766721
+    ]
+   },
+   "properties": {
+    "id": "police-140",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5886106,
+     13.0333764
+    ]
+   },
+   "properties": {
+    "id": "police-141",
+    "name": "R T Nagar Traffic Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5749342,
+     12.9745187
+    ]
+   },
+   "properties": {
+    "id": "police-142",
+    "name": "Upparpet Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.671825,
+     12.885446
+    ]
+   },
+   "properties": {
+    "id": "police-143",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6615877,
+     12.9218103
+    ]
+   },
+   "properties": {
+    "id": "police-144",
+    "name": "Bellandur Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6087598,
+     12.9415666
+    ]
+   },
+   "properties": {
+    "id": "police-145",
+    "name": "Adugodi Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7511459,
+     12.9754425
+    ]
+   },
+   "properties": {
+    "id": "police-146",
+    "name": "Whitefield Police Station -Office of the Deputy Commisionner",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5829241,
+     12.9847727
+    ]
+   },
+   "properties": {
+    "id": "police-147",
+    "name": "High Grounds Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5629547,
+     12.9050939
+    ]
+   },
+   "properties": {
+    "id": "police-148",
+    "name": "Kumaraswamy Layout Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6035505,
+     12.9879685
+    ]
+   },
+   "properties": {
+    "id": "police-149",
+    "name": "Shivajinagar Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5663627,
+     12.8838351
+    ]
+   },
+   "properties": {
+    "id": "police-150",
+    "name": "Konanakunte Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6130934,
+     13.0114152
+    ]
+   },
+   "properties": {
+    "id": "police-151",
+    "name": "DJ Halli Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5100015,
+     12.9654109
+    ]
+   },
+   "properties": {
+    "id": "police-152",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5408201,
+     12.9606478
+    ]
+   },
+   "properties": {
+    "id": "police-153",
+    "name": "Vijayanagara Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6363671,
+     13.0706327
+    ]
+   },
+   "properties": {
+    "id": "police-154",
+    "name": "Hennur Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6935887,
+     12.9964924
+    ]
+   },
+   "properties": {
+    "id": "police-155",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5931961,
+     13.0246853
+    ]
+   },
+   "properties": {
+    "id": "police-156",
+    "name": "RT Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.619254,
+     13.0198144
+    ]
+   },
+   "properties": {
+    "id": "police-157",
+    "name": "Kadugondanahalli Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.6938172,
+     13.0078716
+    ]
+   },
+   "properties": {
+    "id": "police-158",
+    "name": "KR Puram Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7469329,
+     12.9380254
+    ]
+   },
+   "properties": {
+    "id": "police-159",
+    "name": "Varthur Police Station",
+    "type": "police"
+   }
   }
  ]
 }

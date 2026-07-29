@@ -35,74 +35,240 @@
  "lastReviewed": "2026-07-30",
  "heads": {
   "unit": "cases",
-  "source": "NCRB Crime in India 2024, Table 3B.2 (Crime against Women, crime head-wise, metropolitan cities).",
+  "source": "NCRB Crime in India, Table 3B.2 (Crime against Women, crime head-wise, metropolitan cities): 2022 & 2023 volumes (IPC) and 2024 volume (BNS).",
+  "regimeNote": "2022-2023 use IPC section labels, 2024 uses the new BNS labels; both are mapped to one consistent set of head names. Heads we could not confidently isolate for a year fall into 'Other offences', never invented.",
+  "scopeNote": "'Public' vs 'Domestic' groups offences by TYPE, not by where each incident happened (NCRB does not record location).",
   "principalOffenceNote": "NCRB counts each FIR under a single most-serious head, so heads never double-count and the listed heads plus 'Other offences' equal the city total.",
   "availableYears": [
+   2022,
+   2023,
    2024
   ],
   "byYear": {
+   "2022": {
+    "total": 3924,
+    "items": [
+     {
+      "id": "cruelty",
+      "name": "Cruelty by husband or relatives",
+      "scope": "domestic",
+      "isChild": false,
+      "cases": 584
+     },
+     {
+      "id": "molestation",
+      "name": "Assault to outrage modesty",
+      "scope": "public",
+      "isChild": false,
+      "cases": 757
+     },
+     {
+      "id": "kidnap_abduction",
+      "name": "Kidnapping & abduction of women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 613
+     },
+     {
+      "id": "rape",
+      "name": "Rape",
+      "scope": "public",
+      "isChild": false,
+      "cases": 151
+     },
+     {
+      "id": "pocso_girls",
+      "name": "POCSO (girls under 18)",
+      "scope": "public",
+      "isChild": true,
+      "cases": 468
+     },
+     {
+      "id": "trafficking",
+      "name": "Immoral traffic (ITPA)",
+      "scope": "public",
+      "isChild": false,
+      "cases": 964
+     },
+     {
+      "id": "insult_modesty",
+      "name": "Insult to modesty of women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 29
+     },
+     {
+      "id": "cyber",
+      "name": "Cyber crimes against women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 73
+     },
+     {
+      "id": "dowry_deaths",
+      "name": "Dowry deaths",
+      "scope": "domestic",
+      "isChild": false,
+      "cases": 29
+     }
+    ],
+    "otherCases": 256
+   },
+   "2023": {
+    "total": 4870,
+    "items": [
+     {
+      "id": "cruelty",
+      "name": "Cruelty by husband or relatives",
+      "scope": "domestic",
+      "isChild": false,
+      "cases": 706
+     },
+     {
+      "id": "molestation",
+      "name": "Assault to outrage modesty",
+      "scope": "public",
+      "isChild": false,
+      "cases": 1163
+     },
+     {
+      "id": "kidnap_abduction",
+      "name": "Kidnapping & abduction of women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 766
+     },
+     {
+      "id": "rape",
+      "name": "Rape",
+      "scope": "public",
+      "isChild": false,
+      "cases": 169
+     },
+     {
+      "id": "pocso_girls",
+      "name": "POCSO (girls under 18)",
+      "scope": "public",
+      "isChild": true,
+      "cases": 590
+     },
+     {
+      "id": "trafficking",
+      "name": "Immoral traffic (ITPA)",
+      "scope": "public",
+      "isChild": false,
+      "cases": 1013
+     },
+     {
+      "id": "insult_modesty",
+      "name": "Insult to modesty of women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 63
+     },
+     {
+      "id": "cyber",
+      "name": "Cyber crimes against women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 127
+     },
+     {
+      "id": "dowry_deaths",
+      "name": "Dowry deaths",
+      "scope": "domestic",
+      "isChild": false,
+      "cases": 25
+     }
+    ],
+    "otherCases": 248
+   },
    "2024": {
     "total": 4748,
     "items": [
      {
       "id": "cruelty",
       "name": "Cruelty by husband or relatives",
+      "scope": "domestic",
+      "isChild": false,
       "cases": 619
      },
      {
       "id": "molestation",
       "name": "Assault to outrage modesty",
+      "scope": "public",
+      "isChild": false,
       "cases": 897
      },
      {
       "id": "kidnap_abduction",
       "name": "Kidnapping & abduction of women",
+      "scope": "public",
+      "isChild": false,
       "cases": 802
      },
      {
       "id": "rape",
       "name": "Rape",
+      "scope": "public",
+      "isChild": false,
       "cases": 168
+     },
+     {
+      "id": "pocso_girls",
+      "name": "POCSO (girls under 18)",
+      "scope": "public",
+      "isChild": true,
+      "cases": 588
+     },
+     {
+      "id": "trafficking",
+      "name": "Immoral traffic (ITPA)",
+      "scope": "public",
+      "isChild": false,
+      "cases": 878
+     },
+     {
+      "id": "sexual_harassment",
+      "name": "Sexual harassment",
+      "scope": "public",
+      "isChild": false,
+      "cases": 180
      },
      {
       "id": "stalking",
       "name": "Stalking",
+      "scope": "public",
+      "isChild": false,
       "cases": 109
      },
      {
       "id": "insult_modesty",
       "name": "Insult to modesty of women",
+      "scope": "public",
+      "isChild": false,
       "cases": 97
      },
      {
-      "id": "sexual_harassment",
-      "name": "Sexual harassment",
-      "cases": 180
+      "id": "cyber",
+      "name": "Cyber crimes against women",
+      "scope": "public",
+      "isChild": false,
+      "cases": 44
      },
      {
       "id": "dowry_deaths",
       "name": "Dowry deaths",
+      "scope": "domestic",
+      "isChild": false,
       "cases": 25
      },
      {
       "id": "acid_attack",
       "name": "Acid attack",
+      "scope": "public",
+      "isChild": false,
       "cases": 1
-     },
-     {
-      "id": "trafficking",
-      "name": "Immoral traffic (ITPA)",
-      "cases": 878
-     },
-     {
-      "id": "cyber",
-      "name": "Cyber crimes against women",
-      "cases": 44
-     },
-     {
-      "id": "pocso_girls",
-      "name": "POCSO (girl-child victims)",
-      "cases": 588
      }
     ],
     "otherCases": 340

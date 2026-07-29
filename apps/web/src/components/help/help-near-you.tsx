@@ -241,6 +241,8 @@ function ResultsList({ places, selectedId, onSelect, cityName, verified }: { pla
         </LocaleLink>
         <p className="text-[10.5px] leading-snug text-ink-faint">
           {verified ? t('verifiedNote') : `Police stations for ${cityName} are from OpenStreetMap and not yet hand-verified against city police. National helplines apply everywhere.`}
+          {' '}
+          <LocaleLink href="/methodology" className="underline underline-offset-2">{t('howWeSource')}</LocaleLink>
         </p>
         <p className="text-[10.5px] leading-snug text-ink-faint">{t('safeBrowsingShort')}</p>
       </li>
@@ -266,7 +268,12 @@ function PlaceCard({ place: p, selected, onSelect }: { place: Place; selected: b
         {p.distanceLabel && <span className="whitespace-nowrap text-[12px] text-ink-faint">{p.distanceLabel}</span>}
       </div>
       <div className="mt-2 font-display text-[15px] font-medium leading-tight text-ink">{displayName}</div>
-      {p.addr && <div className="mt-0.5 text-[12px] text-ink-soft">{p.addr}</div>}
+      {p.type !== 'helpline' && (
+        <div className={cn('mt-0.5 text-[12px]', p.addr ? 'text-ink-soft' : 'italic text-ink-faint')}>
+          {p.addr || t('addrNotListed')}
+        </div>
+      )}
+      {p.type === 'helpline' && p.addr && <div className="mt-0.5 text-[12px] text-ink-soft">{p.addr}</div>}
       <div className="mt-3 flex gap-2">
         <a href={directionsHref(p)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
           className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-sm border border-line-strong bg-surface px-3 py-2 text-[13px] font-semibold text-ink">

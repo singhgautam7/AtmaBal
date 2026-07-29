@@ -345,6 +345,66 @@
     "name": "Sanganer Sadar Police Station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8176035,
+     26.9320929
+    ]
+   },
+   "properties": {
+    "id": "police-22",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.7355845,
+     26.9153921
+    ]
+   },
+   "properties": {
+    "id": "police-23",
+    "name": "Police Station Vaishali Nagar",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8254757,
+     26.9252096
+    ]
+   },
+   "properties": {
+    "id": "police-24",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.7971644,
+     26.8195252
+    ]
+   },
+   "properties": {
+    "id": "police-25",
+    "name": "Sanganer Police Station",
+    "type": "police"
+   }
   }
  ]
 }

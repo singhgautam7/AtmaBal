@@ -1545,6 +1545,726 @@
     "name": "Kharghar Police Station",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8543819,
+     19.1664849
+    ]
+   },
+   "properties": {
+    "id": "police-103",
+    "name": "Aarey Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8328893,
+     18.9444479
+    ]
+   },
+   "properties": {
+    "id": "police-104",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8323654,
+     18.9675282
+    ]
+   },
+   "properties": {
+    "id": "police-105",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8243459,
+     18.9302617
+    ]
+   },
+   "properties": {
+    "id": "police-106",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8299999,
+     19.1225849
+    ]
+   },
+   "properties": {
+    "id": "police-107",
+    "name": "D.N. Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.0051825,
+     19.0990752
+    ]
+   },
+   "properties": {
+    "id": "police-108",
+    "name": "KK POLICE STATION",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8582168,
+     19.2282071
+    ]
+   },
+   "properties": {
+    "id": "police-109",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8294847,
+     19.0738897
+    ]
+   },
+   "properties": {
+    "id": "police-110",
+    "name": "Police Chowk",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.833307,
+     18.9462953
+    ]
+   },
+   "properties": {
+    "id": "police-111",
+    "name": "Police Commissioner's Office",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8559481,
+     19.2294953
+    ]
+   },
+   "properties": {
+    "id": "police-112",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9008254,
+     19.0639495
+    ]
+   },
+   "properties": {
+    "id": "police-113",
+    "name": "chembur police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9116651,
+     19.0595211
+    ]
+   },
+   "properties": {
+    "id": "police-114",
+    "name": "Govandi Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8808749,
+     19.0650661
+    ]
+   },
+   "properties": {
+    "id": "police-115",
+    "name": "Nehru Nagar Kurla E Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8650937,
+     19.2573838
+    ]
+   },
+   "properties": {
+    "id": "police-116",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9591762,
+     19.1695498
+    ]
+   },
+   "properties": {
+    "id": "police-117",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.956655,
+     19.1715844
+    ]
+   },
+   "properties": {
+    "id": "police-118",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.046117,
+     19.1428227
+    ]
+   },
+   "properties": {
+    "id": "police-119",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.0009279,
+     19.1463017
+    ]
+   },
+   "properties": {
+    "id": "police-120",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.837489,
+     18.9978829
+    ]
+   },
+   "properties": {
+    "id": "police-121",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8603409,
+     19.0645147
+    ]
+   },
+   "properties": {
+    "id": "police-122",
+    "name": "BKC Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8614152,
+     19.1998393
+    ]
+   },
+   "properties": {
+    "id": "police-123",
+    "name": "Samatanagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9374814,
+     19.163976
+    ]
+   },
+   "properties": {
+    "id": "police-124",
+    "name": "Traffic Police Chowky",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8445059,
+     19.1834974
+    ]
+   },
+   "properties": {
+    "id": "police-125",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8325587,
+     19.0085419
+    ]
+   },
+   "properties": {
+    "id": "police-126",
+    "name": "Elphinstone Road Traffic Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8266433,
+     19.0981885
+    ]
+   },
+   "properties": {
+    "id": "police-127",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9669954,
+     19.2590592
+    ]
+   },
+   "properties": {
+    "id": "police-128",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9759036,
+     19.1871851
+    ]
+   },
+   "properties": {
+    "id": "police-129",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8128372,
+     18.9615551
+    ]
+   },
+   "properties": {
+    "id": "police-130",
+    "name": "Traffic Police",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9175446,
+     19.0486817
+    ]
+   },
+   "properties": {
+    "id": "police-131",
+    "name": "Govandi Police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8106349,
+     19.1367566
+    ]
+   },
+   "properties": {
+    "id": "police-132",
+    "name": "Versova Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8332649,
+     18.9420194
+    ]
+   },
+   "properties": {
+    "id": "police-133",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8329469,
+     18.9447895
+    ]
+   },
+   "properties": {
+    "id": "police-134",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8319773,
+     18.9541543
+    ]
+   },
+   "properties": {
+    "id": "police-135",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8167794,
+     18.9609597
+    ]
+   },
+   "properties": {
+    "id": "police-136",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.0193851,
+     19.0289022
+    ]
+   },
+   "properties": {
+    "id": "police-137",
+    "name": "Nerul Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8047155,
+     19.2286965
+    ]
+   },
+   "properties": {
+    "id": "police-138",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.0196546,
+     19.0666157
+    ]
+   },
+   "properties": {
+    "id": "police-139",
+    "name": "Turbhe Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9931274,
+     19.1484859
+    ]
+   },
+   "properties": {
+    "id": "police-140",
+    "name": "Rabale Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.9684652,
+     19.1690865
+    ]
+   },
+   "properties": {
+    "id": "police-141",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8269152,
+     19.0964802
+    ]
+   },
+   "properties": {
+    "id": "police-142",
+    "name": "Juhu Tara Road Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.019855,
+     19.0194324
+    ]
+   },
+   "properties": {
+    "id": "police-143",
+    "name": "Seawoods Traffic Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8401727,
+     19.0421503
+    ]
+   },
+   "properties": {
+    "id": "police-144",
+    "name": "Mahim Traffic Division",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8587022,
+     19.2955748
+    ]
+   },
+   "properties": {
+    "id": "police-145",
+    "name": "Golden Nest Police Chowki",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8919053,
+     19.0904101
+    ]
+   },
+   "properties": {
+    "id": "police-146",
+    "name": "Homeguard Central Training Institute",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.835323,
+     19.0841356
+    ]
+   },
+   "properties": {
+    "id": "police-147",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.830347,
+     18.9350835
+    ]
+   },
+   "properties": {
+    "id": "police-148",
+    "name": "Colaba Traffic Police Division",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.02991,
+     19.0173404
+    ]
+   },
+   "properties": {
+    "id": "police-149",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8335259,
+     18.9251097
+    ]
+   },
+   "properties": {
+    "id": "police-150",
+    "name": "Maharashtra Police Headquarters",
+    "type": "police"
+   }
   }
  ]
 }

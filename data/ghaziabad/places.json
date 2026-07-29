@@ -1,10 +1,11 @@
 {
  "city": "ghaziabad",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 1,
-  "police": 55,
+  "police": 59,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -735,6 +736,58 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM node/4226396264"
+  },
+  {
+   "id": "police-55",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 28.6301852,
+   "lng": 77.4340032,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/5829403386"
+  },
+  {
+   "id": "police-56",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 28.655862,
+   "lng": 77.4333457,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/11198925348"
+  },
+  {
+   "id": "police-57",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 28.6578336,
+   "lng": 77.4304575,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/11198955917"
+  },
+  {
+   "id": "police-58",
+   "type": "police",
+   "name": "Police Station",
+   "addr": "",
+   "phone": "",
+   "lat": 28.6591647,
+   "lng": 77.4486211,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/1208663940"
   },
   {
    "id": "helpline-0",

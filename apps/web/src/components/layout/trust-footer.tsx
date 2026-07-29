@@ -19,6 +19,12 @@ export function TrustFooter() {
         </p>
         <div className="flex flex-none items-center gap-4">
           <LocaleLink
+            href="/about"
+            className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
+          >
+            {t('about')}
+          </LocaleLink>
+          <LocaleLink
             href="/methodology"
             className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
           >

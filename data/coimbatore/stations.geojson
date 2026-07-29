@@ -495,6 +495,201 @@
     "name": "Police Station, Walayar",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9681824,
+     10.9952707
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9515967,
+     11.0266348
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "C-3 Saibaba Colony Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9591307,
+     10.9924847
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "B1 POLICE STATION",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9354528,
+     10.988383
+    ]
+   },
+   "properties": {
+    "id": "police-35",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9715748,
+     11.0250344
+    ]
+   },
+   "properties": {
+    "id": "police-36",
+    "name": "Rathinapuri Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.963933,
+     10.9875675
+    ]
+   },
+   "properties": {
+    "id": "police-37",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9411896,
+     11.0821749
+    ]
+   },
+   "properties": {
+    "id": "police-38",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.8949051,
+     11.0452875
+    ]
+   },
+   "properties": {
+    "id": "police-39",
+    "name": "vadavalli police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9516544,
+     11.0266436
+    ]
+   },
+   "properties": {
+    "id": "police-40",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0296247,
+     11.0001594
+    ]
+   },
+   "properties": {
+    "id": "police-41",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0296799,
+     11.0000407
+    ]
+   },
+   "properties": {
+    "id": "police-42",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0297109,
+     10.999916
+    ]
+   },
+   "properties": {
+    "id": "police-43",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0298438,
+     11.0001463
+    ]
+   },
+   "properties": {
+    "id": "police-44",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

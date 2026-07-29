@@ -90,6 +90,21 @@
     "name": "Piplod Police Chowki",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.8194544,
+     21.1983247
+    ]
+   },
+   "properties": {
+    "id": "police-5",
+    "name": "Chowk Bazar Police Station (Furja)",
+    "type": "police"
+   }
   }
  ]
 }

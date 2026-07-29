@@ -435,6 +435,96 @@
     "name": "Police Station Kalmeshwar",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0853548,
+     21.1373887
+    ]
+   },
+   "properties": {
+    "id": "police-29",
+    "name": "Police Station Dhantoli",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9914947,
+     21.1473628
+    ]
+   },
+   "properties": {
+    "id": "police-30",
+    "name": "Wadi Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.011034,
+     21.1247647
+    ]
+   },
+   "properties": {
+    "id": "police-31",
+    "name": "MIDC Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0605649,
+     21.1186348
+    ]
+   },
+   "properties": {
+    "id": "police-32",
+    "name": "Regional Police Training School",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0679656,
+     21.1284745
+    ]
+   },
+   "properties": {
+    "id": "police-33",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1140883,
+     21.1294512
+    ]
+   },
+   "properties": {
+    "id": "police-34",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

@@ -1,10 +1,11 @@
 {
  "city": "nagpur",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 0,
-  "police": 29,
+  "police": 35,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -384,6 +385,84 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM node/13686160366"
+  },
+  {
+   "id": "police-29",
+   "type": "police",
+   "name": "Police Station Dhantoli",
+   "addr": "Humpyard Rd, Congress Nagar, Dhantoli, Nagpur",
+   "phone": "",
+   "lat": 21.1373887,
+   "lng": 79.0853548,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/3259517632"
+  },
+  {
+   "id": "police-30",
+   "type": "police",
+   "name": "Wadi Police Station",
+   "addr": "Amravati Road Datta Wadi, Nagpur",
+   "phone": "+91-7104-220928, +91-7104-2566765",
+   "lat": 21.1473628,
+   "lng": 78.9914947,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/3259551325"
+  },
+  {
+   "id": "police-31",
+   "type": "police",
+   "name": "MIDC Police Station",
+   "addr": "Opp. Coca Cola Factory, MIDC, Nagpur",
+   "phone": "+91-7104-237885, +91-7104-237935",
+   "lat": 21.1247647,
+   "lng": 79.011034,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/3261287758"
+  },
+  {
+   "id": "police-32",
+   "type": "police",
+   "name": "Regional Police Training School",
+   "addr": "",
+   "phone": "",
+   "lat": 21.1186348,
+   "lng": 79.0605649,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/250080497"
+  },
+  {
+   "id": "police-33",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 21.1284745,
+   "lng": 79.0679656,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/387319559"
+  },
+  {
+   "id": "police-34",
+   "type": "police",
+   "name": "Police station (unnamed in OSM)",
+   "addr": "",
+   "phone": "",
+   "lat": 21.1294512,
+   "lng": 79.1140883,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM way/1274057540"
   },
   {
    "id": "helpline-0",

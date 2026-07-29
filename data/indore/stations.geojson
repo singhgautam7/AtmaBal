@@ -150,6 +150,141 @@
     "name": "Police Station - Tejaji Nagar",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8951965,
+     22.7515954
+    ]
+   },
+   "properties": {
+    "id": "police-10",
+    "name": "Vijay Nagar Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8877551,
+     22.7250681
+    ]
+   },
+   "properties": {
+    "id": "police-11",
+    "name": "Palasiya Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.868114,
+     22.6921153
+    ]
+   },
+   "properties": {
+    "id": "police-12",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.88468,
+     22.7236008
+    ]
+   },
+   "properties": {
+    "id": "police-13",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8416914,
+     22.7210223
+    ]
+   },
+   "properties": {
+    "id": "police-14",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8073745,
+     22.7290625
+    ]
+   },
+   "properties": {
+    "id": "police-15",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8503005,
+     22.7226591
+    ]
+   },
+   "properties": {
+    "id": "police-16",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8952335,
+     22.7516152
+    ]
+   },
+   "properties": {
+    "id": "police-17",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8698797,
+     22.7193857
+    ]
+   },
+   "properties": {
+    "id": "police-18",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
   }
  ]
 }

@@ -116,12 +116,36 @@ export default async function MethodologyPage({
             <strong className="font-semibold text-ink">Where the per-offence split comes from,
             and what&apos;s missing.</strong>{' '}
             The breakdown is real NCRB data (Table 3B.2, crime head-wise, metropolitan cities),
-            parsed from the 2024 volume for all 19 metros and validated against NCRB&apos;s own
-            printed totals. NCRB publishes this split by year, so it is currently available for{' '}
-            <strong className="font-semibold text-ink">2024 only</strong>; for earlier years we
-            show the city total and mark the breakdown &ldquo;not available&rdquo; rather than
-            estimate one. The <em>Get help</em> map is also real: station locations from
-            OpenStreetMap, the One Stop Centre geocoded.
+            parsed from the NCRB master reports for all 19 metros and validated so our 19-city
+            sum equals NCRB&apos;s own printed &ldquo;Total Cities&rdquo; for every head. NCRB
+            publishes this split by year, so it is available for{' '}
+            <strong className="font-semibold text-ink">2022, 2023 and 2024</strong> (the years
+            with a published volume). For 2020-2021 there is no such table, so those years show
+            the city total and mark the breakdown &ldquo;not available&rdquo; rather than estimate
+            one. The 2022-2023 tables use the old IPC section labels and 2024 uses the new BNS
+            labels; both map to one consistent set of head names.
+          </p>
+          <p>
+            <strong className="font-semibold text-ink">POCSO is girls under 18.</strong>{' '}
+            NCRB counts child sexual-offence (POCSO) cases with girl-child victims inside its
+            crimes-against-women total, so we show them too - labelled &ldquo;POCSO (girls
+            &lt;18)&rdquo; on the chart so they are never mistaken for offences against adult women.
+          </p>
+          <p>
+            <strong className="font-semibold text-ink">Charge-sheeting rate: only some
+            years.</strong>{' '}
+            NCRB publishes the charge-sheeting rate for a city in its report year only, so we
+            store it for the years it is actually published (2022 and 2024) and show &ldquo;not
+            available&rdquo; for the rest - we never copy one year&apos;s figure onto the others.
+          </p>
+          <p>
+            <strong className="font-semibold text-ink">The map is real, and OSM-sourced.</strong>{' '}
+            Police-station pins come from OpenStreetMap (crowd-sourced), so a city&apos;s list can
+            be <em>incomplete or out of date</em> - it is a starting point, not a full directory.
+            Women&apos;s police stations and the One Stop Centre are hand-verified for Bengaluru
+            only; for other cities they are marked not yet verified. Missing details show
+            &ldquo;not listed&rdquo; rather than a blank. Always confirm before relying on a
+            specific station.
           </p>
         </div>
 

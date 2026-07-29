@@ -1,10 +1,11 @@
 {
  "city": "surat",
- "source": "OpenStreetMap (Overpass); not yet hand-verified against city police",
- "lastUpdated": "2026-07-27",
+ "source": "Police stations: OpenStreetMap (Overpass, amenity=police) - OSM-sourced and may be incomplete or out of date. Women's police stations & One Stop Centres are hand-verified for Bengaluru only; elsewhere not yet verified. Helplines: government-published numbers.",
+ "lastUpdated": "2026-07-30",
  "counts": {
   "women": 1,
-  "police": 5,
+  "police": 6,
+  "osc": 0,
   "helplines": 5
  },
  "places": [
@@ -85,6 +86,19 @@
    "handVerified": false,
    "lastVerified": "2026-07-27",
    "source": "OSM node/2630973214"
+  },
+  {
+   "id": "police-5",
+   "type": "police",
+   "name": "Chowk Bazar Police Station (Furja)",
+   "addr": "",
+   "phone": "",
+   "lat": 21.1983247,
+   "lng": 72.8194544,
+   "distanceLabel": "",
+   "handVerified": false,
+   "lastVerified": "2026-07-30",
+   "source": "OSM node/2629371913"
   },
   {
    "id": "helpline-0",

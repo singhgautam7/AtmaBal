@@ -810,6 +810,111 @@
     "name": "Police Station,Thamarassery",
     "type": "police"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.837412,
+     11.1828848
+    ]
+   },
+   "properties": {
+    "id": "police-53",
+    "name": "Police Station Feroke",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8156431,
+     11.3765153
+    ]
+   },
+   "properties": {
+    "id": "police-54",
+    "name": "Kakkur Police Station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.7821745,
+     11.2540144
+    ]
+   },
+   "properties": {
+    "id": "police-55",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.7834255,
+     11.2544608
+    ]
+   },
+   "properties": {
+    "id": "police-56",
+    "name": "Vanitha police station",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.7916652,
+     11.2269108
+    ]
+   },
+   "properties": {
+    "id": "police-57",
+    "name": "Police Station, Panniyankara",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8567447,
+     11.218187
+    ]
+   },
+   "properties": {
+    "id": "police-58",
+    "name": "Police station (unnamed in OSM)",
+    "type": "police"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8065649,
+     11.1677635
+    ]
+   },
+   "properties": {
+    "id": "police-59",
+    "name": "Police Station, Beypore",
+    "type": "police"
+   }
   }
  ]
 }
