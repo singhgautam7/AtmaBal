@@ -40,11 +40,49 @@ export interface CrimeHead {
   cases: number[];
 }
 
+/** One crime head within a city-year's breakdown (NCRB Table 3B.2). */
+export interface CrimeHeadItem {
+  id: string;
+  name: string;
+  /**
+   * Reported cases. A number (INCLUDING 0) is a real published figure. `null`
+   * means NCRB published no value for this head/city/year - render it as
+   * "not available" (absence), NEVER as a zero slice and never folded into
+   * "Other offences".
+   */
+  cases: number | null;
+}
+
+/** A city's crime-head composition for one year. */
+export interface CrimeHeadYear {
+  /** The city's total reported crimes against women that year (NCRB Table 3B.1). */
+  total: number;
+  items: CrimeHeadItem[];
+  /**
+   * PRINCIPAL-OFFENCE REMAINDER = total - sum(listed heads). This is REAL data:
+   * NCRB counts each FIR under one most-serious head, and we only chart the major
+   * heads, so the rest (minor heads NCRB lists) are shown honestly as "Other
+   * offences". This is NOT "missing data" - keep it visually distinct from any
+   * head whose `cases` is null.
+   */
+  otherCases: number;
+}
+
+export interface CrimeHeads {
+  unit: string;
+  source: string;
+  principalOffenceNote: string;
+  /** Years for which a real head-wise split exists (others: show total only). */
+  availableYears: number[];
+  byYear: Record<string, CrimeHeadYear>;
+}
+
 /**
- * Per-city crime data - real NCRB totals (2020-2024). NCRB does not publish a
- * clean per-offence split at city level in the sourced tables, so v1 ships the
- * verified city total + multi-year trend; the per-head breakdown is a pipeline
- * job (see headBreakdownNote).
+ * Per-city crime data - real NCRB (2020-2024). Totals + rate + charge-sheeting
+ * are the metro-city tables (3B.1); the per-offence split (3B.2) is real for the
+ * years in `heads.availableYears`. Rate and charge-sheet are per-year maps: a
+ * missing year key means NCRB did not publish that figure - render "not
+ * available", never a backfilled value.
  */
 export interface CrimeData {
   city: string;
@@ -54,13 +92,16 @@ export interface CrimeData {
   /** year (string key) -> total reported crimes against women */
   totals: Record<string, number>;
   populationLakh: number | null;
-  ratePerLakh: number | null;
-  chargesheetRate: number | null;
+  populationBaseYear: number;
+  /** year -> reported cases per lakh women (computed once on the 2011 base). */
+  ratePerLakh: Record<string, number>;
+  /** year -> charge-sheeting rate %. Sparse: only years NCRB actually publishes. */
+  chargesheetRate: Record<string, number>;
   populationBaseNote: string;
   source: string;
   lastUpdated: string;
-  hasHeadBreakdown: boolean;
-  headBreakdownNote: string;
+  lastReviewed: string;
+  heads: CrimeHeads;
 }
 
 export interface JusticeData {

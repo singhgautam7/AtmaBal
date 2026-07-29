@@ -6,7 +6,6 @@
  * data is Bengaluru only for now.
  */
 import citiesJson from '@data/shared/cities.json';
-import headModelJson from '@data/shared/head-model.json';
 
 import bengaluru from '@data/bengaluru/crime.json';
 import ahmedabad from '@data/ahmedabad/crime.json';
@@ -50,7 +49,7 @@ import placesPatna from '@data/patna/places.json';
 import placesPune from '@data/pune/places.json';
 import placesSurat from '@data/surat/places.json';
 
-import type { CityMeta, CrimeData, HeadModel, JusticeData, PlacesData } from './types';
+import type { CityMeta, CrimeData, JusticeData, PlacesData } from './types';
 
 export const DEFAULT_CITY = 'bengaluru';
 
@@ -102,8 +101,4 @@ export function getAllPlaces(): Record<string, PlacesData> {
 
 export function getCities(): CityMeta[] {
   return (citiesJson as { cities: CityMeta[] }).cities;
-}
-
-export function getHeadModel(): HeadModel {
-  return headModelJson as HeadModel;
 }

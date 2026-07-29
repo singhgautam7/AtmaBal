@@ -88,12 +88,23 @@
       "total": "Total reported · {year}",
       "reportedCases": "reported cases",
       "ratePerLakh": "Rate per lakh women",
-      "censusBase": "per 1,00,000 women (Census 2011 base)",
+      "censusBase": "per 1,00,000 women (Census {year} base)",
       "chargesheet": "Charge-sheeting rate",
       "chargesheetSub": "of cases, {year}",
+      "chargesheetNA": "not published by NCRB for {year}",
+      "na": "Not available",
       "changeVs": "Change vs {year}",
       "moreReported": "more reported",
       "fewerReported": "fewer reported"
+    },
+    "heads": {
+      "yearTag": "{year} · NCRB Table 3B.2",
+      "other": "Other offences",
+      "hidden": "Hidden heads",
+      "principalOffence": "NCRB counts each case under one most-serious offence, so heads never double-count: the listed heads plus 'Other offences' add up to the city total. 'Other offences' is the real remainder of smaller heads NCRB lists, not missing data.",
+      "notAvailableList": "No separate figure published for: {heads}",
+      "naYearBadge": "Head-wise breakdown not available",
+      "naYear": "NCRB publishes the per-offence split for {years}, not for {year}. Switch the year to {years} to see it."
     },
     "methodology": "Methodology",
     "filters": {

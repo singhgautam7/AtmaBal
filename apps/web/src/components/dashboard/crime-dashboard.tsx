@@ -3,33 +3,32 @@
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import type { CityMeta, CrimeData, JusticeData } from '@/data/types';
+import type { CityMeta, CrimeData, CrimeHeadYear, JusticeData } from '@/data/types';
 import { fmtN } from '@/lib/format';
+import { catColor } from '@/lib/crime';
 import { IconInfo, IconTrendArrow, IconChevronRight } from '@/components/icons';
 import { LocaleLink } from '@/components/layout/locale-link';
-import { TrendLine, Ring } from './charts';
+import { TrendLine, Donut, Ring } from './charts';
 import { ChartFrame } from './chart-frame';
 
-// A purely decorative donut for the blurred "data not available" placeholder.
-// Deliberately renders NO numbers, labels, or tooltips - it must never read as
-// data, even when partially visible behind the overlay.
-function DecorDonut({ size = 168 }: { size?: number }) {
-  const fracs = [0.34, 0.2, 0.14, 0.12, 0.11, 0.09];
-  const fills = ['var(--data-domestic)', 'var(--accent)', 'var(--cat-3)', 'var(--cat-4)', 'var(--cat-5)', 'var(--line-strong)'];
-  const cx = size / 2, cy = size / 2, r = size / 2 - 2, ir = r * 0.56;
-  let a0 = -Math.PI / 2;
-  return (
-    <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} aria-hidden style={{ display: 'block' }}>
-      {fracs.map((frac, i) => {
-        const a1 = i === fracs.length - 1 ? -Math.PI / 2 + Math.PI * 2 : a0 + frac * Math.PI * 2;
-        const large = frac > 0.5 ? 1 : 0;
-        const d = `M ${cx + r * Math.cos(a0)} ${cy + r * Math.sin(a0)} A ${r} ${r} 0 ${large} 1 ${cx + r * Math.cos(a1)} ${cy + r * Math.sin(a1)} L ${cx + ir * Math.cos(a1)} ${cy + ir * Math.sin(a1)} A ${ir} ${ir} 0 ${large} 0 ${cx + ir * Math.cos(a0)} ${cy + ir * Math.sin(a0)} Z`;
-        a0 = a1;
-        return <path key={i} d={d} fill={fills[i]} stroke="var(--surface)" strokeWidth={1.5} />;
-      })}
-    </svg>
-  );
-}
+// Short chip labels for the head ids in NCRB Table 3B.2 (keyed to data ids).
+const HEAD_SHORT: Record<string, string> = {
+  cruelty: 'Cruelty (husband/family)',
+  molestation: 'Assault on modesty',
+  kidnap_abduction: 'Kidnap & abduction',
+  rape: 'Rape',
+  stalking: 'Stalking',
+  insult_modesty: 'Insult to modesty',
+  sexual_harassment: 'Sexual harassment',
+  dowry_deaths: 'Dowry deaths',
+  acid_attack: 'Acid attack',
+  trafficking: 'Trafficking (ITPA)',
+  cyber: 'Cyber crimes',
+  pocso_girls: 'POCSO (girls <18)',
+};
+// Deliberately NOT a head colour: "Other offences" (the real principal-offence
+// remainder) must read as its own neutral category, distinct from every head.
+const OTHER_FILL = 'var(--ink-faint)';
 
 export function CrimeDashboard({
   allCrime,
@@ -48,7 +47,6 @@ export function CrimeDashboard({
   const urlCity = searchParams.get('city');
   const cityId = urlCity && allCrime[urlCity] ? urlCity : 'bengaluru';
   const crime = allCrime[cityId]!;
-  const pop = crime.populationLakh ?? 40.6;
   const years = crime.years;
   const firstYear = years[0]!;
   const lastYear = years[years.length - 1]!;
@@ -68,16 +66,21 @@ export function CrimeDashboard({
     const cur = values[fi] ?? 0;
     const prev = values[pi] ?? 0;
     const yoy = prev ? ((cur - prev) / prev) * 100 : 0;
-    const rate = pop ? cur / pop : 0;
     const first = values[0] ?? 0;
     const last = values[values.length - 1] ?? 0;
     const spanPct = first ? ((last - first) / first) * 100 : 0;
     const dir = spanPct >= 8 ? 'up' : spanPct <= -8 ? 'down' : 'flat';
-    return { values, pi, cur, yoy, rate, first, last, spanPct, dir };
-  }, [crime.totals, years, focusYear, pop]);
+    return { values, pi, cur, yoy, first, last, spanPct, dir };
+  }, [crime.totals, years, focusYear]);
 
-  const { values, pi, cur, yoy, rate, first, last, spanPct, dir } = model;
+  const { values, pi, cur, yoy, first, last, spanPct, dir } = model;
   const prevYear = years[pi]!;
+  // Rate & charge-sheeting come STRAIGHT from the data per year - a missing year
+  // key means NCRB published no figure, so we show "not available" (never a
+  // backfilled or recomputed value). Rate is computed once in the pipeline as
+  // cases / 2011-female-population (NCRB's own base); see populationBaseNote.
+  const rateY = crime.ratePerLakh[String(focusYear)];
+  const csY = crime.chargesheetRate[String(focusYear)];
   const justice = justiceByCity[cityId] ?? null;
 
   const headline = t(`trend.${dir}`, {
@@ -135,7 +138,11 @@ export function CrimeDashboard({
       {/* Real KPIs */}
       <div className="mt-4 grid grid-cols-2 gap-3.5 md:grid-cols-4">
         <StatCard label={t('stats.total', { year: focusYear })} value={fmtN(cur)} sub={t('stats.reportedCases')} />
-        <StatCard label={t('stats.ratePerLakh')} value={rate.toFixed(1)} sub={t('stats.censusBase')} />
+        <StatCard
+          label={t('stats.ratePerLakh')}
+          value={rateY != null ? rateY.toFixed(1) : t('stats.na')}
+          sub={t('stats.censusBase', { year: crime.populationBaseYear })}
+        />
         <StatCard
           label={t('stats.changeVs', { year: prevYear })}
           value={`${yoy >= 0 ? '+' : '-'}${Math.abs(Math.round(yoy))}%`}
@@ -144,8 +151,8 @@ export function CrimeDashboard({
         />
         <StatCard
           label={t('stats.chargesheet')}
-          value={crime.chargesheetRate != null ? `${crime.chargesheetRate.toFixed(0)}%` : '-'}
-          sub={t('stats.chargesheetSub', { year: lastYear })}
+          value={csY != null ? `${csY.toFixed(0)}%` : t('stats.na')}
+          sub={csY != null ? t('stats.chargesheetSub', { year: focusYear }) : t('stats.chargesheetNA', { year: focusYear })}
         />
       </div>
 
@@ -166,20 +173,7 @@ export function CrimeDashboard({
           <TrendLine values={values} years={years} measure="cases" focusYear={focusYear} width={560} height={220} ariaLabel={t('totalOverTime', { y0: firstYear, y1: lastYear })} />
         </ChartFrame>
 
-        <div className="rounded-md border border-line bg-surface p-4">
-          <div className="mb-2 text-[13px] font-semibold text-ink-soft">{t('breakdownTitle')}</div>
-          <div className="relative flex items-center justify-center py-3">
-            <div style={{ filter: 'blur(7px)', opacity: 0.5 }} aria-hidden>
-              <DecorDonut size={168} />
-            </div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4 text-center">
-              <span className="rounded-full bg-ink px-3 py-1 text-[12px] font-semibold text-paper shadow">
-                {t('notAvailable.badge')}
-              </span>
-              <p className="max-w-[300px] text-[11.5px] leading-snug text-ink-soft">{t('notAvailable.note')}</p>
-            </div>
-          </div>
-        </div>
+        <HeadBreakdown crime={crime} year={focusYear} />
       </div>
 
       {/* Compare any two years - uses only the REAL totals, so it needs no
@@ -203,6 +197,102 @@ export function CrimeDashboard({
 }
 
 /* ---------------------------------------------------------------- bits ---- */
+
+function HeadBreakdown({ crime, year }: { crime: CrimeData; year: number }) {
+  const t = useTranslations('crime');
+  const [hidden, setHidden] = useState<Set<string>>(new Set());
+  const yd: CrimeHeadYear | undefined = crime.heads?.byYear?.[String(year)];
+  const avail = crime.heads?.availableYears ?? [];
+
+  // No real head-wise split for this year: SUPPRESS the chart (rule - never draw
+  // a misleading or empty composition) and say plainly where the data does exist.
+  if (!yd) {
+    return (
+      <div className="rounded-md border border-line bg-surface p-4">
+        <div className="mb-2 text-[13px] font-semibold text-ink-soft">{t('breakdownTitle')}</div>
+        <div className="flex min-h-[210px] flex-col items-center justify-center gap-2 rounded-md border border-dashed border-line px-5 text-center">
+          <span className="rounded-full border border-line px-3 py-1 text-[12px] font-semibold text-ink-soft">
+            {t('heads.naYearBadge')}
+          </span>
+          <p className="max-w-[320px] text-[11.5px] leading-snug text-ink-soft">
+            {t('heads.naYear', { year, years: avail.join(', ') })}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const known = yd.items.filter((i): i is { id: string; name: string; cases: number } => i.cases !== null);
+  const notAvail = yd.items.filter((i) => i.cases === null);
+  const total = yd.total || 1;
+
+  // PRINCIPAL-OFFENCE RULE (do not "fix" this into a false equality):
+  // NCRB counts every FIR under a single, most-serious head, so heads never
+  // double-count and (all listed heads + "Other offences") == the city total.
+  // "Other offences" is the REAL remainder - the minor heads NCRB lists but we
+  // don't chart individually - NOT missing data. A head whose value is null is
+  // ABSENCE (shown separately below), and must never be folded into "Other".
+  let hiddenSum = 0;
+  const slices: { name: string; val: number; fill: string }[] = [];
+  known.forEach((h, i) => {
+    if (hidden.has(h.id)) { hiddenSum += h.cases; return; }
+    if (h.cases > 0) slices.push({ name: HEAD_SHORT[h.id] ?? h.name, val: h.cases, fill: catColor(i) });
+  });
+  if (hiddenSum > 0) slices.push({ name: t('heads.hidden'), val: hiddenSum, fill: 'var(--line-strong)' });
+  if (yd.otherCases > 0) slices.push({ name: t('heads.other'), val: yd.otherCases, fill: OTHER_FILL });
+
+  const pct = (v: number) => `${((v / total) * 100).toFixed(v / total < 0.1 ? 1 : 0)}%`;
+  const toggle = (id: string) =>
+    setHidden((s) => {
+      const n = new Set(s);
+      if (n.has(id)) n.delete(id); else n.add(id);
+      return n;
+    });
+
+  return (
+    <div className="rounded-md border border-line bg-surface p-4">
+      <div className="mb-2 flex items-baseline justify-between gap-2">
+        <div className="text-[13px] font-semibold text-ink-soft">{t('breakdownTitle')}</div>
+        <span className="text-[11px] text-ink-faint">{t('heads.yearTag', { year })}</span>
+      </div>
+      <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-start">
+        <div className="flex-none pt-0.5">
+          <Donut items={slices} size={148} ariaLabel={t('breakdownTitle')} />
+        </div>
+        <ul className="w-full min-w-0 flex-1 space-y-0.5">
+          {known.map((h, i) => (
+            <li key={h.id}>
+              <button
+                type="button"
+                onClick={() => toggle(h.id)}
+                aria-pressed={!hidden.has(h.id)}
+                title={h.name}
+                className={`flex w-full items-center gap-2 rounded px-1 py-0.5 text-left text-[11.5px] hover:bg-accent-soft ${hidden.has(h.id) ? 'opacity-40' : ''}`}
+              >
+                <span className="h-2.5 w-2.5 flex-none rounded-sm" style={{ background: catColor(i) }} />
+                <span className="flex-1 truncate text-ink">{HEAD_SHORT[h.id] ?? h.name}</span>
+                <span className="tabular-nums text-ink-soft">{fmtN(h.cases)}</span>
+                <span className="w-9 text-right tabular-nums text-ink-faint">{pct(h.cases)}</span>
+              </button>
+            </li>
+          ))}
+          <li className="flex items-center gap-2 px-1 py-0.5 text-[11.5px]" title={crime.heads.principalOffenceNote}>
+            <span className="h-2.5 w-2.5 flex-none rounded-sm" style={{ background: OTHER_FILL }} />
+            <span className="flex-1 text-ink">{t('heads.other')}</span>
+            <span className="tabular-nums text-ink-soft">{fmtN(yd.otherCases)}</span>
+            <span className="w-9 text-right tabular-nums text-ink-faint">{pct(yd.otherCases)}</span>
+          </li>
+        </ul>
+      </div>
+      {notAvail.length > 0 && (
+        <p className="mt-2.5 border-t border-line pt-2 text-[11px] leading-snug text-ink-faint">
+          {t('heads.notAvailableList', { heads: notAvail.map((h) => HEAD_SHORT[h.id] ?? h.name).join(', ') })}
+        </p>
+      )}
+      <p className="mt-2.5 text-[10.5px] leading-snug text-ink-faint">{t('heads.principalOffence')}</p>
+    </div>
+  );
+}
 
 function CompareTwoYears({ totals, years, cityId }: { totals: Record<string, number>; years: number[]; cityId: string }) {
   const t = useTranslations('crime.charts');

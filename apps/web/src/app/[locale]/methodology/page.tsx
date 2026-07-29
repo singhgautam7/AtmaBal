@@ -5,9 +5,19 @@ import { getCrime } from '@/data/loaders';
 
 const SOURCES = [
   {
-    kind: 'Crime figures',
-    source: 'NCRB “Crime in India” 2020-2024, metro-city tables (via OpenCity, data.opencity.in)',
-    verified: 'Machine-read from NCRB’s published CSV/XLSX and validated in the pipeline; no number ships without a source.',
+    kind: 'Crime totals & rate',
+    source: 'NCRB “Crime in India” metro-city tables (Table 3B.1), 2022 & 2024 volumes, via OpenCity (data.opencity.in)',
+    verified: 'Machine-read from NCRB’s published CSV/XLSX. Case counts cover 2020-2024. Charge-sheeting rate is stored only for the years NCRB actually publishes it (2022 and 2024); other years show “not available” rather than a copied figure.',
+  },
+  {
+    kind: 'Per-offence split',
+    source: 'NCRB “Crime in India 2024”, Table 3B.2 (Crime against Women, crime head-wise, metropolitan cities)',
+    verified: 'Parsed from the NCRB master PDF for all 19 metros; every head’s figure is cross-checked so our 19-city sum equals NCRB’s printed “Total Cities”. Available for 2024 only so far; earlier years show the total and mark the split “not available”.',
+  },
+  {
+    kind: 'Rate calculation',
+    source: 'Reported cases ÷ Census-2011 female population (NCRB’s own base)',
+    verified: 'Computed once, per year, from the real case count and the fixed 2011 base; our 2022 and 2024 figures reproduce NCRB’s published rates. Because the base does not move, later-year rates run slightly high vs today’s population.',
   },
   {
     kind: 'Court/police disposal',
@@ -92,11 +102,26 @@ export default async function MethodologyPage({
             <strong className="font-semibold text-ink">2,730 in 2020 to 4,748 in 2024</strong>.
           </p>
           <p>
-            <strong className="font-semibold text-ink">What is still being added.</strong>{' '}
-            NCRB does not publish a clean per-offence split at city level in these tables, so
-            we show the verified city total and its trend rather than guess a breakdown - the
-            per-head split is a documented pipeline job. The <em>Get help</em> map is also
-            real: station locations from OpenStreetMap, the One Stop Centre geocoded.
+            <strong className="font-semibold text-ink">Why the offence heads don&apos;t add up
+            to the total.</strong>{' '}
+            NCRB records each case under a single, most-serious offence (the &ldquo;principal
+            offence&rdquo; rule), so the heads never double-count. We chart the major heads
+            individually; everything else NCRB lists is shown honestly as{' '}
+            <em>Other offences</em> - a real remainder, not a guess. Together the listed heads
+            plus <em>Other offences</em> equal the city total. A head with no published figure
+            is marked <em>not available</em> and is never folded into <em>Other offences</em> or
+            shown as zero.
+          </p>
+          <p>
+            <strong className="font-semibold text-ink">Where the per-offence split comes from,
+            and what&apos;s missing.</strong>{' '}
+            The breakdown is real NCRB data (Table 3B.2, crime head-wise, metropolitan cities),
+            parsed from the 2024 volume for all 19 metros and validated against NCRB&apos;s own
+            printed totals. NCRB publishes this split by year, so it is currently available for{' '}
+            <strong className="font-semibold text-ink">2024 only</strong>; for earlier years we
+            show the city total and mark the breakdown &ldquo;not available&rdquo; rather than
+            estimate one. The <em>Get help</em> map is also real: station locations from
+            OpenStreetMap, the One Stop Centre geocoded.
           </p>
         </div>
 
@@ -128,9 +153,9 @@ export default async function MethodologyPage({
           </table>
         </div>
         <p className="mt-4 text-[12px] leading-relaxed text-ink-faint">
-          Data last updated: {crime.lastUpdated}. Something wrong or out of date? Use the
-          corrections link in the footer - every legal point, helpline and station also carries
-          its own source and review date in the app.
+          Data source: {crime.lastUpdated}. Last reviewed: {crime.lastReviewed}. Something wrong
+          or out of date? Use the corrections link in the footer - every legal point, helpline
+          and station also carries its own source and review date in the app.
         </p>
       </main>
       <TrustFooter />

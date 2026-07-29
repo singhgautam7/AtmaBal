@@ -60,22 +60,32 @@ def _slug(name: str) -> str:
 
 
 def fetch_metros() -> dict[str, dict]:
-    """Return {slug: {name, state, totals:{year:int}, pop, rate, chargesheet}}."""
+    """Return {slug: {name, state, totals:{year:int}, pop, cs:{year:float}}}.
+
+    IMPORTANT (data integrity): each NCRB volume reports the charge-sheeting rate
+    for its OWN report year only - the 2022 volume gives the 2022 rate, the 2024
+    volume the 2024 rate. We therefore key charge-sheet by that year and NEVER
+    copy one year's figure onto the others. Years with no published rate stay
+    absent, and render as "not available". Rate/lakh is NOT stored here; it is a
+    deterministic function of cases and the 2011 base, computed once in ingest().
+    """
     import openpyxl
 
     cities: dict[str, dict] = {}
 
-    # 2022 CSV (2020, 2021, 2022 + 2011 population)
+    def _c(name):
+        return cities.setdefault(_slug(name),
+                                 {"name": name, "state": None, "totals": {}, "pop": None, "cs": {}})
+
+    # 2022 CSV: 2020-2022 case counts, 2011 population, and the 2022 charge-sheet rate.
     url = _resource_url("crime-in-india-2022", DATASETS["crime-in-india-2022"])
     if url:
         txt = httpx.get(url, headers={"User-Agent": UA}, timeout=60).text
         for row in csv.DictReader(io.StringIO(txt)):
-            raw = row[list(row.keys())[0]]
-            name, _ = _clean_city(raw)
+            name, _ = _clean_city(row[list(row.keys())[0]])
             if name.upper().startswith("TOTAL"):
                 continue
-            c = cities.setdefault(_slug(name), {"name": name, "state": None, "totals": {},
-                                                "pop": None, "rate": None, "chargesheet": None})
+            c = _c(name)
             for y in ("2020", "2021", "2022"):
                 if row.get(y, "").strip().isdigit():
                     c["totals"][int(y)] = int(row[y])
@@ -83,8 +93,12 @@ def fetch_metros() -> dict[str, dict]:
                 c["pop"] = float(row["Population (in lakhs 2011)"])
             except (KeyError, ValueError, TypeError):
                 pass
+            try:
+                c["cs"][2022] = round(float(row["Chargesheet rate (%)"]), 1)  # 2022 volume => 2022
+            except (KeyError, ValueError, TypeError):
+                pass
 
-    # 2024 XLSX (2022, 2023, 2024 + rate + chargesheet + state)
+    # 2024 XLSX (Table 3B.1): 2022-2024 case counts + 2011 pop + the 2024 charge-sheet rate.
     url = _resource_url("crime-in-india-2024", DATASETS["crime-in-india-2024"])
     if url:
         data = httpx.get(url, headers={"User-Agent": UA}, timeout=60).content
@@ -97,8 +111,7 @@ def fetch_metros() -> dict[str, dict]:
             name, state = _clean_city(r[1])
             if name.upper().startswith("TOTAL"):
                 continue
-            c = cities.setdefault(_slug(name), {"name": name, "state": None, "totals": {},
-                                                "pop": None, "rate": None, "chargesheet": None})
+            c = _c(name)
             c["name"] = name
             if state:
                 c["state"] = state
@@ -107,10 +120,8 @@ def fetch_metros() -> dict[str, dict]:
                     c["totals"][yr] = int(r[2 + yi])
             if isinstance(r[5], (int, float)):
                 c["pop"] = float(r[5])
-            if isinstance(r[6], (int, float)):
-                c["rate"] = float(r[6])
             if isinstance(r[7], (int, float)):
-                c["chargesheet"] = float(r[7])
+                c["cs"][2024] = round(float(r[7]), 1)  # 2024 volume => 2024
 
     # Normalise "Delhi City" -> "delhi"
     if "delhi-city" in cities:
@@ -139,11 +150,17 @@ def ingest(conn: sqlite3.Connection) -> dict:
             (slug, _slug(c["state"] or "unknown"), c["name"], 1 if slug == "bengaluru" else 0),
         )
         for year, cases in c["totals"].items():
+            # Rate = cases / 2011-female-population (NCRB's own base), computed
+            # per year - a single, verifiable source (matches NCRB's published
+            # rate for 2022 & 2024). Charge-sheet is stored ONLY for the year its
+            # source volume actually reports; other years stay NULL (-> "not
+            # available"). Never copy one year's charge-sheet across others.
+            rate = round(cases / c["pop"], 1) if c.get("pop") else None
             conn.execute(
                 "INSERT OR REPLACE INTO crime_city_year"
                 "(city_id,year,cases,population_lakh,rate_per_lakh,chargesheet_rate,source_id)"
                 " VALUES (?,?,?,?,?,?,?)",
-                (slug, year, cases, c["pop"], c["rate"], c["chargesheet"], src),
+                (slug, year, cases, c["pop"], rate, c["cs"].get(year), src),
             )
             n += 1
     conn.execute(

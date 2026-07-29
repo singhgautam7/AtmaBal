@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import math
 import sqlite3
+from datetime import date
 from pathlib import Path
 
 from .db import PIPELINE_DIR
@@ -88,12 +89,34 @@ def export_places(conn: sqlite3.Connection, city_id: str = "bengaluru") -> dict:
 
 
 def export_crime(conn: sqlite3.Connection) -> dict:
-    """Write per-city crime.json (real NCRB totals) + shared/cities.json."""
-    HEAD_NOTE = (
-        "NCRB does not publish a per-offence breakdown at city level for this city in "
-        "the sourced tables; the city total and its multi-year trend are shown. Per-head "
-        "data will be added when parsed from NCRB head-wise tables."
+    """Write per-city crime.json (real NCRB totals + rate + per-head split) + cities.json.
+
+    Data-integrity rules baked in here:
+      * rate/lakh is computed per year as cases / 2011-female-population (NCRB's own
+        base); a single, verifiable source. No stored/smeared rate.
+      * charge-sheet is emitted ONLY for the years NCRB actually publishes it; missing
+        years are simply absent (the UI shows "not available", never a copied value).
+      * the per-head split (crime_stat) is emitted per year it exists; "Other offences"
+        is the PRINCIPAL-OFFENCE remainder = city total - sum(listed heads), which is
+        real (NCRB counts one head per FIR). A head we have no value for is omitted from
+        `items` here only if truly absent; the UI marks such heads "not available".
+    """
+    POP_NOTE = (
+        "Rate = reported cases per 1,00,000 women on the Census-2011 female population - the "
+        "same fixed base NCRB uses (our 2022 & 2024 rates match NCRB's published figures). "
+        "Because the base does not move, later-year rates run slightly high vs today's population."
     )
+    SOURCE = ("NCRB Crime in India: metro-city totals & rate (Table 3B.1, 2022 & 2024 volumes) "
+              "and crime-head split (Table 3B.2, 2024), via OpenCity (data.opencity.in).")
+    HEAD_SOURCE = ("NCRB Crime in India 2024, Table 3B.2 (Crime against Women, crime head-wise, "
+                   "metropolitan cities).")
+    PRINCIPAL = ("NCRB counts each FIR under a single most-serious head, so heads never "
+                 "double-count and the listed heads plus 'Other offences' equal the city total.")
+    last_reviewed = date.today().isoformat()
+
+    head_meta = {r["id"]: (r["display_name"], r["display_order"])
+                 for r in conn.execute("SELECT id, display_name, display_order FROM crime_head")}
+
     cities = conn.execute(
         "SELECT DISTINCT c.id, c.name, c.is_live,"
         " (SELECT s.name FROM state s WHERE s.id=c.state_id) state"
@@ -109,19 +132,42 @@ def export_crime(conn: sqlite3.Connection) -> dict:
         ).fetchall()
         if not rows:
             continue
-        latest = rows[-1]
+        pop = next((r["population_lakh"] for r in rows if r["population_lakh"]), None)
+        totals = {str(r["year"]): r["cases"] for r in rows}
+        rate = {str(r["year"]): round(r["cases"] / pop, 1) for r in rows if pop}
+        cs = {str(r["year"]): r["chargesheet_rate"] for r in rows if r["chargesheet_rate"] is not None}
+
+        # Per-head split per year, from crime_stat (measure='cases').
+        by_year: dict[str, dict] = {}
+        for r in conn.execute(
+            "SELECT year, head_id, value FROM crime_stat WHERE city_id=? AND measure='cases'",
+            (c["id"],),
+        ):
+            by_year.setdefault(str(r["year"]), {})[r["head_id"]] = int(r["value"])
+        heads_by_year = {}
+        for y, hmap in by_year.items():
+            items = [{"id": hid, "name": head_meta.get(hid, (hid, 99))[0], "cases": v}
+                     for hid, v in sorted(hmap.items(), key=lambda kv: head_meta.get(kv[0], ("", 99))[1])]
+            total_y = totals.get(y)
+            other = (total_y - sum(hmap.values())) if total_y is not None else None
+            heads_by_year[y] = {"total": total_y, "items": items, "otherCases": other}
+
         payload = {
             "city": c["id"], "cityName": c["name"], "state": c["state"] or "",
             "years": [r["year"] for r in rows],
-            "totals": {str(r["year"]): r["cases"] for r in rows},
-            "populationLakh": latest["population_lakh"],
-            "ratePerLakh": latest["rate_per_lakh"],
-            "chargesheetRate": latest["chargesheet_rate"],
-            "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
-            "source": "NCRB Crime in India (2022–2024), via OpenCity (data.opencity.in)",
+            "totals": totals,
+            "populationLakh": pop, "populationBaseYear": 2011,
+            "ratePerLakh": rate,
+            "chargesheetRate": cs,
+            "populationBaseNote": POP_NOTE,
+            "source": SOURCE,
             "lastUpdated": "NCRB Crime in India 2024",
-            "hasHeadBreakdown": False,
-            "headBreakdownNote": HEAD_NOTE,
+            "lastReviewed": last_reviewed,
+            "heads": {
+                "unit": "cases", "source": HEAD_SOURCE, "principalOffenceNote": PRINCIPAL,
+                "availableYears": sorted(int(y) for y in heads_by_year),
+                "byYear": heads_by_year,
+            },
         }
         out = DATA_DIR / c["id"]
         out.mkdir(parents=True, exist_ok=True)

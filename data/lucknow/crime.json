@@ -17,11 +17,96 @@
   "2024": 2571
  },
  "populationLakh": 13.8,
- "ratePerLakh": 186.0,
- "chargesheetRate": 83.7,
- "populationBaseNote": "Population base is Census 2011 (lakhs); NCRB rates use this base.",
- "source": "NCRB Crime in India (2022-2024), via OpenCity (data.opencity.in)",
+ "populationBaseYear": 2011,
+ "ratePerLakh": {
+  "2020": 191.0,
+  "2021": 156.6,
+  "2022": 161.7,
+  "2023": 210.3,
+  "2024": 186.3
+ },
+ "chargesheetRate": {
+  "2022": 80.6,
+  "2024": 83.7
+ },
+ "populationBaseNote": "Rate = reported cases per 1,00,000 women on the Census-2011 female population - the same fixed base NCRB uses (our 2022 & 2024 rates match NCRB's published figures). Because the base does not move, later-year rates run slightly high vs today's population.",
+ "source": "NCRB Crime in India: metro-city totals & rate (Table 3B.1, 2022 & 2024 volumes) and crime-head split (Table 3B.2, 2024), via OpenCity (data.opencity.in).",
  "lastUpdated": "NCRB Crime in India 2024",
- "hasHeadBreakdown": false,
- "headBreakdownNote": "NCRB does not publish a per-offence breakdown at city level for this city in the sourced tables; the city total and its multi-year trend are shown. Per-head data will be added when parsed from NCRB head-wise tables."
+ "lastReviewed": "2026-07-30",
+ "heads": {
+  "unit": "cases",
+  "source": "NCRB Crime in India 2024, Table 3B.2 (Crime against Women, crime head-wise, metropolitan cities).",
+  "principalOffenceNote": "NCRB counts each FIR under a single most-serious head, so heads never double-count and the listed heads plus 'Other offences' equal the city total.",
+  "availableYears": [
+   2024
+  ],
+  "byYear": {
+   "2024": {
+    "total": 2571,
+    "items": [
+     {
+      "id": "cruelty",
+      "name": "Cruelty by husband or relatives",
+      "cases": 1446
+     },
+     {
+      "id": "molestation",
+      "name": "Assault to outrage modesty",
+      "cases": 176
+     },
+     {
+      "id": "kidnap_abduction",
+      "name": "Kidnapping & abduction of women",
+      "cases": 246
+     },
+     {
+      "id": "rape",
+      "name": "Rape",
+      "cases": 161
+     },
+     {
+      "id": "stalking",
+      "name": "Stalking",
+      "cases": 31
+     },
+     {
+      "id": "insult_modesty",
+      "name": "Insult to modesty of women",
+      "cases": 0
+     },
+     {
+      "id": "sexual_harassment",
+      "name": "Sexual harassment",
+      "cases": 30
+     },
+     {
+      "id": "dowry_deaths",
+      "name": "Dowry deaths",
+      "cases": 22
+     },
+     {
+      "id": "acid_attack",
+      "name": "Acid attack",
+      "cases": 0
+     },
+     {
+      "id": "trafficking",
+      "name": "Immoral traffic (ITPA)",
+      "cases": 48
+     },
+     {
+      "id": "cyber",
+      "name": "Cyber crimes against women",
+      "cases": 0
+     },
+     {
+      "id": "pocso_girls",
+      "name": "POCSO (girl-child victims)",
+      "cases": 249
+     }
+    ],
+    "otherCases": 162
+   }
+  }
+ }
 }

@@ -53,6 +53,18 @@ def ingest_ncrb_metros() -> None:
     typer.echo(f"ncrb metros: {result}")
 
 
+@app.command("ingest-ncrb-headwise")
+def ingest_ncrb_headwise() -> None:
+    """REAL: parse NCRB Table 3B.2 (2024 master PDF) -> per-head crime_stat for 19 metros."""
+    from .ingest import ncrb_headwise
+
+    conn = dbmod.connect()
+    dbmod.migrate(conn)
+    _seed_geography(conn)
+    result = ncrb_headwise.ingest(conn)
+    typer.echo(f"ncrb head-wise: {result}")
+
+
 @app.command("ingest-ncrb")
 def ingest_ncrb(pdf: Path, year: int) -> None:
     """Parse an NCRB city-wise 'Crime in India' PDF into crime_stat rows (per-head)."""
