@@ -100,7 +100,9 @@
     "heads": {
       "yearTag": "{year} · NCRB Table 3B.2",
       "shareTitle": "Share by offence type · {year}",
+      "selectedTrend": "Cases over time · total of selected heads · {y0}-{y1}",
       "compareTitle": "Compare two years, by offence",
+      "compareHint": "Hover or tap a bar to see both years' numbers.",
       "compareEmpty": "No shared offence heads to compare for these two years. Try different years, or widen the scope filter.",
       "sourceTag": "NCRB Table 3B.2",
       "other": "Other offences",

@@ -22,8 +22,6 @@ const TAG_COLOR: Record<PlaceType, string> = {
   helpline: 'var(--ink-soft)',
 };
 
-const LIST_CAP = 40;
-
 function directionsHref(p: Place): string {
   const dest = p.lat != null && p.lng != null ? `${p.lat},${p.lng}` : `${p.name}`;
   return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`;
@@ -88,7 +86,10 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
       const rank = (ty: PlaceType) => (ty === 'women' ? 0 : ty === 'osc' ? 1 : ty === 'police' ? 2 : 3);
       return rank(a.p.type) - rank(b.p.type);
     });
-    return withDist.slice(0, LIST_CAP).map(({ p, km }) => (km != null ? { ...p, distanceLabel: formatKm(km) } : p));
+    // Show every station (the map already plots them all); capping the list made
+    // "Nearby - N places" read 40 even where a city has 100-280 stations, and left
+    // far-away pins with no card to open.
+    return withDist.map(({ p, km }) => (km != null ? { ...p, distanceLabel: formatKm(km) } : p));
   }, [places, filter, coords]);
 
   const mapPlaces = useMemo(

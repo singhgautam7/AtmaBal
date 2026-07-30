@@ -141,29 +141,22 @@ export function CrimeDashboard({
         </div>
       </div>
 
-      {/* Total trend (real totals, full range) - not head-dependent, always shown. */}
-      <div className="mt-6">
-        <ChartFrame title={t('totalOverTime', { y0: firstYear, y1: lastYear })} filename={`${cityId}-total-trend`}>
-          <TrendLine values={values} years={years} measure="cases" focusYear={focusYear} width={880} height={230} ariaLabel={t('totalOverTime', { y0: firstYear, y1: lastYear })} />
-        </ChartFrame>
-      </div>
-
       {hasCategories ? (
         <>
-          {/* Filters (design handoff): scope + crime-head multi-select. */}
-          <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-md border border-line bg-surface px-4 py-3">
+          {/* Filters (design handoff): scope + crime-head multi-select, above the charts. */}
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-md border border-line bg-surface px-4 py-3">
             <div className="flex items-center gap-2">
               <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-faint">{t('filters.scope')}</span>
               <ScopeSeg value={scope} onChange={setScope} labels={{ all: t('scope.all'), public: t('scope.public'), domestic: t('scope.domestic') }} />
             </div>
             <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
               <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-faint">{t('filters.crimeHead')}</span>
-              {headCatalog.filter(inScope).map((h, i) => {
+              {headCatalog.filter(inScope).map((h) => {
                 const off = hidden.has(h.id);
                 return (
                   <button key={h.id} type="button" onClick={() => toggle(h.id)} aria-pressed={!off}
                     className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11.5px] ${off ? 'border-line text-ink-faint opacity-60' : 'border-accent-line text-ink'}`}>
-                    <span className="h-2 w-2 flex-none rounded-full" style={{ background: catColor(headCatalog.indexOf(h)) }} />
+                    <span className="h-2 w-2 flex-none rounded-full" style={{ background: catFor(crime, h.id) }} />
                     {HEAD_SHORT[h.id] ?? h.name}
                   </button>
                 );
@@ -171,8 +164,13 @@ export function CrimeDashboard({
             </div>
           </div>
 
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
+          {/* Row 1: selected-heads line (filter-dependent) + share-by-head pie. */}
+          <div className="mt-4 grid gap-4 md:grid-cols-[1.4fr_1fr]">
+            <SelectedHeadsTrend crime={crime} focusYear={focusYear} scope={scope} hidden={hidden} inScope={inScope} />
             <ShareByHead crime={crime} year={focusYear} scope={scope} hidden={hidden} inScope={inScope} />
+          </div>
+          {/* Row 2: compare two years by head, full width so the axis labels breathe. */}
+          <div className="mt-4">
             <CompareByHead crime={crime} scope={scope} hidden={hidden} inScope={inScope} />
           </div>
           {crime.heads.scopeNote && (
@@ -180,10 +178,17 @@ export function CrimeDashboard({
           )}
         </>
       ) : (
-        // No categories for this city: keep the simple total year-on-year view.
-        <div className="mt-4">
-          <CompareTwoYears totals={crime.totals} years={years} cityId={cityId} />
-        </div>
+        // No categories for this city: keep the simple total trend + year-on-year view.
+        <>
+          <div className="mt-6">
+            <ChartFrame title={t('totalOverTime', { y0: firstYear, y1: lastYear })} filename={`${cityId}-total-trend`}>
+              <TrendLine values={values} years={years} measure="cases" focusYear={focusYear} width={880} height={230} ariaLabel={t('totalOverTime', { y0: firstYear, y1: lastYear })} />
+            </ChartFrame>
+          </div>
+          <div className="mt-4">
+            <CompareTwoYears totals={crime.totals} years={years} cityId={cityId} />
+          </div>
+        </>
       )}
 
       {justice && <JusticeSection justice={justice} />}
@@ -207,10 +212,51 @@ const HEAD_SHORT: Record<string, string> = {
   stalking: 'Stalking', insult_modesty: 'Insult to modesty', cyber: 'Cyber crimes', dowry_deaths: 'Dowry deaths', acid_attack: 'Acid attack',
 };
 
+// Short x-axis labels for the grouped bars (the full names overlap/merge).
+const HEAD_ABBR: Record<string, string> = {
+  cruelty: 'Cruelty', molestation: 'Molest.', kidnap_abduction: 'Kidnap', rape: 'Rape',
+  pocso_girls: 'POCSO', trafficking: 'Traffick', sexual_harassment: 'Harass', stalking: 'Stalk',
+  insult_modesty: 'Insult', cyber: 'Cyber', dowry_deaths: 'Dowry', acid_attack: 'Acid',
+};
+
 function catFor(crime: CrimeData, id: string): string {
   const latest = crime.heads.availableYears[crime.heads.availableYears.length - 1];
   const cat = (latest != null && crime.heads.byYear[String(latest)]?.items) || [];
   return catColor(Math.max(0, cat.findIndex((h) => h.id === id)));
+}
+
+// The trend line is FILTER-DEPENDENT (design: "total of selected heads"). With no
+// filter active it shows the full real city total across all years (2020-2024);
+// once you narrow the scope or heads it switches to the sum of the selected heads,
+// over the years that actually have a head-wise split (never interpolated).
+function SelectedHeadsTrend({
+  crime, focusYear, scope, hidden, inScope,
+}: { crime: CrimeData; focusYear: number; scope: Scope; hidden: Set<string>; inScope: (h: CrimeHeadItem) => boolean }) {
+  const t = useTranslations('crime');
+  const avail = crime.heads.availableYears;
+  const allSelected = hidden.size === 0 && scope === 'all';
+
+  let years: number[];
+  let values: number[];
+  let title: string;
+  if (allSelected) {
+    years = crime.years;
+    values = years.map((y) => crime.totals[String(y)] ?? 0);
+    title = t('totalOverTime', { y0: years[0], y1: years[years.length - 1] });
+  } else {
+    years = avail;
+    values = avail.map((y) =>
+      (crime.heads.byYear[String(y)]?.items ?? [])
+        .filter((h) => h.cases != null && inScope(h) && !hidden.has(h.id))
+        .reduce((s, h) => s + (h.cases as number), 0));
+    title = t('heads.selectedTrend', { y0: avail[0], y1: avail[avail.length - 1] });
+  }
+  const fy = years.includes(focusYear) ? focusYear : years[years.length - 1]!;
+  return (
+    <ChartFrame title={title} filename={`${crime.city}-trend`}>
+      <TrendLine values={values} years={years} measure="cases" focusYear={fy} width={560} height={230} ariaLabel={title} />
+    </ChartFrame>
+  );
 }
 
 function ShareByHead({
@@ -321,12 +367,12 @@ function CompareByHead({
     const mapB = new Map(ydB.items.filter((i) => i.cases !== null).map((i) => [i.id, i.cases as number]));
     return ydA.items
       .filter((h) => h.cases !== null && inScope(h) && !hidden.has(h.id) && mapB.has(h.id))
-      .map((h) => ({ name: HEAD_SHORT[h.id] ?? h.name, short: HEAD_SHORT[h.id] ?? h.name, cur: mapB.get(h.id)!, prev: h.cases as number }));
+      .map((h) => ({ name: HEAD_SHORT[h.id] ?? h.name, short: HEAD_ABBR[h.id] ?? HEAD_SHORT[h.id] ?? h.name, cur: mapB.get(h.id)!, prev: h.cases as number }));
   }, [ydA, ydB, scope, hidden, inScope]);
 
   return (
     <div className="rounded-md border border-line bg-surface p-4">
-      <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+      <div className="mb-1 flex flex-wrap items-center justify-between gap-3">
         <div className="text-[13px] font-semibold text-ink-soft">{t('heads.compareTitle')}</div>
         <div className="flex items-center gap-2 text-[13px]">
           <YearPicker label={t('charts.earlierYear')} value={a} years={avail} onChange={setA} />
@@ -334,9 +380,10 @@ function CompareByHead({
           <YearPicker label={t('charts.laterYear')} value={b} years={avail} onChange={setB} />
         </div>
       </div>
+      <p className="mb-3 text-[11px] text-ink-faint">{t('heads.compareHint')}</p>
       {bars.length ? (
         <>
-          <GroupedBars bars={bars} yearCur={b} yearPrev={a} measure="cases" width={420} height={230} ariaLabel={t('heads.compareTitle')} />
+          <GroupedBars bars={bars} yearCur={b} yearPrev={a} measure="cases" width={1000} height={250} ariaLabel={t('heads.compareTitle')} />
           <div className="mt-2 flex items-center gap-4 text-[11px] text-ink-soft">
             <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: 'var(--data-domestic)' }} />{a}</span>
             <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: 'var(--data-public)' }} />{b}</span>
