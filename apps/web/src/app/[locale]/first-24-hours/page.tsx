@@ -26,7 +26,7 @@ export default async function First24Page({ params }: { params: Promise<{ locale
 
         <ol className="mt-6 flex flex-col gap-3.5">
           {FIRST_24.map((s, i) => (
-            <li key={s.id} className="rounded-lg border border-line bg-surface p-5">
+            <li key={s.id} id={s.id} className="scroll-mt-24 rounded-lg border border-line bg-surface p-5">
               <div className="flex items-start gap-3.5">
                 <span className="flex h-7 w-7 flex-none items-center justify-center rounded-full bg-accent-soft font-display text-[14px] font-semibold text-accent-deep">
                   {i + 1}

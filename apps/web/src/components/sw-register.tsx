@@ -10,7 +10,10 @@ import { useEffect } from 'react';
 export function SwRegister() {
   useEffect(() => {
     if (typeof navigator === 'undefined' || !('serviceWorker' in navigator)) return;
-    const register = () => navigator.serviceWorker.register('/sw.js').catch(() => {});
+    // Version the SW URL with the build id so each deploy installs a fresh SW
+    // and clears the old offline cache.
+    const v = process.env.NEXT_PUBLIC_SW_VERSION || '1';
+    const register = () => navigator.serviceWorker.register(`/sw.js?v=${v}`).catch(() => {});
     // By the time React hydrates a static page, `load` has usually already fired,
     // so register now if the document is ready, else wait for load.
     if (document.readyState === 'complete') register();

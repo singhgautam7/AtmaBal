@@ -80,7 +80,7 @@ ${v.yourPhone?.trim() ? v.yourPhone : ''}`;
   };
 
   return (
-    <div className="mt-6 grid gap-6 lg:grid-cols-2">
+    <div className="mt-6 grid gap-6 lg:grid-cols-2 lg:items-start">
       {/* Form */}
       <div data-noprint className="flex flex-col gap-3">
         <div className="rounded-md bg-accent-soft px-3.5 py-3 text-[12.5px] leading-snug text-ink">
@@ -119,7 +119,7 @@ ${v.yourPhone?.trim() ? v.yourPhone : ''}`;
           <button
             type="button"
             onClick={() => window.print()}
-            className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-sm bg-accent px-4 py-2.5 text-[13.5px] font-semibold text-white hover:bg-accent-deep"
+            className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-1.5 rounded-sm bg-accent px-4 py-2.5 text-[13.5px] font-semibold text-white hover:bg-accent-deep"
           >
             <IconDoc size={15} />
             Print
@@ -127,7 +127,7 @@ ${v.yourPhone?.trim() ? v.yourPhone : ''}`;
           <button
             type="button"
             onClick={download}
-            className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-sm border border-line-strong bg-surface px-4 py-2.5 text-[13.5px] font-semibold text-ink"
+            className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-1.5 rounded-sm border border-line-strong bg-surface px-4 py-2.5 text-[13.5px] font-semibold text-ink"
           >
             <IconDownload size={15} />
             Download (.txt)
@@ -136,8 +136,8 @@ ${v.yourPhone?.trim() ? v.yourPhone : ''}`;
       </div>
 
       {/* Live letter (this is what prints) */}
-      <div className="tool-print rounded-md border border-line bg-white p-6 shadow-[var(--shadow-card)]">
-        <pre className="whitespace-pre-wrap font-serif text-[13.5px] leading-relaxed text-ink">{letter}</pre>
+      <div className="tool-print min-w-0 max-w-full overflow-hidden rounded-md border border-line bg-white p-5 shadow-[var(--shadow-card)] sm:p-6">
+        <pre className="max-w-full whitespace-pre-wrap break-words font-serif text-[13px] leading-relaxed text-ink [overflow-wrap:anywhere] sm:text-[13.5px]">{letter}</pre>
       </div>
     </div>
   );

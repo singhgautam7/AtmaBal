@@ -4,6 +4,7 @@ import { TrustFooter } from '@/components/layout/trust-footer';
 import { LocaleLink } from '@/components/layout/locale-link';
 import { Diya } from '@/components/brand/diya';
 import { ReviewBanner, LawBehind } from '@/components/tools/review-banner';
+import { SaveCardImage } from '@/components/tools/rights-card-image';
 import { RIGHTS } from '@/data/rights';
 
 export default async function RightsPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -28,7 +29,8 @@ export default async function RightsPage({ params }: { params: Promise<{ locale:
           {RIGHTS.map((r) => (
             <article
               key={r.id}
-              className="flex flex-col rounded-lg border border-line bg-surface p-5"
+              id={r.id}
+              className="flex flex-col scroll-mt-24 rounded-lg border border-line bg-surface p-5"
               style={{ breakInside: 'avoid' }}
             >
               <div className="flex items-center justify-between gap-2">
@@ -43,6 +45,7 @@ export default async function RightsPage({ params }: { params: Promise<{ locale:
               <h2 className="mt-3 font-display text-[19px] font-medium leading-snug text-ink">{r.title}</h2>
               <p className="mt-2 flex-1 text-[13.5px] leading-relaxed text-ink-soft">{r.body}</p>
               <LawBehind law={r.law} />
+              <SaveCardImage card={r} />
             </article>
           ))}
         </div>

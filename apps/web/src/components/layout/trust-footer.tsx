@@ -25,6 +25,12 @@ export function TrustFooter() {
             {t('tools')}
           </LocaleLink>
           <LocaleLink
+            href="/helplines"
+            className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
+          >
+            {t('helplines')}
+          </LocaleLink>
+          <LocaleLink
             href="/about"
             className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
           >

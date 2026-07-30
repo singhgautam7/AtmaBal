@@ -130,6 +130,15 @@ export function IconInfo(p: IconProps) {
   );
 }
 
+export function IconSearch(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <circle cx="11" cy="11" r="7" />
+      <path d="M20 20l-3.5-3.5" />
+    </svg>
+  );
+}
+
 export function IconDownload(p: IconProps) {
   return (
     <svg {...base({ size: 18, strokeWidth: 1.6, ...p })}>

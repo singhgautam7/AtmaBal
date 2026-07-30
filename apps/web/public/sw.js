@@ -8,11 +8,15 @@
  * cached: the templates keep what you type in memory only, never in a request.
  * Bump CACHE to invalidate on deploy.
  */
-const CACHE = 'atmabal-v1';
+// Cache version is taken from this SW's own URL (?v=<build id>), set by the
+// registration in sw-register.tsx, so every deploy busts the offline cache.
+const VERSION = new URL(self.location.href).searchParams.get('v') || 'v1';
+const CACHE = 'atmabal-' + VERSION;
 const PRECACHE = [
-  '/', '/en/', '/en/tools/', '/en/rights/', '/en/first-24-hours/',
-  '/en/complaint-letter/', '/en/incident-log/', '/en/map/', '/en/options/',
-  '/en/crime/', '/manifest.webmanifest',
+  '/', '/en/', '/en/start/', '/en/search/', '/en/tools/', '/en/rights/',
+  '/en/first-24-hours/', '/en/complaint-letter/', '/en/incident-log/',
+  '/en/safety-plan/', '/en/how-it-works/', '/en/helplines/', '/en/map/',
+  '/en/options/', '/en/crime/', '/manifest.webmanifest',
 ];
 
 self.addEventListener('install', (e) => {

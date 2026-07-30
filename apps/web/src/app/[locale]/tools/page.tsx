@@ -3,9 +3,15 @@ import type { ComponentType } from 'react';
 import { SiteHeader } from '@/components/layout/site-header';
 import { TrustFooter } from '@/components/layout/trust-footer';
 import { LocaleLink } from '@/components/layout/locale-link';
-import { IconShield, IconRights, IconDoc, IconChevronRight } from '@/components/icons';
+import { IconShield, IconRights, IconDoc, IconPhone, IconHelp, IconInfo, IconChevronRight } from '@/components/icons';
 
 const TOOLS: { href: string; title: string; desc: string; Icon: ComponentType<{ size?: number }> }[] = [
+  {
+    href: '/start',
+    title: 'Where do I start?',
+    desc: 'Not sure what you need? One soft question points you to the right place.',
+    Icon: IconHelp,
+  },
   {
     href: '/first-24-hours',
     title: 'First 24 hours',
@@ -19,6 +25,18 @@ const TOOLS: { href: string; title: string; desc: string; Icon: ComponentType<{ 
     Icon: IconRights,
   },
   {
+    href: '/helplines',
+    title: 'Helpline directory',
+    desc: 'Filterable national helplines with tap-to-call and a last-verified date.',
+    Icon: IconPhone,
+  },
+  {
+    href: '/how-it-works',
+    title: 'What actually happens when you…',
+    desc: 'Plain-language walk-throughs: filing an FIR, a medical exam, a One Stop Centre.',
+    Icon: IconInfo,
+  },
+  {
     href: '/complaint-letter',
     title: 'Written-complaint template',
     desc: 'A fill-in-the-blank letter to the police asking for an FIR. Print, download, or fill by hand.',
@@ -29,6 +47,12 @@ const TOOLS: { href: string; title: string; desc: string; Icon: ComponentType<{ 
     title: 'Incident log',
     desc: 'A blank log to keep over time - dates, witnesses, evidence, complaint references. Print or download.',
     Icon: IconDoc,
+  },
+  {
+    href: '/safety-plan',
+    title: 'Safety-planning checklist',
+    desc: 'A calm, printable checklist for an ongoing unsafe situation - papers, essentials, leaving safely.',
+    Icon: IconShield,
   },
 ];
 
