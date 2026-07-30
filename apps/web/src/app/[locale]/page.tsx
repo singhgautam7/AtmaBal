@@ -9,6 +9,7 @@ import {
   IconRights,
   IconHelp,
   IconHeart,
+  IconShield,
   IconChevronRight,
 } from '@/components/icons';
 
@@ -29,13 +30,14 @@ export default async function HomePage({
 }
 
 const ENTRIES: {
-  key: 'crime' | 'options' | 'help' | 'overwhelmed';
+  key: 'crime' | 'options' | 'help' | 'tools' | 'overwhelmed';
   href: string;
   Icon: ComponentType<{ size?: number }>;
 }[] = [
   { key: 'crime', href: '/crime', Icon: IconChart },
   { key: 'options', href: '/options', Icon: IconRights },
   { key: 'help', href: '/map?city=bengaluru', Icon: IconHelp },
+  { key: 'tools', href: '/tools', Icon: IconShield },
   { key: 'overwhelmed', href: '/grounding', Icon: IconHeart },
 ];
 

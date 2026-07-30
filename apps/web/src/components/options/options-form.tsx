@@ -304,6 +304,22 @@ function Outcome({
         {t('outcome.reviewNote')}
       </p>
 
+      {/* In-the-moment tools - handy right from an outcome. */}
+      <div className="mt-4 flex flex-wrap gap-2 text-[12.5px]">
+        <LocaleLink href="/first-24-hours" className="rounded-full border border-accent-line px-3 py-1.5 font-semibold text-accent-deep hover:bg-accent-soft">
+          First 24 hours
+        </LocaleLink>
+        <LocaleLink href="/rights" className="rounded-full border border-accent-line px-3 py-1.5 font-semibold text-accent-deep hover:bg-accent-soft">
+          Know your rights
+        </LocaleLink>
+        <LocaleLink href="/complaint-letter" className="rounded-full border border-accent-line px-3 py-1.5 font-semibold text-accent-deep hover:bg-accent-soft">
+          Complaint template
+        </LocaleLink>
+        <LocaleLink href="/incident-log" className="rounded-full border border-accent-line px-3 py-1.5 font-semibold text-accent-deep hover:bg-accent-soft">
+          Incident log
+        </LocaleLink>
+      </div>
+
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {cards.map((card, i) => (
           <article

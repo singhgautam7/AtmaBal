@@ -52,6 +52,10 @@
         "title": "Get help now",
         "desc": "Verified helplines and your nearest stations."
       },
+      "tools": {
+        "title": "In-the-moment tools",
+        "desc": "First-24-hours guide, rights cards, complaint & log templates."
+      },
       "overwhelmed": {
         "title": "Feeling overwhelmed?",
         "desc": "A calm space to breathe and steady yourself."
@@ -304,6 +308,7 @@
   "footer": {
     "storeNothing": "We store nothing. This site is served as static files - there is no server that receives what you do here, no account, no tracking, no analytics on your choices.",
     "dataSources": "Data & sources",
+    "tools": "Tools",
     "about": "About",
     "corrections": "Something wrong or out of date? Corrections",
     "sourcesReviewed": "Every legal point and helpline carries a source and a review date."

@@ -233,6 +233,14 @@ function ResultsList({ places, selectedId, onSelect, cityName, verified }: { pla
         <PlaceCard key={p.id} place={p} selected={selectedId === p.id} onSelect={() => onSelect(p.id)} />
       ))}
       <li className="mt-1 flex flex-col gap-2">
+        <div className="flex flex-wrap gap-2">
+          <LocaleLink href="/first-24-hours" className="flex-1 rounded-md border border-accent-line px-3 py-2 text-center text-[12.5px] font-semibold text-accent-deep hover:bg-accent-soft">
+            First 24 hours
+          </LocaleLink>
+          <LocaleLink href="/rights" className="flex-1 rounded-md border border-accent-line px-3 py-2 text-center text-[12.5px] font-semibold text-accent-deep hover:bg-accent-soft">
+            Know your rights
+          </LocaleLink>
+        </div>
         <LocaleLink href="/grounding" className="flex items-center justify-between rounded-md border border-line bg-surface px-3.5 py-3 text-ink hover:border-accent-line">
           <span>
             <span className="block font-display text-[14px] font-medium">{t('overwhelmed.title')}</span>

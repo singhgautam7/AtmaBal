@@ -174,8 +174,27 @@
   50% { transform: translate(4%, 8%) scale(1.1); opacity: 0.65; }
 }
 
-/* Print stylesheet: the options outcome must be carryable to a station/lawyer. */
+/* Print stylesheet: outcomes, complaint letters and logs must print cleanly so a
+ * woman can carry them to a station or lawyer. Chrome + controls are marked
+ * .no-print / [data-noprint]; the document itself (.tool-print) prints borderless. */
 @media print {
-  .no-print { display: none !important; }
+  .no-print,
+  [data-noprint] { display: none !important; }
   body { background: #fff; }
+  @page { margin: 16mm; }
+  .tool-print {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  /* keep form values visible when a filled log/letter is printed */
+  .tool-print textarea,
+  .tool-print input {
+    border: none !important;
+    color: #2a2420 !important;
+    resize: none !important;
+  }
+  .tool-print table { font-size: 11px; }
+  article { break-inside: avoid; }
 }

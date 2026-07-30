@@ -17,7 +17,13 @@ export function TrustFooter() {
           <IconLock className="mt-0.5 flex-none text-accent-deep" />
           <span className="max-w-[640px]">{t('storeNothing')}</span>
         </p>
-        <div className="flex flex-none items-center gap-4">
+        <div className="flex flex-none flex-wrap items-center gap-x-4 gap-y-1.5">
+          <LocaleLink
+            href="/tools"
+            className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"
+          >
+            {t('tools')}
+          </LocaleLink>
           <LocaleLink
             href="/about"
             className="whitespace-nowrap text-[12px] font-semibold text-accent-deep underline underline-offset-2"

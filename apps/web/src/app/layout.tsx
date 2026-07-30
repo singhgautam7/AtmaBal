@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { Spectral, IBM_Plex_Sans } from 'next/font/google';
 import '@/styles/globals.css';
+import { SwRegister } from '@/components/sw-register';
 
 /**
  * Root layout - owns the <html>/<body> document shell (Next requires this here).
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to content
         </a>
         {children}
+        <SwRegister />
       </body>
     </html>
   );
