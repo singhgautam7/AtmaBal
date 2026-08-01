@@ -3,15 +3,9 @@ import type { ComponentType } from 'react';
 import { SiteHeader } from '@/components/layout/site-header';
 import { TrustFooter } from '@/components/layout/trust-footer';
 import { LocaleLink } from '@/components/layout/locale-link';
-import { IconShield, IconRights, IconDoc, IconPhone, IconHelp, IconInfo, IconChevronRight } from '@/components/icons';
+import { IconShield, IconRights, IconDoc, IconPhone, IconInfo, IconChevronRight } from '@/components/icons';
 
 const TOOLS: { href: string; title: string; desc: string; Icon: ComponentType<{ size?: number }> }[] = [
-  {
-    href: '/start',
-    title: 'Where do I start?',
-    desc: 'Not sure what you need? One soft question points you to the right place.',
-    Icon: IconHelp,
-  },
   {
     href: '/first-24-hours',
     title: 'First 24 hours',

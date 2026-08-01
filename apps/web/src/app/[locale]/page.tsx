@@ -62,16 +62,6 @@ function Hero() {
 
         {/* Entry cards */}
         <div className="flex flex-col gap-3">
-          <LocaleLink
-            href="/start"
-            className="flex items-center justify-between gap-3 rounded-md border border-accent-line bg-accent-soft px-5 py-3.5 text-accent-deep hover:bg-accent-soft/70"
-          >
-            <span className="min-w-0">
-              <span className="block font-display text-[16px] font-semibold leading-tight">Not sure where to start?</span>
-              <span className="mt-0.5 block text-[13px] leading-snug text-ink-soft">One soft question to point you the right way.</span>
-            </span>
-            <IconChevronRight size={18} className="flex-none" />
-          </LocaleLink>
           {ENTRIES.map(({ key, href, Icon }) => (
             <LocaleLink
               key={key}

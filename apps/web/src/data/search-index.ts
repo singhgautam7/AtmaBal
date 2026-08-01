@@ -17,7 +17,6 @@ export interface SearchEntry {
 }
 
 const PAGES: SearchEntry[] = [
-  { title: 'Where do I start', snippet: 'A gentle front door - one question to point you the right way.', href: '/start', keywords: 'begin help unsure not sure' },
   { title: 'Crime in your city', snippet: 'Honest NCRB crime data by offence type, for 19 metros.', href: '/crime', keywords: 'ncrb statistics rate charge-sheet head' },
   { title: 'Know your options', snippet: 'Your rights and next steps, in plain language.', href: '/options', keywords: 'form scenario rights next steps' },
   { title: 'Get help now', snippet: 'Verified helplines and your nearest police / women’s station.', href: '/map?city=bengaluru', keywords: 'map station police women osc directions near me' },

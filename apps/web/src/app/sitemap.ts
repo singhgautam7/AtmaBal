@@ -7,7 +7,7 @@ import type { MetadataRoute } from 'next';
 const BASE = 'https://atmabal.in';
 
 const ROUTES = [
-  '', 'start', 'search', 'crime', 'options', 'map', 'helplines', 'tools',
+  '', 'search', 'crime', 'options', 'map', 'helplines', 'tools',
   'first-24-hours', 'rights', 'complaint-letter', 'incident-log', 'safety-plan',
   'how-it-works', 'grounding', 'methodology', 'about', 'corrections',
 ];

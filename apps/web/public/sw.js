@@ -13,7 +13,7 @@
 const VERSION = new URL(self.location.href).searchParams.get('v') || 'v1';
 const CACHE = 'atmabal-' + VERSION;
 const PRECACHE = [
-  '/', '/en/', '/en/start/', '/en/search/', '/en/tools/', '/en/rights/',
+  '/', '/en/', '/en/search/', '/en/tools/', '/en/rights/',
   '/en/first-24-hours/', '/en/complaint-letter/', '/en/incident-log/',
   '/en/safety-plan/', '/en/how-it-works/', '/en/helplines/', '/en/map/',
   '/en/options/', '/en/crime/', '/manifest.webmanifest',

@@ -25,7 +25,10 @@ const FIELDS: Field[] = [
   { key: 'witnesses', label: 'Witness(es), if any', placeholder: 'Names / contacts, if any', textarea: true },
 ];
 
-const blank = (n = 24) => '_'.repeat(n);
+// Blanks are capped short so an unfilled field can never form a long unbreakable
+// run that overflows a narrow column; combined with `overflow-wrap: anywhere` on
+// the <pre>, the letter always stays inside its card.
+const blank = (n = 12) => '_'.repeat(Math.min(n, 16));
 
 export function ComplaintTool() {
   const [v, setV] = useState<Record<string, string>>({});
