@@ -176,6 +176,7 @@
     "useMyLocation": "Use my location",
     "myLocation": "My location",
     "changeCity": "Change city",
+    "filterLabel": "Filter",
     "locating": "Locating…",
     "locDenied": "Location permission is blocked. Allow it in your browser to sort by distance and show where you are.",
     "locUnavailable": "Couldn’t get your location. You can still browse and get directions.",

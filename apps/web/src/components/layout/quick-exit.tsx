@@ -21,10 +21,16 @@ export function QuickExit({
   cityName = 'Bengaluru',
   size = 'sm',
   variant = 'default',
+  iconOnly = false,
+  className,
 }: {
   cityName?: string;
   size?: 'sm' | 'lg';
   variant?: 'default' | 'floating';
+  /** Render only the exit glyph (the tooltip still conveys purpose) - used where
+   *  space is tight, e.g. the mobile map controls. */
+  iconOnly?: boolean;
+  className?: string;
 }) {
   const t = useTranslations('quickExit');
   const firedRef = useRef(false);
@@ -52,13 +58,18 @@ export function QuickExit({
       aria-label={t('hint')}
       className={cn(
         'inline-flex items-center gap-1.5 rounded-full border font-semibold transition-colors',
-        size === 'lg' ? 'px-3.5 py-[7px] text-[13px]' : 'px-3 py-1.5 text-xs',
+        iconOnly
+          ? 'p-2.5'
+          : size === 'lg'
+            ? 'px-3.5 py-[7px] text-[13px]'
+            : 'px-3 py-1.5 text-xs',
         variant === 'floating'
           ? 'border-line-strong bg-surface text-ink shadow-[0_3px_10px_rgba(42,36,32,0.14)] hover:text-accent-deep'
           : 'border-line-strong bg-transparent text-ink-soft hover:border-accent-line hover:text-accent-deep',
+        className,
       )}
     >
-      {t('label')}
+      {!iconOnly && t('label')}
       <IconExit />
     </button>
   );

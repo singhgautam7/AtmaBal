@@ -6,10 +6,11 @@ import { useTranslations, useLocale } from 'next-intl';
 import type { CityMeta, PlacesData, Place, PlaceType } from '@/data/types';
 import { haversineKm, formatKm } from '@/lib/haversine';
 import { cn } from '@/lib/cn';
-import { IconPin, IconPhone, IconChevronRight, IconChevronDown, IconLocate } from '@/components/icons';
+import { IconPin, IconPhone, IconChevronRight, IconChevronDown, IconLocate, IconFilter } from '@/components/icons';
 import { LocaleLink } from '@/components/layout/locale-link';
 import { QuickExit } from '@/components/layout/quick-exit';
 import { Logo } from '@/components/layout/logo';
+import { DiyaMark } from '@/components/layout/diya-mark';
 import { MapCanvas } from './map-canvas';
 
 type Filter = 'all' | PlaceType;
@@ -142,16 +143,30 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
       {/* Floating chrome: row 1 brand + city + quick exit; row 2 filters (separate) */}
       <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex flex-col gap-2.5 p-3.5 sm:p-4">
         <div className="flex items-start justify-between gap-2">
-          <span className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-surface px-3.5 py-2 shadow-[0_3px_10px_rgba(42,36,32,0.14)]">
-            <Logo size="sm" />
-            <span className="hidden text-[13px] font-semibold text-ink-faint sm:inline">/ {t('mobileTitle')}</span>
+          {/* Mobile: brand mark only (icon), no wordmark. Desktop: full wordmark. */}
+          <span className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-surface px-3 py-2 shadow-[0_3px_10px_rgba(42,36,32,0.14)] md:px-3.5">
+            <LocaleLink href="/" aria-label="Atma Bal" className="inline-flex md:hidden">
+              <DiyaMark size={24} />
+            </LocaleLink>
+            <span className="hidden items-center gap-2 md:inline-flex">
+              <Logo size="sm" />
+              <span className="text-[13px] font-semibold text-ink-faint">/ {t('mobileTitle')}</span>
+            </span>
           </span>
           <div className="pointer-events-auto flex items-center gap-2">
             <MapCitySelect cities={helpCities} current={cityId} onChange={changeCity} label={t('changeCity')} />
-            <QuickExit variant="floating" />
+            {/* Quick exit stays persistent, but off the mobile header (it moves to
+                the bottom control cluster as an icon). Header keeps it on desktop.
+                Wrapped so the wrapper controls visibility - QuickExit sets its own
+                `inline-flex`, which would otherwise beat a `hidden` on the button. */}
+            <span className="hidden md:inline-flex">
+              <QuickExit variant="floating" />
+            </span>
           </div>
         </div>
-        <div className="pointer-events-auto flex flex-wrap items-center gap-1.5">
+        {/* Filter chips: desktop only. On mobile the filter is a drop-up next to
+            "My location" (see the bottom control cluster). */}
+        <div className="pointer-events-auto hidden flex-wrap items-center gap-1.5 md:flex">
           {filters.map((f) => {
             const active = filter === f.id;
             return (
@@ -172,17 +187,28 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
         </div>
       </div>
 
-      {/* My location - accent button. Bottom-right on web (zoom is bottom-left, so
-          no collision); on mobile just above the sheet. */}
-      <button
-        type="button"
-        onClick={useMyLocation}
+      {/* Bottom-right control cluster. Bottom-right on web (zoom is bottom-left, so
+          no collision); on mobile it sits just above the sheet and also carries the
+          mobile-only quick-exit (icon) and the filter drop-up, to the left of
+          "My location". The row is pointer-transparent so map gestures pass between
+          the buttons; each control re-enables pointer events. */}
+      <div
         style={{ ['--sheet' as string]: `${sheetVh}vh` }}
-        className="pointer-events-auto absolute right-3 bottom-[calc(var(--sheet)+12px)] z-20 inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-2 text-[12.5px] font-semibold text-white shadow-[0_4px_12px_rgba(190,90,56,0.4)] hover:bg-accent-deep md:right-4 md:bottom-6"
+        className="pointer-events-none absolute right-3 bottom-[calc(var(--sheet)+12px)] z-20 flex items-center gap-2 md:right-4 md:bottom-6"
       >
-        <IconLocate size={15} strokeWidth={2} />
-        {loc === 'locating' ? t('locating') : t('myLocation')}
-      </button>
+        <span className="pointer-events-auto inline-flex md:hidden">
+          <QuickExit variant="floating" iconOnly />
+        </span>
+        <MapFilterMenu filters={filters} current={filter} onChange={setFilter} label={t('filterLabel')} className="md:hidden" />
+        <button
+          type="button"
+          onClick={useMyLocation}
+          className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-2 text-[12.5px] font-semibold text-white shadow-[0_4px_12px_rgba(190,90,56,0.4)] hover:bg-accent-deep"
+        >
+          <IconLocate size={15} strokeWidth={2} />
+          {loc === 'locating' ? t('locating') : t('myLocation')}
+        </button>
+      </div>
       {(loc === 'denied' || loc === 'unavailable') && (
         <p style={{ ['--sheet' as string]: `${sheetVh}vh` }} className="pointer-events-none absolute right-3 bottom-[calc(var(--sheet)+54px)] z-20 max-w-[220px] rounded-md bg-surface px-2.5 py-1.5 text-right text-[11px] leading-snug text-accent-deep shadow md:right-4 md:bottom-[64px]">
           {loc === 'denied' ? t('locDenied') : t('locUnavailable')}
@@ -261,6 +287,77 @@ function MapCitySelect({ cities, current, onChange, label }: { cities: CityMeta[
               </button>
             ))}
           </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Mobile map filter - a compact drop-UP (it sits near the bottom of the screen)
+ * with radio options, replacing the chip row on small screens. The trigger shows
+ * the active filter's label so the current selection is always visible.
+ */
+function MapFilterMenu({
+  filters,
+  current,
+  onChange,
+  label,
+  className,
+}: {
+  filters: { id: Filter; label: string }[];
+  current: Filter;
+  onChange: (id: Filter) => void;
+  label: string;
+  className?: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => { if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false); };
+    document.addEventListener('mousedown', onDown);
+    return () => document.removeEventListener('mousedown', onDown);
+  }, [open]);
+  const active = filters.find((f) => f.id === current);
+  const triggerLabel = current === 'all' ? label : active?.label ?? label;
+  return (
+    <div className={cn('pointer-events-auto relative', className)} ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label={label}
+        className={cn(
+          'inline-flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-[12.5px] font-semibold shadow-[0_3px_10px_rgba(42,36,32,0.14)]',
+          current === 'all' ? 'border-line-strong bg-surface text-ink' : 'border-accent bg-accent text-white',
+        )}
+      >
+        <IconFilter size={14} strokeWidth={1.8} />
+        {triggerLabel}
+        <IconChevronDown size={10} strokeWidth={1.8} className={current === 'all' ? 'text-ink-faint' : 'text-white/80'} />
+      </button>
+      {open && (
+        <div role="listbox" aria-label={label} className="absolute bottom-[46px] right-0 w-[212px] rounded-md border border-line-strong bg-surface p-1.5 shadow-[var(--shadow-pop)]">
+          {filters.map((f) => {
+            const sel = f.id === current;
+            return (
+              <button
+                key={f.id}
+                type="button"
+                role="option"
+                aria-selected={sel}
+                onClick={() => { onChange(f.id); setOpen(false); }}
+                className={cn('flex w-full items-center gap-2.5 rounded-lg px-3 py-2.5 text-left', sel ? 'bg-accent-soft' : 'hover:bg-paper')}
+              >
+                <span className={cn('flex h-[17px] w-[17px] flex-none items-center justify-center rounded-full border-2', sel ? 'border-accent' : 'border-line-strong')}>
+                  {sel && <span className="h-[9px] w-[9px] rounded-full bg-accent" />}
+                </span>
+                <span className={cn('text-[14px]', sel ? 'font-semibold text-ink' : 'font-medium text-ink-soft')}>{f.label}</span>
+              </button>
+            );
+          })}
         </div>
       )}
     </div>

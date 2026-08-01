@@ -164,6 +164,15 @@ export function IconExit(p: IconProps) {
   );
 }
 
+/** Funnel - the mobile map filter control. */
+export function IconFilter(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <path d="M3 5h18l-7 8v6l-4-2v-4z" />
+    </svg>
+  );
+}
+
 /** "Locate me" crosshair - clearer than a pin for the my-location action. */
 export function IconLocate(p: IconProps) {
   return (

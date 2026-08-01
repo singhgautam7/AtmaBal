@@ -13,7 +13,7 @@
 const VERSION = new URL(self.location.href).searchParams.get('v') || 'v1';
 // Bump this prefix to force-evict every returning visitor's cache on deploy
 // (belt-and-suspenders on top of the per-build ?v= version).
-const CACHE = 'atmabal-v3-' + VERSION;
+const CACHE = 'atmabal-v4-' + VERSION;
 const PRECACHE = [
   '/', '/en/', '/en/search/', '/en/tools/', '/en/rights/',
   '/en/first-24-hours/', '/en/complaint-letter/', '/en/incident-log/',
