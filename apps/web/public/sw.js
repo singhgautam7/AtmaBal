@@ -11,7 +11,9 @@
 // Cache version is taken from this SW's own URL (?v=<build id>), set by the
 // registration in sw-register.tsx, so every deploy busts the offline cache.
 const VERSION = new URL(self.location.href).searchParams.get('v') || 'v1';
-const CACHE = 'atmabal-' + VERSION;
+// Bump this prefix to force-evict every returning visitor's cache on deploy
+// (belt-and-suspenders on top of the per-build ?v= version).
+const CACHE = 'atmabal-v2-' + VERSION;
 const PRECACHE = [
   '/', '/en/', '/en/search/', '/en/tools/', '/en/rights/',
   '/en/first-24-hours/', '/en/complaint-letter/', '/en/incident-log/',

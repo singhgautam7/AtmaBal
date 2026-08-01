@@ -4,7 +4,7 @@ import { TrustFooter } from '@/components/layout/trust-footer';
 import { LocaleLink } from '@/components/layout/locale-link';
 import { Diya } from '@/components/brand/diya';
 import { ReviewBanner, LawBehind } from '@/components/tools/review-banner';
-import { SaveCardImage } from '@/components/tools/rights-card-image';
+import { SaveCardImageLazy as SaveCardImage } from '@/components/tools/save-card-image-lazy';
 import { RIGHTS } from '@/data/rights';
 
 export default async function RightsPage({ params }: { params: Promise<{ locale: string }> }) {
