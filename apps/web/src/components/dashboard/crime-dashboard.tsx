@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import type { CityMeta, CrimeData, CrimeHeadItem, CrimeHeadYear, JusticeData } from '@/data/types';
@@ -19,6 +19,25 @@ type Head = CrimeHeadItem & { cases: number };
 // neither is mistaken for an offence category.
 const OTHER_FILL = 'var(--ink-faint)';
 const FILTERED_FILL = 'var(--line-strong)';
+
+// Measure a container so charts render at their real pixel width (labels stay
+// readable instead of being scaled down to nothing on a phone).
+function useWidth(): [React.RefObject<HTMLDivElement | null>, number] {
+  const ref = useRef<HTMLDivElement>(null);
+  const [w, setW] = useState(0);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver((entries) => {
+      const cw = entries[0]?.contentRect.width;
+      if (cw) setW(Math.round(cw));
+    });
+    ro.observe(el);
+    setW(el.clientWidth);
+    return () => ro.disconnect();
+  }, []);
+  return [ref, w];
+}
 
 export function CrimeDashboard({
   allCrime,
@@ -133,9 +152,9 @@ export function CrimeDashboard({
       </div>
 
       {/* Headline + caveat */}
-      <div className="mt-6 flex flex-wrap items-start gap-6">
-        <h2 className="min-w-[300px] max-w-[580px] flex-1 font-display text-[22px] font-normal leading-snug text-ink sm:text-[24px]">{headline}</h2>
-        <div className="flex min-w-[280px] max-w-[400px] flex-1 gap-2.5 rounded-md bg-accent-soft px-4 py-3.5">
+      <div className="mt-6 flex flex-wrap items-start gap-4 sm:gap-6">
+        <h2 className="w-full font-display text-[21px] font-normal leading-snug text-ink sm:w-auto sm:min-w-[300px] sm:max-w-[580px] sm:flex-1 sm:text-[24px]">{headline}</h2>
+        <div className="flex w-full gap-2.5 rounded-md bg-accent-soft px-4 py-3.5 sm:w-auto sm:min-w-[280px] sm:max-w-[400px] sm:flex-1">
           <IconInfo size={17} className="mt-0.5 flex-none text-accent-deep" strokeWidth={1.7} />
           <p className="text-[13px] leading-snug text-ink">{t('caveat')}</p>
         </div>
@@ -143,14 +162,15 @@ export function CrimeDashboard({
 
       {hasCategories ? (
         <>
-          {/* Filters (design handoff): scope + crime-head multi-select, above the charts. */}
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-md border border-line bg-surface px-4 py-3">
-            <div className="flex items-center gap-2">
+          {/* Filters (design handoff): scope, then a full-width wrapping chip group.
+              Stacks vertically on mobile so chips never squeeze into a side column. */}
+          <div className="mt-6 flex flex-col gap-3 rounded-md border border-line bg-surface px-4 py-3 sm:flex-row sm:items-start sm:gap-5">
+            <div className="flex flex-none items-center gap-2">
               <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-faint">{t('filters.scope')}</span>
               <ScopeSeg value={scope} onChange={setScope} labels={{ all: t('scope.all'), public: t('scope.public'), domestic: t('scope.domestic') }} />
             </div>
             <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-faint">{t('filters.crimeHead')}</span>
+              <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-faint">{t('filters.crimeHead')}</span>
               {headCatalog.filter(inScope).map((h) => {
                 const off = hidden.has(h.id);
                 return (
@@ -252,9 +272,13 @@ function SelectedHeadsTrend({
     title = t('heads.selectedTrend', { y0: avail[0], y1: avail[avail.length - 1] });
   }
   const fy = years.includes(focusYear) ? focusYear : years[years.length - 1]!;
+  const [ref, w] = useWidth();
+  const chartW = Math.max(240, w || 520);
   return (
     <ChartFrame title={title} filename={`${crime.city}-trend`}>
-      <TrendLine values={values} years={years} measure="cases" focusYear={fy} width={560} height={230} ariaLabel={title} />
+      <div ref={ref}>
+        <TrendLine values={values} years={years} measure="cases" focusYear={fy} width={chartW} height={220} ariaLabel={title} />
+      </div>
     </ChartFrame>
   );
 }
@@ -302,7 +326,7 @@ function ShareByHead({
   const shownHeads = known.filter((h) => inScope(h) && !hidden.has(h.id) && h.cases > 0);
 
   return (
-    <div className="rounded-md border border-line bg-surface p-4">
+    <div className="min-w-0 rounded-md border border-line bg-surface p-4">
       <div className="mb-2 flex items-baseline justify-between gap-2">
         <div className="text-[13px] font-semibold text-ink-soft">{t('heads.shareTitle', { year })}</div>
         <span className="text-[11px] text-ink-faint">{t('heads.sourceTag')}</span>
@@ -370,8 +394,14 @@ function CompareByHead({
       .map((h) => ({ name: HEAD_SHORT[h.id] ?? h.name, short: HEAD_ABBR[h.id] ?? HEAD_SHORT[h.id] ?? h.name, cur: mapB.get(h.id)!, prev: h.cases as number }));
   }, [ydA, ydB, scope, hidden, inScope]);
 
+  const [ref, cw] = useWidth();
+  // Grouped bars need room per head to stay readable; when the card is narrower
+  // than that (mobile), the CHART scrolls inside its card - never the page.
+  const chartW = Math.max(cw || 320, Math.min(bars.length, 6) * 92 + 56);
+  const scrolls = chartW > (cw || 0) + 4;
+
   return (
-    <div className="rounded-md border border-line bg-surface p-4">
+    <div className="min-w-0 rounded-md border border-line bg-surface p-4">
       <div className="mb-1 flex flex-wrap items-center justify-between gap-3">
         <div className="text-[13px] font-semibold text-ink-soft">{t('heads.compareTitle')}</div>
         <div className="flex items-center gap-2 text-[13px]">
@@ -380,10 +410,15 @@ function CompareByHead({
           <YearPicker label={t('charts.laterYear')} value={b} years={avail} onChange={setB} />
         </div>
       </div>
-      <p className="mb-3 text-[11px] text-ink-faint">{t('heads.compareHint')}</p>
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <p className="text-[11px] text-ink-faint">{t('heads.compareHint')}</p>
+        {scrolls && <span className="flex-none text-[10.5px] font-semibold text-accent-deep">scroll →</span>}
+      </div>
       {bars.length ? (
         <>
-          <GroupedBars bars={bars} yearCur={b} yearPrev={a} measure="cases" width={1000} height={250} ariaLabel={t('heads.compareTitle')} />
+          <div ref={ref} className="-mx-1 overflow-x-auto px-1">
+            <GroupedBars bars={bars} yearCur={b} yearPrev={a} measure="cases" width={chartW} height={250} ariaLabel={t('heads.compareTitle')} />
+          </div>
           <div className="mt-2 flex items-center gap-4 text-[11px] text-ink-soft">
             <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: 'var(--data-domestic)' }} />{a}</span>
             <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: 'var(--data-public)' }} />{b}</span>

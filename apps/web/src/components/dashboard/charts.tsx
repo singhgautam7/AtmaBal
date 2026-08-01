@@ -203,7 +203,7 @@ export function GroupedBars({
       height={h}
       role="img"
       aria-label={ariaLabel}
-      style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
+      style={{ display: 'block' }}
       onMouseMove={(e) => hover.onMove(e, centers)}
       onMouseLeave={() => hover.setIdx(null)}
     >

@@ -19,6 +19,43 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 const BENGALURU: [number, number] = [77.5906, 12.9796];
 
+// Brand tint for the base map (legibility-first - see call site).
+const MAPTINT = {
+  land: '#F4EDDF', water: '#C4D5DA', green: '#E6E6CC', building: '#EADDC8',
+  road: '#E8D7B8', roadMajor: '#DDC59B', boundary: '#D6C2A6', label: '#493D32', halo: '#FBF8F2',
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function tintMap(map: any) {
+  const layers = map.getStyle()?.layers || [];
+  for (const L of layers) {
+    const id: string = L.id;
+    try {
+      if (L.type === 'background') {
+        map.setPaintProperty(id, 'background-color', MAPTINT.land);
+      } else if (L.type === 'fill') {
+        if (/water|ocean|sea|lake|river|pond|reservoir/i.test(id)) map.setPaintProperty(id, 'fill-color', MAPTINT.water);
+        else if (/park|wood|forest|grass|green|nature|wetland|golf|pitch|cemetery|scrub|farm|meadow|landcover|sand/i.test(id)) map.setPaintProperty(id, 'fill-color', MAPTINT.green);
+        else if (/building/i.test(id)) map.setPaintProperty(id, 'fill-color', MAPTINT.building);
+        else map.setPaintProperty(id, 'fill-color', MAPTINT.land);
+      } else if (L.type === 'fill-extrusion') {
+        map.setPaintProperty(id, 'fill-extrusion-color', MAPTINT.building);
+      } else if (L.type === 'line') {
+        if (/water|river|waterway/i.test(id)) map.setPaintProperty(id, 'line-color', MAPTINT.water);
+        else if (/motorway|trunk|primary|secondary/i.test(id)) map.setPaintProperty(id, 'line-color', MAPTINT.roadMajor);
+        else if (/boundary|admin|border/i.test(id)) map.setPaintProperty(id, 'line-color', MAPTINT.boundary);
+        else if (/road|street|transport|bridge|tunnel|rail|path|track|service|link|minor|aeroway/i.test(id)) map.setPaintProperty(id, 'line-color', MAPTINT.road);
+      } else if (L.type === 'symbol' && L.layout?.['text-field']) {
+        map.setPaintProperty(id, 'text-color', MAPTINT.label);
+        map.setPaintProperty(id, 'text-halo-color', MAPTINT.halo);
+        map.setPaintProperty(id, 'text-halo-width', 1.5);
+      }
+    } catch {
+      /* layer may not support this paint prop; skip */
+    }
+  }
+}
+
 const TYPE_COLOR: Record<PlaceType, string> = {
   women: '#be5a38', // --accent
   police: '#2f6f7b', // --data-domestic
@@ -85,6 +122,14 @@ export function MapCanvas({
       // button (bottom-right on desktop / above the sheet on mobile).
       map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-left');
       mapRef.current = map;
+
+      // Tint the (legible) Positron base to the app's warm palette. Legibility
+      // first: water stays a distinct blue-grey, labels stay dark ink with a cream
+      // halo, roads are a light ochre - never so strong that streets/labels/pins
+      // become hard to read. Pins are separate DOM markers, so they stay distinct.
+      const applyTint = () => tintMap(map);
+      map.on('load', applyTint);
+      map.on('styledata', applyTint);
 
       // The map often initialises before the flex/absolute container has its
       // final width; keep it sized to the container so markers project correctly.

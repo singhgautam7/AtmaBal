@@ -41,7 +41,7 @@ export function ChartFrame({
   };
 
   return (
-    <div className={`rounded-md border border-line bg-surface p-4 ${className ?? ''}`}>
+    <div className={`min-w-0 rounded-md border border-line bg-surface p-4 ${className ?? ''}`}>
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <span className="text-[13px] font-semibold text-ink-soft">{title}</span>
         <div className="flex items-center gap-2">

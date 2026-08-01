@@ -45,6 +45,30 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
   const [loc, setLoc] = useState<LocState>('idle');
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
+  // Draggable bottom sheet (mobile): height as a % of viewport, with snap points
+  // peek / half / full so the user can shrink it to see the map.
+  const SNAPS = [15, 52, 90];
+  const [sheetVh, setSheetVh] = useState(52);
+  const dragRef = useRef<{ startY: number; startVh: number } | null>(null);
+  const [dragging, setDragging] = useState(false);
+  const onSheetDown = (e: React.PointerEvent) => {
+    dragRef.current = { startY: e.clientY, startVh: sheetVh };
+    setDragging(true);
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+  };
+  const onSheetMove = (e: React.PointerEvent) => {
+    if (!dragRef.current) return;
+    const dvh = ((dragRef.current.startY - e.clientY) / window.innerHeight) * 100;
+    setSheetVh(Math.min(92, Math.max(12, dragRef.current.startVh + dvh)));
+  };
+  const onSheetUp = (e: React.PointerEvent) => {
+    if (!dragRef.current) return;
+    dragRef.current = null;
+    setDragging(false);
+    try { (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId); } catch {}
+    setSheetVh((v) => SNAPS.reduce((best, s) => (Math.abs(s - v) < Math.abs(best - v) ? s : best), SNAPS[1]!));
+  };
+
   const changeCity = (id: string) => {
     setSelectedId(null);
     setFilter('all');
@@ -153,13 +177,14 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
       <button
         type="button"
         onClick={useMyLocation}
-        className="pointer-events-auto absolute right-3 bottom-[calc(56%+12px)] z-20 inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-2 text-[12.5px] font-semibold text-white shadow-[0_4px_12px_rgba(190,90,56,0.4)] hover:bg-accent-deep md:right-4 md:bottom-6"
+        style={{ ['--sheet' as string]: `${sheetVh}vh` }}
+        className="pointer-events-auto absolute right-3 bottom-[calc(var(--sheet)+12px)] z-20 inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-2 text-[12.5px] font-semibold text-white shadow-[0_4px_12px_rgba(190,90,56,0.4)] hover:bg-accent-deep md:right-4 md:bottom-6"
       >
         <IconLocate size={15} strokeWidth={2} />
         {loc === 'locating' ? t('locating') : t('myLocation')}
       </button>
       {(loc === 'denied' || loc === 'unavailable') && (
-        <p className="pointer-events-none absolute right-3 bottom-[calc(56%+54px)] z-20 max-w-[220px] rounded-md bg-surface px-2.5 py-1.5 text-right text-[11px] leading-snug text-accent-deep shadow md:right-4 md:bottom-[64px]">
+        <p style={{ ['--sheet' as string]: `${sheetVh}vh` }} className="pointer-events-none absolute right-3 bottom-[calc(var(--sheet)+54px)] z-20 max-w-[220px] rounded-md bg-surface px-2.5 py-1.5 text-right text-[11px] leading-snug text-accent-deep shadow md:right-4 md:bottom-[64px]">
           {loc === 'denied' ? t('locDenied') : t('locUnavailable')}
         </p>
       )}
@@ -173,9 +198,26 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
         <div className="flex-1 overflow-y-auto p-3">{list}</div>
       </div>
 
-      {/* Mobile bottom sheet (list only) */}
-      <div className="pointer-events-auto absolute inset-x-0 bottom-0 z-10 flex max-h-[56%] flex-col rounded-t-[22px] bg-surface shadow-[0_-8px_28px_rgba(42,36,32,0.16)] md:hidden">
-        <div className="flex flex-none justify-center py-2.5"><span className="h-1 w-9 rounded-full bg-line-strong" /></div>
+      {/* Mobile bottom sheet - draggable, with peek / half / full snap points. */}
+      <div
+        className="pointer-events-auto absolute inset-x-0 bottom-0 z-10 flex flex-col rounded-t-[22px] bg-surface shadow-[0_-8px_28px_rgba(42,36,32,0.16)] md:hidden"
+        style={{ height: `${sheetVh}vh`, transition: dragging ? 'none' : 'height 0.28s cubic-bezier(0.22,1,0.36,1)' }}
+      >
+        <div
+          onPointerDown={onSheetDown}
+          onPointerMove={onSheetMove}
+          onPointerUp={onSheetUp}
+          onPointerCancel={onSheetUp}
+          role="slider"
+          aria-label={t('nearbyCount', { count: shown.length })}
+          aria-valuemin={12}
+          aria-valuemax={92}
+          aria-valuenow={Math.round(sheetVh)}
+          tabIndex={0}
+          className="flex flex-none cursor-grab touch-none select-none justify-center pb-1 pt-3 active:cursor-grabbing"
+        >
+          <span className="h-1.5 w-11 rounded-full bg-line-strong" />
+        </div>
         <div className="flex flex-none items-baseline justify-between px-4 pb-2">
           <span className="font-display text-[15px] font-semibold text-ink">{t('nearbyCount', { count: shown.length })}</span>
           <span className="text-[11px] text-ink-faint">{t('byDistance')}</span>
