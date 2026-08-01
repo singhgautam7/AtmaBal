@@ -155,10 +155,13 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
           </span>
           <div className="pointer-events-auto flex items-center gap-2">
             <MapCitySelect cities={helpCities} current={cityId} onChange={changeCity} label={t('changeCity')} />
-            {/* Quick exit stays persistent, but off the mobile header (it moves to
-                the bottom control cluster as an icon). Header keeps it on desktop.
-                Wrapped so the wrapper controls visibility - QuickExit sets its own
-                `inline-flex`, which would otherwise beat a `hidden` on the button. */}
+            {/* Quick exit stays persistent. Mobile: a compact icon to the right of
+                the city dropdown. Desktop: the full labelled button. Wrapped so the
+                wrapper controls visibility - QuickExit sets its own `inline-flex`,
+                which would otherwise beat a `hidden` on the button. */}
+            <span className="inline-flex md:hidden">
+              <QuickExit variant="floating" iconOnly />
+            </span>
             <span className="hidden md:inline-flex">
               <QuickExit variant="floating" />
             </span>
@@ -188,17 +191,14 @@ export function HelpNearYou({ allPlaces, cities }: { allPlaces: Record<string, P
       </div>
 
       {/* Bottom-right control cluster. Bottom-right on web (zoom is bottom-left, so
-          no collision); on mobile it sits just above the sheet and also carries the
-          mobile-only quick-exit (icon) and the filter drop-up, to the left of
-          "My location". The row is pointer-transparent so map gestures pass between
-          the buttons; each control re-enables pointer events. */}
+          no collision); on mobile it sits just above the sheet and carries the
+          filter drop-up to the left of "My location" (quick exit lives in the
+          header). The row is pointer-transparent so map gestures pass between the
+          buttons; each control re-enables pointer events. */}
       <div
         style={{ ['--sheet' as string]: `${sheetVh}vh` }}
         className="pointer-events-none absolute right-3 bottom-[calc(var(--sheet)+12px)] z-20 flex items-center gap-2 md:right-4 md:bottom-6"
       >
-        <span className="pointer-events-auto inline-flex md:hidden">
-          <QuickExit variant="floating" iconOnly />
-        </span>
         <MapFilterMenu filters={filters} current={filter} onChange={setFilter} label={t('filterLabel')} className="md:hidden" />
         <button
           type="button"
